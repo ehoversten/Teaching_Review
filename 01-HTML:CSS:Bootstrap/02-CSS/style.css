@@ -1,0 +1,34 @@
+title {
+  text-align: center;
+  color: crimson;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+wrapper {
+  border: 1px solid goldenrod;
+}
+
+wrapper img {
+  border: 1px solid lawngreen;
+  padding: 5%;
+  margin: 5%;
+}
+
+dogeFig {
+  text-align: center;
+}
+
+dogeImg {
+  max-height: 200px;
+}
+
+.figcaption {
+  font-size: 3rem;
+  color: rebeccapurple;
+}
+
+#body {
+  background-image: linear-gradient(to top left, red, yellow);
+}
