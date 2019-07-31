@@ -26,7 +26,6 @@
 # To see which remote servers you have configured,
 
     $> git remote -v
-    $> git add -A 
 
 
 # Add a remote to your git connected project
