@@ -43,9 +43,11 @@ img {
 /*  Making a fixed footer */
 footer {
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
     max-height: 120px;
-    background: gray;
+    background: rgb(189, 189, 189);
     padding-top: 20px;
+    margin-top: 60px;
+    border-top: 5px solid rgb(79, 79, 83);
 }
