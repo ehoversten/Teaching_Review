@@ -1,0 +1,139 @@
+/* Need tips for centering content on the page? */
+/* https://css-tricks.com/centering-css-complete-guide/ */
+
+
+body {
+    
+}
+
+
+.jumbotron {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.carousel-item img {
+    max-height: 500px;
+}
+
+.carousel-caption {
+    color: rgb(255, 255, 255);
+}
+
+#cards {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Amatic SC', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.card {
+    border: solid #000 2px;
+    border-radius: 10px;
+    background: rgb(68, 160, 199);
+
+}
+
+.card img {
+    height: 300px;
+    padding: 10px 10px;
+}
+
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: rgb(189, 189, 189);
+    padding-top: 20px;
+    margin-top: 60px;
+    border-top: 5px solid rgb(79, 79, 83);
+}
+
+
+/* ----- MEDIA QUERIES -------- */
+/* Smartphones (portrait and landscape) ---------- */
+@media screen and (min-width: 320px) and (max-width: 480px){
+    /* styles */
+    body {
+        background: rgb(186, 230, 173);
+    }
+
+    .card {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+}
+
+/* Smartphones (portrait) ---------- */
+@media screen and (max-width: 320px){
+    /* styles */
+    body {
+        background: rgb(186, 230, 173);
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .card-column {
+        max-width: 50%;
+    }
+}
+
+/* Smartphones (landscape) ---------- */
+@media screen and (min-width: 321px){
+    /* styles */
+}
+
+/* Custom style */
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    body {
+        background: rgb(186, 230, 173);
+    }
+
+    #card-container {
+        margin: 10px auto;
+    }
+
+    .card-column {
+        max-width: 50%;
+        margin: 2.5px 5px;
+    }
+
+}
+
+/* Tablets, iPads (portrait and landscape) ---------- */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    /* styles */
+    body {
+        background: lightblue;
+    }
+
+    .card-column {
+        max-width: 45%;
+        margin-top: 0px;
+    }
+}
+
+/* Tablets, iPads (portrait) ---------- */
+@media screen and (min-width: 768px){
+    /* styles */
+}
+
+/* Tablets, iPads (landscape) ---------- */
+@media screen and (min-width: 1024px){
+    /* styles */
+}
+/* Desktops and laptops ---------- */
+@media screen and (min-width: 1224px){
+    /* styles */
+}
+
+/* Large screens ---------- */
+@media screen and (min-width: 1824px){
+    /* styles */
+}
