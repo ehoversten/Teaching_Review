@@ -20,6 +20,16 @@ body {
     text-align: center;
 }
 
+
+
+.carousel-item img {
+    max-height: 500px;
+}
+
+.carousel-caption {
+    color: rgb(255, 255, 255);
+}
+
 #cards {
     text-align: center;
 }
@@ -35,10 +45,12 @@ h1 {
 
 }
 
-img {
+.card img {
     height: 300px;
     padding: 10px 10px;
 }
+
+
 
 /*  Making a fixed footer */
 footer {
@@ -50,4 +62,45 @@ footer {
     padding-top: 20px;
     margin-top: 60px;
     border-top: 5px solid rgb(79, 79, 83);
+}
+
+
+/* ----- MEDIA QUERIES -------- */
+/* Smartphones (portrait and landscape) ---------- */
+@media screen and (min-width: 320px) and (max-width: 480px){
+    /* styles */
+}
+
+/* Smartphones (portrait) ---------- */
+@media screen and (max-width: 320px){
+    /* styles */
+}
+
+/* Smartphones (landscape) ---------- */
+@media screen and (min-width: 321px){
+    /* styles */
+}
+
+/* Tablets, iPads (portrait and landscape) ---------- */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    /* styles */
+}
+
+/* Tablets, iPads (portrait) ---------- */
+@media screen and (min-width: 768px){
+    /* styles */
+}
+
+/* Tablets, iPads (landscape) ---------- */
+@media screen and (min-width: 1024px){
+    /* styles */
+}
+/* Desktops and laptops ---------- */
+@media screen and (min-width: 1224px){
+    /* styles */
+}
+
+/* Large screens ---------- */
+@media screen and (min-width: 1824px){
+    /* styles */
 }
