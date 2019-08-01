@@ -6,7 +6,7 @@ JavaScript is NOT magic. Someone or other people built programs that convert you
 
 ## **Syntax Parsers**: A program that reads your code and determines what it does and if its grammar is valid.
 
-So it's going through character by character like F-U-N-C-T-I-O-N. and It'll say "Oh, that's a function so there should be a space after this." and then the next thing it see up until the paranthesis will be the name of the function, etc. And that gets translated by the systems/programs that someone else wrote. And along the way, the `engine` that is interpreting your code can decide to do other things.
+So it's going through character by character like F-U-N-C-T-I-O-N. and It'll say "Oh, that's a function so there should be a space after this." and then the next thing it see up until the parenthesis will be the name of the function, etc. And that gets translated by the systems/programs that someone else wrote. And along the way, the `engine` that is interpreting your code can decide to do other things.
 
 ## **Lexical Environments**: Where something sits physically in the code you write.
 
