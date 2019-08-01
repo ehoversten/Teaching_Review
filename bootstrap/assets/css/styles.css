@@ -1,0 +1,51 @@
+/* Need tips for centering content on the page? */
+/* https://css-tricks.com/centering-css-complete-guide/ */
+
+
+body {
+    
+}
+
+#welcome-msg {
+
+}
+
+#welcome {
+    color: blue;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#cards {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Amatic SC', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.card {
+    border: solid #000 2px;
+    border-radius: 10px;
+    background: rgb(68, 160, 199);
+
+}
+
+img {
+    height: 300px;
+    padding: 10px 10px;
+}
+
+/*  Making a fixed footer */
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    max-height: 120px;
+    background: gray;
+    padding-top: 20px;
+}
