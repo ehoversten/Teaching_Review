@@ -6,14 +6,14 @@
 
 ### The base execution context is **_the global execution context_**. By `global`, we mean that everything has access to it everywhere.
 
-![globalScope](./img/globalscope.png)
+![globalScope](./img/globalScope.PNG)
 
 ## The global execution context creates two things for you, which you don't have to code.
 
 -   ### It creates a `Global Object` (a collection of name/value pairs).
 -   ### It creates a special variable for you, called `this`.
 
-![Global Execution Context ](./img/executionContextGlobal.png)
+![Global Execution Context ](./img/executionContextGlobal.PNG)
 
 ### TA: demonstration
 
@@ -28,7 +28,7 @@
     - Each separate tab is a different global object.
     - Each window has its own execution context and its own global execution context.
 
-![Window Global Execution Context](./img/windowglobalexecutioncontext.png)
+![Window Global Execution Context](./img/windowGlobalExecutionContext.PNG)
 
 #### Code:
 
@@ -48,12 +48,12 @@ function b(oneParameter) {
 
 ### When you're running code inside a function, `Outer Environment` means the code that's outside the function. But when you're running at the global level, meaning when you're not inside a function, there's nothing outside (you're already as outside as you can get). There is no outer environment, so the outer environment is just null (it's nothing at the global level).
 
-![outer_environment](./img/outer_environment.png)
+![outer_environment](./img/outer_environment.PNG)
 
 ## Your Code
 
 ### And finally, the execution context is running your code!
 
-![EC_your_code](./img/EC_your_code.png)
+![EC_your_code](./img/EC_your_code.PNG)
 
 # The wrapper, or the `execution context`, has other things that you didn't write. And the JS engine running your code is doing it for you!

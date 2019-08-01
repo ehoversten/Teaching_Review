@@ -35,4 +35,4 @@ var car = {
 };
 ```
 
-![Name-Value Pairs](./img/name-value-pairs.png)
+![Name-Value-Pairs](./img/name-value-pairs.PNG)
