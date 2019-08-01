@@ -1,4 +1,4 @@
-# Conceptual Aside: Syntax Parsers, Execution Context, and Lexical Environments
+# Syntax Parsers, Execution Context, and Lexical Environments
 
 JavaScript is NOT magic. Someone or other people built programs that convert your JavaScript into something the computer can understand. Those programs are called `Compilers`. The `Compilers` do the process, the work of actually reading your code, character by character. And determines if the syntax is valid and then implement that syntax in a way computers can understand.
 
@@ -6,7 +6,7 @@ JavaScript is NOT magic. Someone or other people built programs that convert you
 
 ## **Syntax Parsers**: A program that reads your code and determines what it does and if its grammar is valid.
 
-So it's going through character by character like F-U-N-C-T-I-O-N. and It'll say "Oh, that's a function so there should be a space after this." and then the next thing it see up until the paranthesis will be the name of the function, etc. And that gets translated by the systems/programs that someone else wrote. And along the way, the `engine` that is interpreting your code can decide to do other things.
+So it's going through character by character like F-U-N-C-T-I-O-N. and It'll say "Oh, that's a function so there should be a space after this." and then the next thing it see up until the parenthesis will be the name of the function, etc. And that gets translated by the systems/programs that someone else wrote. And along the way, the `engine` that is interpreting your code can decide to do other things.
 
 ## **Lexical Environments**: Where something sits physically in the code you write.
 
@@ -20,7 +20,7 @@ In programming languages where the lexical environment is important, that means 
 
 #### Basically, Lexical Environment of something in the code means where it's written and what surrounds it.
 
-![Syntax Parser](./syntaxParser.png)
+![Syntax Parser](./img/syntaxParser.png)
 
 ## **Execution Context**: A wrapper to help manage the code that is running.
 
