@@ -1,12 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+
+// Create a basic object and define it
+const susan = {
+    first_name: "Susan",
+    last_name: "Phillips",
+    age: 34,
+    email: "sphillips@gmail.com",
+
+    greet: function() {
+        console.log(`Hello I'm ${this.first_name} ${this.last_name}`);
+    }
+
+}
+
+// Let's log it
+console.log(susan);
+console.log("***************");
+susan.greet();
+
+// Let's create an OBJECT CONSTRUCTOR
+const Person = function(first, last, age, email) {
+    this.first = first;
+    this.last = last;
+    this.age = age;
+    this.email = email;
+
+    this.greet = function() {
+        console.log(`Hello, my name is ${this.first} ${this.last}`);
+    }
+
+}
+
+let bob = new Person("Bob", "Jones", 44, "bob@yahoo.com");
+console.log(bob);;
+bob.greet();
