@@ -39,6 +39,7 @@ var boo2 = false;
 ``` javascript
 var num1 = 32;
 var num2 = +Infinity;
+var num3 = 32.00;
 ```
 
 ## String
