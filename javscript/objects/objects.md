@@ -125,3 +125,32 @@ In the below example, we will remove the weapon property from gimli using delete
 delete gimli.weapon;
 ```
 #
+
+## Looping through an Object
+
+#### We can use ' *for...in* ' to traverse through all the properties of gimli and print them to the console. Using bracket notation, we can retrieve the property value as a variable, in this case key.
+
+```javascript
+// Iterate through properties of gimli
+for (let key in gimli) {
+  console.log(gimli[key]);
+}
+
+output -> 
+            Gimli
+            dwarf
+            axe
+            [Function: greet]
+            139
+            [Function: fight]
+```
+
+#### Another useful enumeration method is the Object.keys() method, which will return an array of the object's keys.
+
+```javascript
+// Initialize method on gimli object to return property keys
+let gimli_keys = Object.keys(gimli);
+console.log(gimli_keys);
+
+output -> [ 'name', 'race', 'weapon', 'greet', 'age', 'fight' ]
+```
