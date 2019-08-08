@@ -1,5 +1,4 @@
 
-
 // Basic while loop
 while (condition) {
     // execute code as long as condition is true

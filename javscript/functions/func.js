@@ -3,7 +3,6 @@ function nameOfFunction() {
     // Code to be executed
 }
 
-
 /* 
 
     The declaration begins with the function keyword, followed by the name of the function. Function names follow the same rules as variables — they can contain letters, numbers, underscores and dollar signs, and are frequently written in camel case. The name is followed by a set of parentheses, which can be used for optional parameters. The code of the function is contained in curly brackets 
