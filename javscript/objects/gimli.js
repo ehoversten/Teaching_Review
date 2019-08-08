@@ -28,3 +28,7 @@ for (let key in gimli) {
 
 
 console.log(Object.keys(gimli));
+console.log("**************");
+console.log(Object.values(gimli));
+console.log("**************");
+console.log(Object.entries(gimli));

@@ -154,3 +154,35 @@ console.log(gimli_keys);
 
 output -> [ 'name', 'race', 'weapon', 'greet', 'age', 'fight' ]
 ```
+
+#### We can also create an array of values
+```javascript
+// Initialize method on gimli object to return property keys
+let gimli_values = Object.values(gimli);
+console.log(gimli_values);
+
+output -> 
+            [ 'Gimli',
+            'dwarf',
+            'axe',
+            [Function: greet],
+            139,
+            [Function: fight] ]
+```
+
+#### How about both ['key':'value'] pairs?
+```javascript
+// Initialize method on gimli object to return property keys
+let gimli_key_val = Object.entries(gimli);
+console.log(gimli_key_val);
+
+output -> 
+    [
+        [ 'name', 'Gimli' ],
+        [ 'race', 'dwarf' ],
+        [ 'weapon', 'axe' ],
+        [ 'greet', [Function: greet] ],
+        [ 'age', 139 ],
+        [ 'fight', [Function: fight] ]
+    ]
+```
