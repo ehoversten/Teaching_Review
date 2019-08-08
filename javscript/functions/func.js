@@ -4,9 +4,7 @@ function nameOfFunction() {
 }
 
 /* 
-
     The declaration begins with the function keyword, followed by the name of the function. Function names follow the same rules as variables — they can contain letters, numbers, underscores and dollar signs, and are frequently written in camel case. The name is followed by a set of parentheses, which can be used for optional parameters. The code of the function is contained in curly brackets 
-
 */
 
 // Making a Function Declaration
@@ -51,9 +49,7 @@ sum(100, 3);
 // ** ARROW FUNCTIONS ** //
 
 /*
-
     So far, we have gone through how to define functions using the function keyword. However, there is a newer, more concise method of defining a function known as arrow function expressions as of ECMAScript 6. Arrow functions, as they are commonly known, are represented by an equals sign followed by a greater than sign: =>
-    
 */
 
 // Define multiply function
