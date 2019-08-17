@@ -20,7 +20,7 @@
 
 ## What is an `event handler`?
 
--   Used to detect user interaction and respond to it
+-   Purpose is to detect user or any interaction and respond to it
 
 ## `React` vs.. `React-DOM..?`
 
