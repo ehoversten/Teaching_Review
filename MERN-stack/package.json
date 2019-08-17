@@ -1,0 +1,38 @@
+{
+    "name": "mern-stack",
+    "version": "0.1.0",
+    "description": "mern stack example from scratch",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "watch": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/ehoversten/Teaching_Review.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ehoversten/Teaching_Review/issues"
+    },
+    "homepage": "https://github.com/ehoversten/Teaching_Review#readme",
+    "dependencies": {
+        "axios": "^0.19.0",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "dotenv": "^8.0.0",
+        "express": "^4.17.1",
+        "helmet": "^3.20.0",
+        "if-env": "^1.0.4",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.6.9",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0",
+        "passport-local": "^1.0.0"
+    },
+    "devDependencies": {
+        "concurrently": "^4.1.2",
+        "morgan": "^1.9.1"
+    }
+}
