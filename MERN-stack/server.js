@@ -31,7 +31,7 @@ app.use(bodyParser.json());
 app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.json({
-        msg: err.message,
+        message: err.message,
         status: err.status || 500,
         error: err ? err.message : ''
     });
@@ -39,6 +39,8 @@ app.use(function(err, req, res, next) {
 
 //using the routes
 app.use(routes);
+
+require('./config/Auth');
 
 //database
 mongoose.connect(

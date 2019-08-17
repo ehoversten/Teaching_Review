@@ -15,6 +15,7 @@ router.post(
     '/registeruser',
     passport.authenticate('signup', { session: false }),
     async (req, res, next) => {
+        console.log(req.user);
         res.json({
             code: 200,
             message: 'OK',
@@ -25,20 +26,38 @@ router.post(
 
 //login
 router.post('/login', async (req, res, next) => {
-    try {
-        if (err || !user) {
-            const error = new Error('Login info might not be correct..');
+    passport.authenticate('login', async (err, user, info) => {
+        try {
+            //if there's an error or user doesn't exist
+            if (err || !user) {
+                const error = new Error('Login info might not be correct..');
+                return next(error);
+            }
+
+            req.login(user, { session: false }, err => {
+                if (err) return next(error);
+
+                // gathering the info needed to send, as an object
+                const body = {
+                    _id: user._id,
+                    username: user.username
+                };
+
+                //signing the JWT token and populating with the payload 'body'
+                const token = jwt.sign(
+                    { user: body },
+                    process.env.JWT_SECRETKEY,
+                    {
+                        expiresIn: jwtExpireTime
+                    }
+                );
+
+                return res.json({ code: 200, message: info.message, token });
+            });
+        } catch (error) {
             return next(error);
         }
-
-        req.login(user, { session: false }, err => {
-            if (err) return next(error);
-
-            //stopped here until models/controllers/auth are done
-            const body = {
-                _id: user._id,
-                username: user.username
-            };
-        });
-    } catch (error) {}
+    })(req, res, next);
 });
+
+module.exports = router;
