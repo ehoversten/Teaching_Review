@@ -25,6 +25,7 @@ if (process.env.NODE_ENV === 'production') {
     app.use(logger('dev'));
 }
 
+//parses data for req.body
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
