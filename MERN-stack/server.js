@@ -1,4 +1,5 @@
 require('dotenv').config();
+require('./config/Auth');
 const express = require('express');
 const helmet = require('helmet');
 const mongoose = require('mongoose');
@@ -33,14 +34,12 @@ app.use(function(err, req, res, next) {
     res.json({
         message: err.message,
         status: err.status || 500,
-        error: err ? err.message : ''
+        error: err ? err.message : err
     });
 });
 
 //using the routes
 app.use(routes);
-
-require('./config/Auth');
 
 //database
 mongoose.connect(
