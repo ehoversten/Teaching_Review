@@ -15,13 +15,15 @@ passport.use(
         async (username, password, done) => {
             try {
                 const user = await userModel.findOne({ username });
-                console.log(user);
 
                 if (user) {
-                    done({
-                        message: `${user.username} already exists!`,
-                        status: 409
-                    });
+                    done(
+                        JSON.stringify(
+                            { message: `user ${user.username} already exists` },
+                            null,
+                            4
+                        )
+                    );
                 } else {
                     userModel.create({ username, password });
                     return done({ message: 'OK', status: 200 }, user);

@@ -6,7 +6,7 @@ module.exports = {
     findAll: function(req, res) {
         axios(url)
             .then(docs => res.json(docs.data))
-            .catch(err => new Error(err));
+            .catch(err => new Error(JSON.stringify(err, null, 2)));
     },
     findOne: function(req, res) {
         let findOneURL = `${url}/${req.params.rocket_id}`;
@@ -14,6 +14,6 @@ module.exports = {
 
         axios(findOneURL)
             .then(rocket => res.json(rocket.data))
-            .catch(err => new Error(err));
+            .catch(err => new Error(JSON.stringify(err, null, 2)));
     }
 };

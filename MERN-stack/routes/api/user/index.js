@@ -15,11 +15,11 @@ router.post(
     '/registeruser',
     passport.authenticate('signup', { session: false }),
     async (req, res, next) => {
-        console.log(req.user);
-        res.json({
+        let jsonUSER = JSON.stringify(req.user, null, 2);
+        res.send({
             code: 200,
             message: 'OK',
-            user: req.user
+            user: jsonUSER
         });
     }
 );
@@ -35,7 +35,7 @@ router.post('/login', async (req, res, next) => {
             }
 
             req.login(user, { session: false }, err => {
-                if (err) return next(error);
+                if (err) return next(JSON.stringify(err, null, 2));
 
                 // gathering the info needed to send, as an object
                 const body = {
@@ -55,7 +55,7 @@ router.post('/login', async (req, res, next) => {
                 return res.json({ code: 200, message: info.message, token });
             });
         } catch (error) {
-            return next(error);
+            return next(JSON.stringify(error, null, 2));
         }
     })(req, res, next);
 });
