@@ -8,7 +8,7 @@
 
 ## How to install
 
-```js
+```
 1. run `git clone git@github.com:ehoversten/Teaching_Review.git`
 
 2. cd `Teaching_Review/MERN-stack`
