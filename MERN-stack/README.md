@@ -21,6 +21,12 @@
 
 ```
 
+## Wireframe
+
+### Express
+
+![express-wireframe](./project_resources/express-wireframe.png)
+
 ## Routes
 
 ### EXPRESS API ENDPOINT: The url for your Express API endpoint is `http://localhost:3001`.
