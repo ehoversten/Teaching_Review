@@ -1,5 +1,17 @@
+## `CLI` vs. Configuration
+
+Easy route
+```javascript
+$> create-react-app <NAME_OF_YOUR_APP>
+```
+
+### Webpack and Babel configuration: *`This is beyond class scope`*
+
+##### Checkout Webpack --> https://webpack.js.org/
+##### Checkout Babel --> https://babeljs.io/
 
 
+# 
 
 ## JSX is `NOT` HTML
 
