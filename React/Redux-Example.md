@@ -104,3 +104,5 @@ console.log(store.getState());
 }
  */
 ```
+
+# More Redux info is available here: [REACT-REDUX.md](./REACT-REDUX.md)
