@@ -1,0 +1,43 @@
+#title {
+	color: red;
+	font-size: 5rem;
+	text-align: center;
+
+	h3 {
+		padding: 0;
+		margin: 0;
+	}
+	:hover {
+		color: blue;
+	}
+}
+
+#details {
+	font-size: 3rem;
+	color: springgreen;
+	ul {
+		text-decoration: underline solid aqua;
+		color: goldenrod;
+
+		:hover {
+			color: green;
+		}
+	}
+	.rotate {
+		padding: 10rem;
+		animation: rotation 10s infinite linear;
+	}
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+#wheels {
+	font-size: 2rem;
+}
