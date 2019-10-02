@@ -9,7 +9,6 @@
 ```javascript
 objectName.propertyName
 ```
-
 #
 
 ## Creating an Object
@@ -150,6 +149,7 @@ output ->
 ```javascript
 // Initialize method on gimli object to return property keys
 let gimli_keys = Object.keys(gimli);
+// This will print out the ARRAY that was created and populated with the 'keys' of the Gimli OBJECT
 console.log(gimli_keys);
 
 output -> [ 'name', 'race', 'weapon', 'greet', 'age', 'fight' ]
@@ -159,6 +159,7 @@ output -> [ 'name', 'race', 'weapon', 'greet', 'age', 'fight' ]
 ```javascript
 // Initialize method on gimli object to return property keys
 let gimli_values = Object.values(gimli);
+// This will print out the ARRAY that was created and populated with the 'values' of the Gimli OBJECT
 console.log(gimli_values);
 
 output -> 
@@ -174,6 +175,7 @@ output ->
 ```javascript
 // Initialize method on gimli object to return property keys
 let gimli_key_val = Object.entries(gimli);
+// This will print out the ARRAY that was created and populated with the 'key' and 'value' pairs of the Gimli OBJECT
 console.log(gimli_key_val);
 
 output -> 
