@@ -1,5 +1,5 @@
 
-
+// Here we DECLARE a new array called 'notes'
 const notes = [
     'Note 1',
     'Note 2',
