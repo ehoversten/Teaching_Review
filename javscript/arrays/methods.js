@@ -2,6 +2,20 @@
 
 // Some useful JavaScript Array Methods
 
+// Array.length() - This method will give you the number of items in the array
+const arr = [5, 6, 7, 8, 9, 10];
+console.log(arr.length);  // output: 6
+
+
+// Array.splice()
+
+// Array.slice()
+
+// Array.reverse()
+
+// Array.concat()
+
+
 // Array.forEach() - This is another method that can help you to loop over an array's items
 const arr = [1, 2, 3, 4, 5, 6];
 
@@ -40,3 +54,17 @@ console.log(arr); // output: [1, 2, 3, 4, 5, 6]
 
 // Array.reduce() 
     // ....
+
+// Array.every()
+    // ...
+
+// Array.some()
+    // ...
+
+/* 
+
+    A few resources: 
+    https://codeburst.io/useful-javascript-array-and-object-methods-6c7971d93230
+
+
+*/

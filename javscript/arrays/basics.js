@@ -1,5 +1,11 @@
 
-// Here we DECLARE a new array called 'notes'
+// Here we DECALRE a new array using the 'new' constructor keyword
+let notebook = new Array();
+
+console.log('New Notebook Array');
+console.log(notes);
+
+// Here we DECLARE a new ARRAY LITERAL called 'notes'
 const notes = [
     'Note 1',
     'Note 2',
