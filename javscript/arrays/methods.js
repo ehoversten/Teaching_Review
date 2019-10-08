@@ -128,16 +128,33 @@ let product = numbers.reduce((accumulator, currentVal) => accumulator * currentV
 
 
 
-// ## Array.every()
-    // ...
+// ## Array.every(function(PARAMS) { return *TEST_CONDITION* })
+//  - This method tests that every  element in the array passes the test condition implemented by the provided function. It returns a Boolean value( true/false )
+let nums = [-2, -1, 0, 1, 2];
+nums.every(function (element) {
+    return element > 0;
+})  // output: false
 
-// ## Array.some()
-    // ...
+// How about using Arrow Functions
+let divByFive = [5, 10, 15, 20, 25, 50];
+divByFive.every( (elem) => elem % 5 == 0);  // output: true
+
+
+
+
+// ## Array.some(function(PARAMS) { return *TEST_CONDITION* });
+//  - This method tests whether at least one element in the array passes the test condition implemented by the provided function. It returns a Boolean value( true/false )
+let nums = [-2, -1, 0, 1, 2];
+nums.some(function(element) {
+    return element > 0;
+})  // output: true
+
 
 /* 
 
     A few resources: 
     https://codeburst.io/useful-javascript-array-and-object-methods-6c7971d93230
 
+    https://dev.to/frugencefidel/10-javascript-array-methods-you-should-know-4lk3
 
 */
