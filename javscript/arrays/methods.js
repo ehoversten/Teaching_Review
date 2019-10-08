@@ -50,10 +50,23 @@ console.log(part_animals); // output: ["camel", "duck"]
 
 
 
-
 // ## Array.reverse()
+//  - This method reverses the order of the supplied array IN-PLACE (Meaning this will affect the original array supplied)
+let numArr = [1, 2, 3, 4, 5];
+console.log(numArr);    // output: [1, 2, 3, 4, 5];
+let reversedArr = numArr.reverse();
+console.log(reversedArr);  // output: [5, 4, 3, 2, 1];
+console.log(numArr);    // output: [5, 4, 3, 2, 1];
+
+
+
 
 // ## Array.concat()
+//  - This method is used to merge two or more arrays. Method will not modify original array but create a NEW ARRAY
+let arr_1 = [1, 2, 3, 4, 5];
+let arr_2 = [6, 7, 8, 9, 10];
+console.log(arr_1.concat(arr_2));  // output: [1, 2, 3, 4, 5, 6, 7, 9, 10]
+
 
 
 
