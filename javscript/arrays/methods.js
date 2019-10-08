@@ -115,8 +115,18 @@ console.log(oneAdded); // output [2, 4, 6, 8, 10, 12]
 console.log(arr); // output: [1, 2, 3, 4, 5, 6]
 
 
-// ## Array.reduce() 
-    // ....
+// ## Array.reduce(function(ACCUMULATOR, CURRENT_VALUE) { *LOGIC* });
+//  - THis method executes a reducer function (that you provide) on each element of the array, the result is a single output value
+let numbers = [1, 2, 3, 4, 5];
+
+let sum = numbers.reduce(function(accumulator, currentVal) {
+    return accumulator + currentVal;
+})  // output: 15
+
+// Or with ES6 syntax => arrow functions
+let product = numbers.reduce((accumulator, currentVal) => accumulator * currentVal);    // output: 120
+
+
 
 // ## Array.every()
     // ...
