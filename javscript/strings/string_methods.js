@@ -38,7 +38,12 @@ string_3.lastIndexOf('diddy');  // output: 25
 
 
 // ## .concat()
+//  - This method concatenates the string arguments to the calling string and returns a new string
+let str_1 = "Hello ";
+let str_2 = "World";
 
+let newStr = str_1.concat(str_2);
+console.log(newStr);
 
 
 // ## .endsWith()
