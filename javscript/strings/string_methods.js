@@ -47,11 +47,18 @@ console.log(newStr);
 
 
 // ## .endsWith()
-
+//  - This method determines if a string ENDS with the character or characters of a specified string, returns a boolean: true or false
+let str_3 = "JavaScript is my jam";
+console.log(str_3.endsWith('m'));
+console.log(str_3.endsWith('jam'));
+console.log(str_3.endsWith('!'));
 
 
 // ## .startsWith()
-
+//  - This method determines if a string STARTS with the character or characters of a specified string, returns a boolean: true or false
+console.log(str_3.startsWith('J'));
+console.log(str_3.startsWith("j"));
+console.log(str_3.startsWith("Java"));
 
 
 // ## .includes()
@@ -87,14 +94,26 @@ console.log(newStr);
 
 
 // ## .toUpperCase()
-
+//  - This method returns the calling string value converted to uppercase
+let uppercaseMe = "i wish i was big";
+console.log(uppercaseMe.toUpperCase());
 
 
 // ## .toLowerCase()
+//  - This method returns the calling string value converted to lowercase
+let makeMeSmall = "I WANT to BE SMALL"
+console.log(makeMeSmall.toLowerCase());
 
 
 
 // ## .trim()
+//  - This method trims the extra whitespace from the front and/or end of a string
+let spaces = " Ends with spaces    ";
+let moreSpaces = "    Starts and ends with spaces   ";
+console.log(spaces);
+console.log(spaces.trim());
+console.log(moreSpaces);
+console.log(moreSpaces.trim());
 
 
 /*
