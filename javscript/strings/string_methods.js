@@ -70,6 +70,7 @@ console.log(includeStr.includes('Man'));    // output: true
 
 
 // ## .match()
+//  - This method retrieves the result of matching a string against a regular expression.
 
 
 
@@ -85,8 +86,11 @@ console.log(includeStr.includes('Man'));    // output: true
 
 
 
-// ## .slice()
-
+// ## .slice(START_INDEX, *END_INDEX*)
+//  - This method takes a section of the calling string defined by the START_INDEX parameter to the END_INDEX parameter. The END_INDEX parameter is *optional* , If no end index is supplied it will continue until the end of the string.
+let sliceMe = "Take this string and slice it!";
+console.log(sliceMe.slice(21, 26));    // output: 'slice'
+console.log(sliceMe.slice(21));        // output: 'slice it!'
 
 
 // ## .split()
