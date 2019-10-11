@@ -42,27 +42,31 @@ string_3.lastIndexOf('diddy');  // output: 25
 let str_1 = "Hello ";
 let str_2 = "World";
 
-let newStr = str_1.concat(str_2);
-console.log(newStr);
+let newStr = str_1.concat(str_2);  
+console.log(newStr);    // output: 'Hello World'
 
 
 // ## .endsWith()
 //  - This method determines if a string ENDS with the character or characters of a specified string, returns a boolean: true or false
 let str_3 = "JavaScript is my jam";
-console.log(str_3.endsWith('m'));
-console.log(str_3.endsWith('jam'));
-console.log(str_3.endsWith('!'));
+console.log(str_3.endsWith('m'));       // output: true
+console.log(str_3.endsWith('jam'));     // output: true
+console.log(str_3.endsWith('!'));       // output: false
 
 
 // ## .startsWith()
 //  - This method determines if a string STARTS with the character or characters of a specified string, returns a boolean: true or false
-console.log(str_3.startsWith('J'));
-console.log(str_3.startsWith("j"));
-console.log(str_3.startsWith("Java"));
+console.log(str_3.startsWith('J'));     // output: true
+console.log(str_3.startsWith("j"));     // output: false
+console.log(str_3.startsWith("Java"));  // output: true
 
 
 // ## .includes()
-
+//  - This method returns a Boolean, if the string or character parameter is present in the called String
+let includeStr = "I am Iron Man!";
+console.log(includeStr.includes('!'));      // output: true
+console.log(includeStr.includes('man'));    // output: false
+console.log(includeStr.includes('Man'));    // output: true
 
 
 // ## .match()
