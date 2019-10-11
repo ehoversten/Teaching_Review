@@ -94,6 +94,17 @@ console.log(sliceMe.slice(21));        // output: 'slice it!'
 
 
 // ## .split()
+//  - This method splits a STRING OBJECT into an ARRAY of strings by separating the string into substrings, using a specified separator string to determine where to make each split.
+let splitStr = "Split this string into an array";
+// here we are using the spaces between words as our delimiter
+let splitArr = splitStr.split(' '); 
+console.log(splitArr)   // output: ['Split', 'this', 'string', 'into', 'an', 'array'];
+
+
+let commaStr = "Hey there, Hi there, Ho there"
+// here we use the comma (", ") as our demiliter
+let commaArr = commaStr.split(', ');
+console.log(commaArr);   // output: ['Hey there', 'Hi there', 'Ho there']
 
 
 
