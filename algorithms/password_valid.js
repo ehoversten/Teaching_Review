@@ -54,7 +54,7 @@ console.log(isValidPass(password_2));
 
 
 
-// How a solution using RegEX
+// How about a solution using RegEX
 function validPass(str) {
     let regCap = /[A-Z]/;
     let regLow = /[a-z]/;
