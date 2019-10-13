@@ -83,6 +83,16 @@ console.log(includeStr.includes('Man'));    // output: true
 
 
 // ## .repeat()
+//  - This method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together
+let repeatChar = '-';
+let repeatedChar = repeatChar.repeat(5);
+console.log(repeatedChar);
+
+// We can also combine multiple string methods and create new strings.
+let str_4 = "How many dashes? ";
+let repeatStr = str_4.concat(repeatChar.repeat(5));
+console.log(repeatStr);
+
 
 
 
