@@ -79,6 +79,7 @@ console.log(includeStr.includes('Man'));    // output: true
 
 
 // ## .replace()
+//  - This method
 
 
 
@@ -86,13 +87,26 @@ console.log(includeStr.includes('Man'));    // output: true
 //  - This method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together
 let repeatChar = '-';
 let repeatedChar = repeatChar.repeat(5);
-console.log(repeatedChar);
+console.log(repeatedChar);    // output: '-----'
 
 // We can also combine multiple string methods and create new strings.
 let str_4 = "How many dashes? ";
 let repeatStr = str_4.concat(repeatChar.repeat(5));
-console.log(repeatStr);
+console.log(repeatStr);     // output: 'How many dashes? -----'
 
+
+
+// ## .split()
+//  - This method splits a STRING OBJECT into an ARRAY of strings by separating the string into substrings, using a specified separator string to determine where to make each split.
+let splitStr = "Split this string into an array";
+// here we are using the spaces between words as our delimiter
+let splitArr = splitStr.split(' '); 
+console.log(splitArr)   // output: ['Split', 'this', 'string', 'into', 'an', 'array'];
+
+let commaStr = "Hey there, Hi there, Ho there"
+// here we use the comma (", ") as our demiliter
+let commaArr = commaStr.split(', ');
+console.log(commaArr);   // output: ['Hey there', 'Hi there', 'Ho there']
 
 
 
@@ -103,22 +117,12 @@ console.log(sliceMe.slice(21, 26));    // output: 'slice'
 console.log(sliceMe.slice(21));        // output: 'slice it!'
 
 
-// ## .split()
-//  - This method splits a STRING OBJECT into an ARRAY of strings by separating the string into substrings, using a specified separator string to determine where to make each split.
-let splitStr = "Split this string into an array";
-// here we are using the spaces between words as our delimiter
-let splitArr = splitStr.split(' '); 
-console.log(splitArr)   // output: ['Split', 'this', 'string', 'into', 'an', 'array'];
 
-
-let commaStr = "Hey there, Hi there, Ho there"
-// here we use the comma (", ") as our demiliter
-let commaArr = commaStr.split(', ');
-console.log(commaArr);   // output: ['Hey there', 'Hi there', 'Ho there']
-
-
-
-// ## .substr()
+// ## .substring()
+//  - This method returns the part of the string between the start and end indexes, or to the end of the string. This method is similar to STRING.slice()
+let subStr = "Take part of this string";
+console.log(subStr.substring(5));       // output: 'part of this string'
+console.log(subStr.substring(5, 17));   // output: 'part of this'
 
 
 
