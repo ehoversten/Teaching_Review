@@ -57,7 +57,7 @@ const gimli = {
 #### There are two ways to access an object's properties.
 
  - Dot notation: .
- - Bracket notation: []
+ - Bracket notation: [ ]
 
 ```javascript
 // Retrieve the value of the weapon property using dot notation

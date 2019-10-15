@@ -17,7 +17,7 @@ console.log(susan);
 console.log("***************");
 susan.greet();
 
-// Let's create an OBJECT CONSTRUCTOR
+// Let's create an OBJECT using a CONSTRUCTOR
 const Person = function(first, last, age, email) {
     this.first = first;
     this.last = last;
@@ -30,6 +30,7 @@ const Person = function(first, last, age, email) {
 
 }
 
+// Take note of the `new` keyword before our OBJECT (call to the constructor)
 let bob = new Person("Bob", "Jones", 44, "bob@yahoo.com");
 console.log(bob);;
 bob.greet();
