@@ -9,7 +9,6 @@ console.log(arr.length);  // output: 6
 
 
 
-
 // ## Array.splice(ARR_INDEX, *DELETE_#_ITEMS, *ELEMENT_TO_ADD) 
 //  - This method changes the contents of an array by removing or replacing existing elements and/or adding new elements IN-PLACE.
 var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
@@ -27,7 +26,6 @@ console.log(animals); // output: ["ant", "goat", "lion", "bison", "elephant"]
 // Here we can both remove elements from a specified INDEX and insert new elements starting at specified INDEX
 animals.splice(0, 2, "hippo");
 console.log(animals); // output: ["hippo", "lion", "bison", "elephant"]
-
 
 
 
@@ -49,7 +47,6 @@ console.log(part_animals); // output: ["camel", "duck"]
 
 
 
-
 // ## Array.reverse()
 //  - This method reverses the order of the supplied array IN-PLACE (Meaning this will affect the original array supplied)
 let numArr = [1, 2, 3, 4, 5];
@@ -60,14 +57,11 @@ console.log(numArr);    // output: [5, 4, 3, 2, 1];
 
 
 
-
 // ## Array.concat()
 //  - This method is used to merge two or more arrays. Method will not modify original array but create a NEW ARRAY
 let arr_1 = [1, 2, 3, 4, 5];
 let arr_2 = [6, 7, 8, 9, 10];
 console.log(arr_1.concat(arr_2));  // output: [1, 2, 3, 4, 5, 6, 7, 9, 10]
-
-
 
 
 
@@ -90,7 +84,6 @@ arr.includes(7); // output: false
 
 
 
-
 // ## Array.filter() 
 //  - This method will create a new array, with only the elements that passed the condition inside the function
 const arr = [1, 2, 3, 4, 5, 6];
@@ -100,7 +93,6 @@ const filtered = arr.filter(num => num > 3);
 console.log(filtered); // output: [4, 5, 6]
 
 console.log(arr); // output: [1, 2, 3, 4, 5, 6]
-
 
 
 
