@@ -22,3 +22,22 @@ function factorial(num) {
 
 console.log(factorial(6));
 console.log(factorial(10));
+
+
+// We can also use RECURSION to solve this type of problem!!
+
+var recFactorial = function(number) {
+    // this is often refered to as a 'terminal case' : This is the condition that keeps our function from looping forever
+    if (number <= 0) {
+        return 1;
+    } else { 
+        // block to execute
+        return (number * recFactorial(number - 1));
+    }
+};
+
+console.log(recFactorial(3));
+console.log(recFactorial(5));
+console.log(recFactorial(6));
+
+
