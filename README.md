@@ -8,40 +8,40 @@
 
 ### Topics Covered:
 
-    * JavaScript Fundamentals
-        - Strings
-        - Arrays
-        - Conditionals
-        - Loops
-        - Functions
-        - Objects
-        - Datatypes
+* JavaScript Fundamentals
+    - Strings
+    - Arrays
+    - Conditionals
+    - Loops
+    - Functions
+    - Objects
+    - Datatypes
 
-    * Git / GitHub
+* JavaScript and the DOM
+    - jQuery
+    - VanillaJS
+    - Events
 
-    * HTML and CSS review
+* Bash and Terminal Commands review
 
-    * Bootstrap 4 review
+* Git / GitHub
 
-    * JavaScript and the DOM
-        - jQuery
-        - VanillaJS
-        - Events
+* HTML and CSS review
 
-    * Bash and Terminal Commands review
+* Bootstrap 4 review
 
-    * Node (`in progress`)
+* Node (`in progress`)
 
-    * Express and Handlebars
+* Express and Handlebars
 
-    * React
+* React
 
-    * MERN - Stack
+* MERN - Stack
 
-    * Databases (*in progress*)
-        - SQL vs NoSQL
-        - MySQL and Sequalize
-        - MongoDB and Mongoose
+* Databases (`in progress`)
+    - SQL vs NoSQL
+    - MySQL and Sequalize
+    - MongoDB and Mongoose
 
 
 #
