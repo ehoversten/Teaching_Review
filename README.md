@@ -43,6 +43,9 @@
     - MySQL and Sequalize
     - MongoDB and Mongoose
 
+* Algorithms in JavaScript
+
+* Regular Expressions (`*to be done`)
 
 #
 
