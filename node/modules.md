@@ -14,6 +14,7 @@ function subtract(x, y) {
 }
 ```
 
+#
 ## Exporting a Module:
 #
 
@@ -64,3 +65,40 @@ module.exports = {
     }
 };
 ```
+
+#
+## Importing a Module:
+#
+
+### By exporting the functions of our calc.js file we make it publically available to any file or program that wants to import it.
+
+######
+
+#### So how do we import a file that has made functions or objects available? We `require` it!
+
+```javascript
+// in our main.js file
+var calculations = require('./calc.js);
+```
+
+### The keyword `require` returns an OBJECT, which references the value of module.exports for a given file.
+
+
+
+#### Now we have access and can use (or call) those functions that were defined in another file.
+
+```javascript
+// in our main.js file
+var calculations = require('./calc.js');
+
+// we can call our add() function
+calulations.add(2, 3);    // output: 5
+
+// we can call our subtract() function
+calulations.subtract(5, 2)  // output: 3
+```
+
+#
+
+### Resources: 
+- https://www.sitepoint.com/understanding-module-exports-exports-node-js/
