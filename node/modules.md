@@ -2,6 +2,8 @@
 
 ## A module encapsulates related code into a single unit of code. When creating a module, this can be interpreted as moving all related functions into a file.
 
+### In simple terms, a module is code that we group together for the purposes of sharing and reuse. Modules, therefore, allow us to break down complexity in our applications into small chunks.
+
 #### For example - Let's define a few functions:
 ```javascript
 // Let's call this file calc.js
@@ -104,3 +106,4 @@ calulations.subtract(5, 2)  // output: 3
 
 ### Resources: 
 - https://www.sitepoint.com/understanding-module-exports-exports-node-js/
+- https://stackify.com/node-js-module-exports/
