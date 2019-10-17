@@ -4,8 +4,6 @@
 ## This repo was created to help students learn/review material and topics related to JavaScript
 
 
-#
-
 ### Topics Covered:
 
 * JavaScript Fundamentals
