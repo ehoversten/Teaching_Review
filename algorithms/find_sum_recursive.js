@@ -20,3 +20,23 @@ function sum(n) {
 
 console.log(sum(5));
 console.log(sum(10));
+
+
+
+// What's happening here?
+/*
+    // We evoke the sum() function and pass in '5' as the parameter
+    sum(5);
+
+    This is when we activly use the 'Call Stack'. This may help visualize what is happening
+
+    -> return   5  +  sum(4)
+    -> return           4   +  sum(3)
+    -> return                    3   +  sum(2)
+    -> return                             2   +  sum(1)
+    -> return                                      1   +  sum(0)
+    -> return                                               0
+    -> return   5   +   4   +    3    +   2    +   1   +    0 
+    -> return  15
+    
+*/
