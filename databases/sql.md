@@ -7,9 +7,6 @@
 SQL is a standard programming language specifically designed for storing, retrieving, managing or manipulating the data inside a `relational database management system` (RDBMS)
 
 
-#### Wait... What is a Relational Database?
-
-
 
 ## What You Can Do with an SQL Database?
 #### There are lot more things you can do with SQL:
