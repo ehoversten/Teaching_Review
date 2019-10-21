@@ -49,8 +49,50 @@ CREATE TABLE people (
     -- Makes a boolean column called "is_married" which cannot contain null --
     is_married BOOLEAN NOT NULL,
     -- Sets id as this table's primary key which means all data contained within it will be unique --
-    PRIMARY_KEY(id)
+    PRIMARY KEY(id)
 );
 ```
 
+Now we have CREATED a DATABASE and a TABLE within that DATABASE
 
+Let's add some data to our `people` TABLE in our `friends_db` DATABASE
+
+```sql
+-- Creates new rows containing data in all named columns --
+INSERT INTO people (name, age, is_married)
+VALUES ("Ahmed", 32, true);
+
+INSERT INTO people (name, age, is_married)
+VALUES ("Bobby", 25, false);
+
+```
+
+
+
+How do we see our TABLE and the DATA that we put into it?
+
+```sql 
+-- SELECTS all (`*`) data rows FROM the people TABLE -- 
+SELECT * FROM people;
+```
+
+We can UPDATE data in our TABLE if the instance that some piece of information has been updated.
+
+```sql
+-- Updates the row where the column name is 'Bobby' --
+
+-- You must make sure that you select the TABLE that you want to UPDATE -- 
+UPDATE people    
+SET age = 26 
+WHERE id = 2
+```
+
+
+We can also DELETE or remove a database record
+```sql
+DELETE FROM people
+-- This operation may not work if you have SAFE MODE enabled on SQL Workbench --
+WHERE name = "Ahmed";
+-- if this is the case then you need to use the specific ID of the data or record that we are referring to
+WHERE id = 1;
+```
