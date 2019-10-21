@@ -33,7 +33,7 @@ function mapArray(arr, func) {
 
 
 
-// More complex functions to pass in.
+// More complex functions to pass in. Will require a refactor of our code to be able to impletement these.
 function sum(a, b) {
     return a + b;
 }
