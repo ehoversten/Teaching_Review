@@ -12,6 +12,7 @@ Relational databases like MySQL, PostgreSQL, and SQLite3 represent and store dat
 
 *  Relational Database vs. Non-Relational Database
 
+&nbsp;
 #
 
 ## WHAT IS A NON-RELATIONAL DATABASE ?  ( `NoSQL` )
@@ -19,8 +20,10 @@ Relational databases like MySQL, PostgreSQL, and SQLite3 represent and store dat
 A `non-relational database` is any database that does not follow the relational model provided by traditional `relational database management systems`. 
 
 
+
 For Example: Non-relational databases like MongoDB represent data in collections of `JSON documents`
 
+&nbsp;
 
 ## WHAT IS A RELATIONAL DATABASE MANAGEMENT SYSTEM (RDBMS)?
 A relational database management system (RDBMS) is a program that allows you to create, update, and administer a relational database. Most relational database management systems use the `SQL` language to access the database.)
