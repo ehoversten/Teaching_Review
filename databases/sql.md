@@ -29,12 +29,14 @@ First we need to CREATE a new DATABASE
 ```sql
 CREATE DATABASE friends_db;
 ```
+&nbsp; 
 
 The next `IMPORTANT` thing that we need to do before we start adding or playing with data in our DATABASE is we have to tell SQL that we want to USE this specific database
 
 ```sql
 USE friends_db;
 ```
+&nbsp;
 
 Next we need a data structure to hold our data. In SQL that data structure is a TABLE
 
@@ -52,6 +54,7 @@ CREATE TABLE people (
     PRIMARY KEY(id)
 );
 ```
+&nbsp;
 
 Now we have CREATED a DATABASE and a TABLE within that DATABASE
 
@@ -67,6 +70,7 @@ VALUES ("Bobby", 25, false);
 
 ```
 
+&nbsp;
 
 
 How do we see our TABLE and the DATA that we put into it?
@@ -75,6 +79,8 @@ How do we see our TABLE and the DATA that we put into it?
 -- SELECTS all (`*`) data rows FROM the people TABLE -- 
 SELECT * FROM people;
 ```
+
+&nbsp;
 
 We can UPDATE data in our TABLE if the instance that some piece of information has been updated.
 
@@ -86,6 +92,7 @@ UPDATE people
 SET age = 26 
 WHERE id = 2
 ```
+&nbsp;
 
 
 We can also DELETE or remove a database record
