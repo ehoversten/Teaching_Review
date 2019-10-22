@@ -43,7 +43,19 @@ if (test_condition) {
 #
 # To - Do Sections...
 
-#### Using Logical Operators with Conditional Statements:
+## Using Logical Operators with Conditional Statements: 
+* && — AND; allows you to chain together two or more expressions so that all of them have to individually evaluate to true for the whole expression to return true.
+
+* || — OR; allows you to chain together two or more expressions so that one or more of them have to individually evaluate to true for the whole expression to return true.
+
+&nbsp; 
+```javascript
+if (test_condition_1 && test_condition_2 ) {
+  // code that runs when BOTH condition_1 and condition_2 evaluate to TRUE
+} else {
+  // code that runs when either one or both test_conditions evaluate to FALSE
+}
+```
 
 #### The Switch Statement:
 
