@@ -15,7 +15,7 @@ let fish = ["shark", "cuttlefish", "clownfish", "eel"];
 ```javascript
 console.log(fish);
 
-$> ["shark", "cuttlefish", "clownfish", "eel"];
+// output: -> ["shark", "cuttlefish", "clownfish", "eel"];
 ```
 
 #### Arrays are a very flexible data type because they are mutable in that they can have element values added, removed, and changed.
@@ -51,7 +51,7 @@ output -> 2
 ```javascript
 fish[1];
 
-output -> "shark"
+// output -> "shark"
 ```
 
 
@@ -59,7 +59,7 @@ output -> "shark"
 ```javascript
 fish[10];
 
-output -> undefined
+// output -> undefined
 ```
 
 #### In order to access items in a nested array, you would add another index number to correspond to the inner array.
@@ -77,7 +77,7 @@ let nestedArray = [
 
 nestedArray[1][0];
 
-output -> 'coral'
+// output -> 'coral'
 ```
 
 #
@@ -89,7 +89,7 @@ output -> 'coral'
 ```javascript
 fish[5] = "squid";
 
-output -> ["shark", "cuttlefish", "clownfish", "eel", "squid"]
+// output -> ["shark", "cuttlefish", "clownfish", "eel", "squid"]
 ```
 
 
@@ -100,7 +100,7 @@ Using the push() method, we add an item to the end of an array.
 ```javascript
 fish.push("whale");
 
-output -> ["shark", "cuttlefish", "clownfish", "eel", "squid", "whale"]
+// output -> ["shark", "cuttlefish", "clownfish", "eel", "squid", "whale"]
 ```
 
 Using the unshift() method will add an item to the beginning of an array.
@@ -109,7 +109,7 @@ fish.unshift("lobster");
 
 console.log(fish);
 
-output -> ["lobster", "shark", "cuttlefish", "clownfish", "eel", "squid", "whale"]
+// output -> ["lobster", "shark", "cuttlefish", "clownfish", "eel", "squid", "whale"]
 ```
 
 #
@@ -122,7 +122,7 @@ output -> ["lobster", "shark", "cuttlefish", "clownfish", "eel", "squid", "whale
 ```javascript
 fish[0] = "manatee";
 
-output -> ["manatee", "shark", "cuttlefish", "clownfish", "eel", "squid", "whale"]
+// output -> ["manatee", "shark", "cuttlefish", "clownfish", "eel", "squid", "whale"]
 ```
 
 #### Another way to modify a value is using the splice() method with a new parameter. If we wanted to change the value of clownfish, which is the item at index 3, we could remove it and add a new item in its place.
@@ -130,7 +130,7 @@ output -> ["manatee", "shark", "cuttlefish", "clownfish", "eel", "squid", "whale
 ```javascript
 fish.splice(3, 1, "sea lion");
 
-output -> ["manatee", "shark", "cuttlefish", "sea lion", "eel", "squid", "whale"]
+// output -> ["manatee", "shark", "cuttlefish", "sea lion", "eel", "squid", "whale"]
 ```
 
 var removedItems = fish.splice(pos, n); 

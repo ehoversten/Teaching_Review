@@ -28,8 +28,8 @@ if (condition_a) {
 }
 
 
-// A Ternary operation -> ternary operator(? :)
-(condition) ? expression on true : expression on false
+// *** A Ternary operation -> ternary operator(? :)
+// (condition) ? expression on true : expression on false
 
 // ** EXAMPLE ** 
 // Set age of user
