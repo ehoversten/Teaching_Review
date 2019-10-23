@@ -68,17 +68,7 @@ var favoriteThings;
 var weather = null;
 ```
 &nbsp; 
-#
-## JavaScript Variable Scope
-### The scope of a variable is the region of your program in which it is defined. JavaScript variables have only two scopes.
 
-* ### Global Variables − A global variable has global scope which means it can be defined anywhere in your JavaScript code.
-
-* ### Local Variables − A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.
-
-&nbsp; 
-
-### Within the body of a function, a local variable takes precedence over a global variable with the same name. If you declare a local variable or function parameter with the same name as a global variable, you effectively hide the global variable. Take a look into the following example.
 
 #
 
