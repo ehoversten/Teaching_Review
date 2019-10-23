@@ -33,11 +33,31 @@ console.log(hello);
 // String Value (as returned to the console)
 // output -> Hello World
 ```
+&nbsp; 
+# String Concatenation
+
+### Concatenation means joining two or more strings together to create a new string. In order to concatenate, we use the concatenation operator, represented by a + symbol.
+
+```javascript
+let firstName = "Bobby";
+let lastName = "Smith"
+let hello = "Hello " + firstName + " " + lastName + "!";
+
+console.log(hello);   
+// output -> Hello Bobby Smith!
+
+```
+
+&nbsp;
+## Escaping Character ( \ )
+
+### We can use the backslash ( `\` ) escape character to prevent JavaScript from interpreting a quote as the end of the string.
+
+
+* #### The syntax of `\'` will always be a single quote, and the syntax of `\"` will always be a double quote, without any fear of breaking the string.
 
 
 
 #
-# To Do
 
-* ### String Concatination
 
