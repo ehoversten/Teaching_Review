@@ -93,9 +93,9 @@ fish[5] = "squid";
 ```
 
 &nbsp; 
-### We can also use a built-in javasript array method to add data to the array. 
+### We can also use a built-in javascript array methods to add data to the array. 
 
-### Using the push() method, we add an item to the end of an array.
+* ### Using the push() method, we add an item to the end of an array.
 
 ```javascript
 fish.push("whale");
@@ -103,7 +103,7 @@ fish.push("whale");
 // output -> ["shark", "cuttlefish", "clownfish", "eel", "squid", "whale"]
 ```
 &nbsp; 
-### Using the unshift() method will add an item to the beginning of an array.
+* ### Using the unshift() method will add an item to the beginning of an array.
 ```javascript
 fish.unshift("lobster");
 
@@ -116,7 +116,7 @@ console.log(fish);
 
 
 ## Modifying Items in Arrays:
-&nbsp; 
+
 ### We can overwrite any value in an array by assigning a new value using the assignment operator, just like we would with a regular variable.
 
 ```javascript
@@ -127,6 +127,8 @@ fish[0] = "manatee";
 &nbsp; 
 ### Another way to modify a value is using the splice() method with a new parameter. If we wanted to change the value of clownfish, which is the item at index 3, we could remove it and add a new item in its place.
 
+
+
 ```javascript
 var removedItems = fish.splice(pos, n); 
 // this is how to remove items, n defines the number of items to be removed, from that position(pos) onward to the end of array.
@@ -135,4 +137,6 @@ fish.splice(3, 1, "sea lion");
 
 // output -> ["manatee", "shark", "cuttlefish", "sea lion", "eel", "squid", "whale"]
 ```
+
+* ### The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements `in place`.
 
