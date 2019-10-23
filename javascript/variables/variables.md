@@ -12,8 +12,62 @@
 * ### Variable names are case-sensitive.
 * ### Avoid `RESERVED` words
 
+&nbsp; 
+# 
+## Declaring Variables:
 
+```javascript
+var variableName = value;
 
+var firstName = 'Kire';
+var lastName = 'Bobbins';
+var age = 45;
+```
+
+Or we could declare variables this way...
+```javascript
+// here we can declare multiple variables in one line
+var firstName, lastName, age;
+
+// but we still have to assign values
+firstName = 'Bob';
+lastName = 'the Builder';
+age = 45;
+
+```
+Or this way...
+```javascript
+var firstName = "Ricki", 
+    lastName = "Lake", 
+    age = 35;
+```
+
+&nbsp; 
+#
+
+## Variables can be assigned any data type:
+
+* ### A String or a string of characters
+```javascript
+var userName = 'Jane Doe';
+```
+* ### An Integer or Floating Point Number
+```javascript
+var userAge = 30;
+```
+* ### A Boolean `true` or `false`
+```javascript
+var catsAreBest = false;
+```
+* ### An `undefined` value that hasn't been defined
+```javascript
+var favoriteThings;
+```
+* ### `null` an explicitly empty value
+```javascript
+var weather = null;
+```
+&nbsp; 
 #
 ## JavaScript Variable Scope
 ### The scope of a variable is the region of your program in which it is defined. JavaScript variables have only two scopes.
@@ -28,11 +82,18 @@
 
 #
 
-JavaScript Reserved Words
-A list of all the reserved words in JavaScript are given in the following table. They cannot be used as JavaScript variables, functions, methods, loop labels, or any object names.
+# JavaScript Reserved Words
 
-abstract	else	instanceof	switch
-boolean	enum	int	synchronized
+### A list of all the reserved words in JavaScript are given in the following table. They cannot be used as JavaScript variables, functions, methods, loop labels, or any object names.
+
+abstract	
+else	
+instanceof	
+switch
+boolean	
+enum	
+int	
+synchronized
 break	export	interface	this
 byte	extends	long	throw
 case	false	native	throws

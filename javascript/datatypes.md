@@ -8,7 +8,7 @@
     foo     = 'bar'; // foo is now a string
     foo     = true;  // foo is now a boolean
 ```
-
+&nbsp; 
 # Data types
 
 #### The latest ECMAScript standard defines eight data types:
@@ -22,7 +22,7 @@
 #### -  String
 #### -  Symbol
 
-## and Object
+## and `Object`
 &nbsp; 
 #
 ## Boolean
