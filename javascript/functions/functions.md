@@ -9,7 +9,7 @@ function nameOfFunction() {
 }
 ```
 &nbsp;
-### The declaration begins with the `function` keyword, followed by the name of the function. Function names follow the same rules as variables — they can contain letters, numbers, underscores and dollar signs, and are frequently written in camel case. The name is followed by a set of `parentheses`, which can be used for optional parameters. The code of the function is contained within curly brackets.
+### The `declaration` begins with the `function` keyword, followed by the name of the function. Function names follow the same rules as variables — they can contain letters, numbers, underscores and dollar signs, and are frequently written in camel case. The name is followed by a set of `parentheses`, which can be used for optional parameters. The code of the function is contained within curly brackets.
 &nbsp; 
 
 ```javascript
@@ -73,19 +73,32 @@ const sum = function(x, y) {
 // Invoke function to find the sum
 sum(100, 3);
 ```
+&nbsp; 
+#
+## `Returning` from a Function:
+
+## Rule #1:
+* ### Every function in JavaScript returns `undefined` unless otherwise specified.
+
+## Rule #2:
+* ### The `return` statement ends function execution. Using return causes your code to short-circuit and stop executing immediately
+
+## Rule #3:
+* ### The return statement returns a `value` to the `calling function`
+
 &nbsp;
 #
 ## JavaScript Variable Scope:
 
 ### The scope of a variable is the region of your program in which it is defined. JavaScript variables have only two scopes.
 
-* ### Global Variables − A global variable has global scope which means it can be defined anywhere in your JavaScript code.
+* ### `Global` Variables − A global variable has global scope which means it can be defined anywhere in your JavaScript code.
 
-* ### Local Variables − A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.
+* ### `Local` Variables − A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.
 
 &nbsp; 
 
-### Within the body of a function, a local variable takes precedence over a global variable with the same name. If you declare a local variable or function parameter with the same name as a global variable, you effectively hide the global variable. Take a look into the following example.
+### `Note:` Within the body of a function, a local variable takes precedence over a global variable with the same name. If you declare a local variable or function parameter with the same name as a global variable, you effectively hide the global variable.
 
 
 #

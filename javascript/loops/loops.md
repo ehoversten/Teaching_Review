@@ -80,6 +80,3 @@ for (let i = 0; i < 4; i++) {
 //         4
 ```
 
-
-&nbsp; 
-## forEach loop
