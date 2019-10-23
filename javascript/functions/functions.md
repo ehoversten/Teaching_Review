@@ -37,8 +37,20 @@ function greet(name) {
 greet("Susan");
 ```
 &nbsp; 
-### `Argument` and `Parameter` are terms associated with functions. The key difference between `argument` and `parameter` is that an `argument` is the data passed at the time of calling a function while a `parameter` is a variable defined by a function that receives a value when the function is called. An `argument` is an actual value while a `parameter` is a placeholder.
+## I keep hearing the terms `argument` and `parameter`. Are they the same, are they different? 
 
+* ### `Argument` and `Parameter` are terms associated with functions. The key difference between `argument` and `parameter` is that an `argument` is the data passed at the time of calling a function while a `parameter` is a variable defined by a function that receives a value when the function is called. An `argument` is an actual value while a `parameter` is a placeholder.
+
+```javascript
+// When defining a function we pass a PARAMETER to the function and then use that VARIABLE within the function scope
+function greet(name) {
+    console.log(`Hello, ${name}!`);
+}
+
+// When we call/invoke a function we pass in an ARGUMENT to the FUNCTION CALL
+greet("Tom");
+```
+&nbsp;  
 # 
 ### We can also create a `function expression` by assigning a `function` to a `variable`.
 ```javascript
