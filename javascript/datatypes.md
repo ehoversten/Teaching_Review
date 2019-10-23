@@ -22,9 +22,9 @@
 #### -  String
 #### -  Symbol
 
-## and `Object`
-&nbsp; 
-#
+##  and `Object`
+&nbsp;
+
 ## Boolean
 ### - A boolean represents only one of two values: true, or false. Think of a boolean as an on/off or a yes/no switch.
 ```javascript
@@ -67,7 +67,7 @@ console.log(testVar); // undefined
 const mySymbol = Symbol('mySymbol');
 ```
 &nbsp;
-#
+
 
 ## What about Objects?
 

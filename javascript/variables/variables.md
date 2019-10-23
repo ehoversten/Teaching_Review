@@ -76,24 +76,6 @@ var weather = null;
 
 ### A list of all the reserved words in JavaScript are given in the following table. They cannot be used as JavaScript variables, functions, methods, loop labels, or any object names.
 
-abstract	
-else	
-instanceof	
-switch
-boolean	
-enum	
-int	
-synchronized
-break	export	interface	this
-byte	extends	long	throw
-case	false	native	throws
-catch	final	new	transient
-char	finally	null	true
-class	float	package	try
-const	for	private	typeof
-continue	function	protected	var
-debugger	goto	public	void
-default	if	return	volatile
-delete	implements	short	while
-do	import	static	with
-double	in	super	
+&nbsp; 
+![Reserved Words](./reserved_words.jpeg)
+

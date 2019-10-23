@@ -100,7 +100,7 @@ sum(100, 3);
 
 ### `Note:` Within the body of a function, a local variable takes precedence over a global variable with the same name. If you declare a local variable or function parameter with the same name as a global variable, you effectively hide the global variable.
 
-
+&nbsp; 
 #
 
 ### Resources: https://www.digitalocean.com/community/tutorials/how-to-define-functions-in-javascript
