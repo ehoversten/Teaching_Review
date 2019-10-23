@@ -1,8 +1,7 @@
 # Dynamic typing
 
-#### JavaScript is a loosely typed or a dynamic language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types:
+### JavaScript is a loosely typed or a `dynamically typed` language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types:
 
-Ex:
 
 ```javascript
     var foo = 42;    // foo is now a number
@@ -14,7 +13,7 @@ Ex:
 
 #### The latest ECMAScript standard defines eight data types:
 
-### Seven data types that are primitives:
+### Seven data types that are `primitives`:
 #### -  Boolean
 #### -  Null
 #### -  Undefined
@@ -23,12 +22,11 @@ Ex:
 #### -  String
 #### -  Symbol
 
+## and Object
+&nbsp; 
 #
-# and Object
-
-
 ## Boolean
-#### - A boolean represents only one of two values: true, or false. Think of a boolean as an on/off or a yes/no switch.
+### - A boolean represents only one of two values: true, or false. Think of a boolean as an on/off or a yes/no switch.
 ```javascript
 var boo1 = true;
 var boo2 = false;
@@ -43,7 +41,7 @@ var num3 = 32.00;
 ```
 
 ## String
-#### - Strings are used for storing text. Strings must be inside of either double or single quotes. In JS, Strings are immutable (they cannot be changed).
+### - Strings are used for storing text. Strings must be inside of either double or single quotes. In JS, Strings are immutable (they cannot be changed).
 ```javascript
 var str1 = 'hello, it is me';
 var str2 = "hello, it's me";
@@ -51,30 +49,31 @@ var str2 = "hello, it's me";
 
 ## Null
 
-#### - Null has one value: null. It is explicitly nothing.
+### - Null has one value: null. It is explicitly nothing.
 ```javascript
 var nothing = null;
 ```
 
 ## Undefined
-#### - A variable that has no value is undefined.
+### - A variable that has no value is undefined.
 ```javascript
 var testVar;
 console.log(testVar); // undefined
 ```
 
 ## Symbol
-### - Symbols are new in ES6. A Symbol is an immutable primitive value that is unique. For the sake of brevity, that is the extent that this article will cover Symbols.
+### - Symbols are new in ES6. A Symbol is an immutable primitive value that is unique. 
 ```javascript
 const mySymbol = Symbol('mySymbol');
 ```
-
+&nbsp;
 #
+
 ## What about Objects?
 
-#### Objects are not a primitive data Type.
+### Objects are not a primitive data Type.
 
-#### An object is a collection of properties. These properties are stored in key/value pairs. Properties can reference any type of data, including objects and/or primitive values.
+### An object is a collection of properties. These properties are stored in `key/value` pairs. Properties can reference any type of data, including objects and/or primitive values.
 ```javascript
 var obj = {
   key1: 'value',
