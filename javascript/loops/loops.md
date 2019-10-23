@@ -2,6 +2,7 @@
 
 ###  There are many different kinds of loops, but they all essentially do the same thing: they `repeat an action some number of times` (and it's actually possible that number could be zero). The various loop mechanisms offer different ways to determine the start and end points of the loop.
 
+
 &nbsp; 
 ## The `do... while` Loop:
 
@@ -37,7 +38,7 @@ while (test_condition) {
 // Program continues as normal ...
 ```
 
-Example: 
+### Example: 
 ```javascript
 let n = 0;
 
@@ -51,6 +52,33 @@ while (n < 3) {
 
 &nbsp; 
 ## The `for` Loop:
+
+### The for statement is a type of loop that will use up to three optional expressions( the `initialization`, the `condition`, and the final expression, also known as `incrementation` ) to implement the repeated execution of a code block.
+
+```javascript
+for (initialization; condition; final expression) {
+    // code to be executed as long as the condition evaluates to TRUE
+}
+``` 
+1) ### The first expression is the `initialization`
+2) ### Next the `condition` is run EVERY iteration through the loop
+3) ### Lastly the `final expression` is executed at the end of each loop. This will modify our `INCREMENTOR`, then pass that value to our `condition` to be evaluated again
+
+&nbsp; 
+### Example:
+```javascript
+// Initialize a for statement with 5 iterations
+for (let i = 0; i < 4; i++) {
+    // Print each iteration to the console
+    console.log(i);
+}
+
+// output: 0
+//         1
+//         2
+//         3
+//         4
+```
 
 
 &nbsp; 
