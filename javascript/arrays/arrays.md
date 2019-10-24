@@ -25,7 +25,7 @@ console.log(fish);
 
 ## Indexing Arrays
 
-### Arrays do not have name/value pairs. Instead, they are indexed with integer values beginning with 0.
+### Arrays do not have name/value pairs. Instead, they are indexed with integer values beginning with `0`. You may hear the term `zero indexed`
 
 
 ### - We can find out how many items are in an array with the length property.
@@ -140,3 +140,8 @@ fish.splice(3, 1, "sea lion");
 
 * ### The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements `in place`.
 
+
+
+# 
+
+### Resources: https://www.digitalocean.com/community/tutorials/understanding-arrays-in-javascript

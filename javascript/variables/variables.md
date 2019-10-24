@@ -5,6 +5,7 @@
 
 ### Before you use a variable in a JavaScript program, you must declare it. Variables are declared with the `var` keyword.
 
+&nbsp; 
 ## JavaScript Variable naming conventions:
 
 * ### Contain `letters`, `numbers`, `$`, or `_`

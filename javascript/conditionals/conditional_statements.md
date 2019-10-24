@@ -4,9 +4,9 @@
 
 &nbsp;
 
-![Conditional Choice](./img/cookie-choice-small.PNG)
-<!-- ![Conditional Choice](./img/decisions.jpeg) -->
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"Do I want one cookie... or two?"
+<!-- ![Conditional Choice](./img/cookie-choice-small.PNG) -->
+![Conditional Choice](./img/decisions.jpeg)
+
 
 &nbsp; 
 &nbsp; 
@@ -42,6 +42,7 @@ if (test_condition) {
 ```
 
 #
+![relational operators](./img/relational_operators.jpeg)
 
 ## Using Logical Operators with Conditional Statements: 
 * && — AND; allows you to chain together two or more expressions so that all of them have to individually evaluate to true for the whole expression to return true.
@@ -94,6 +95,12 @@ switch (expression) {
 let num = 5
 let result = (num < 10) ? console.log("TRUE") : console.log("FALSE");  
 ```
+
+#
+&nbsp;
+
+
+![operators image](./img/operators.png);
 
 
 
