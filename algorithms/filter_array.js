@@ -61,3 +61,20 @@ function doSomething(input) {
 
 
 passTesting(test_array, doSomething);
+passTesting([1, 2, 3, 4, 5, 6],  function (num) { return num % 2 === 0 });
+
+
+
+// Another Solution
+var filter = function (arr, cb) {
+    var newArr = [];
+
+    for (var i = 0; i < arr.length; i++) {
+        var cbOutput = cb(arr[i]);
+        if (cbOutput) {
+            newArr.push(arr[i]);
+        }
+    }
+
+    return newArr;
+}
