@@ -25,13 +25,17 @@
 function passTesting(arr, func) {
     let new_array = [];
 
-    if(test_condition) {
-        return true;
-    } else {
-        return false;
+    // Let's try this with a simple for() loop
+    for(let i = 0; i < arr.length; i++) {
+        let result = func(arr[i]);
+        if(result == true) {
+            new_array.push(arr[i]);
+        }
     }
+    // return the NEW_ARRAY
+    console.log(new_array);
+    return new_array;
 }
-
 // 2) input FUNCTION is run against every elemnt in the input ARRAY
 //      - sounds like a loop or map() function -> loop through each element
 //      - test each element against a test_condition
@@ -40,4 +44,16 @@ function passTesting(arr, func) {
 //      + sounds like we need a NEW_ARRAY variable (let's define this up top!)
 //      - return NEW_ARRAY 
 
+const test_array = [5, 2, 7, 9, 3, 1];
 
+function doSomething(input) {
+    // we are simply checking to see if any of the input values passed in from the input array are greater or equal to 5
+    if(input >= 5) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+passTesting(test_array, doSomething);
