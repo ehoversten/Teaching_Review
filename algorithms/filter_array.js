@@ -23,16 +23,20 @@
 //          * return FALSE;
 
 function passTesting(arr, func) {
-    let new_array = [];
+    // let new_array = [];
 
-    // Let's try this with a simple for() loop
-    for(let i = 0; i < arr.length; i++) {
-        let result = func(arr[i]);
-        if(result == true) {
-            new_array.push(arr[i]);
-        }
-    }
+    // Let's try this with a simple for() loop  // *** THIS WORKS BUT LETS IMPROVE IT ***
+    // for(let i = 0; i < arr.length; i++) {
+    //     let result = func(arr[i]);
+    //     if(result == true) {
+    //         new_array.push(arr[i]);
+    //     }
+    // }
     // return the NEW_ARRAY
+
+    // ** This is how we can use higher order functions and improve the above code
+    let new_array = arr.filter( elem => func(elem));
+   
     console.log(new_array);
     return new_array;
 }
