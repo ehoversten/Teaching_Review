@@ -14,7 +14,7 @@
 * ### Avoid `RESERVED` words
 
 &nbsp; 
-# 
+
 ## Declaring Variables:
 
 ```javascript
@@ -44,7 +44,7 @@ var firstName = "Ricki",
 ```
 
 &nbsp; 
-#
+
 
 ## Variables can be assigned any data type:
 
@@ -70,8 +70,6 @@ var weather = null;
 ```
 &nbsp; 
 
-
-#
 
 # JavaScript Reserved Words
 
