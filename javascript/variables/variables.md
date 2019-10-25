@@ -73,7 +73,7 @@ var weather = null;
 
 # JavaScript Reserved Words
 
-### A list of all the reserved words in JavaScript are given in the following table. They cannot be used as JavaScript variables, functions, methods, loop labels, or any object names.
+### A list of some of the reserved words in JavaScript are given in the following table. They cannot be used as JavaScript variables, functions, methods, loop labels, or any object names.
 
 &nbsp; 
 ![Reserved Words](./reserved_words.jpeg)
