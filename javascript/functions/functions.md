@@ -1,8 +1,8 @@
 # Functions
 
-###  A function is a block of code that performs an action or returns a value. Functions are custom bits of reusable code, and can therefore make your programs more modular and efficient.
+### A function is a block of code that performs an action or returns a value. Functions are custom bits of reusable code, and can therefore make your programs more modular and efficient.
 
-### So how do we make one?
+#### So how do we make one?
 ```javascript
 function nameOfFunction() {
     // Code to be executed
@@ -37,9 +37,9 @@ function greet(name) {
 greet("Susan");
 ```
 &nbsp; 
-## I keep hearing the terms `argument` and `parameter`. Are they the same, are they different? 
+## I keep hearing the terms `argument` and `parameter`. Are they the same? Are they different? 
 
-* ### `Argument` and `Parameter` are terms associated with functions. The key difference between `argument` and `parameter` is that an `argument` is the data passed at the time of calling a function while a `parameter` is a variable defined by a function that receives a value when the function is called. An `argument` is an actual value while a `parameter` is a placeholder.
+### `Argument` and `Parameter` are terms associated with functions. The key difference between `argument` and `parameter` is that an `argument` is the data passed at the time of calling a function while a `parameter` is a variable defined by a function that receives a value when the function is called. An `argument` is an actual value while a `parameter` is a placeholder.
 
 ```javascript
 // When defining a function we pass a PARAMETER to the function and then use that VARIABLE within the function scope
@@ -48,7 +48,7 @@ function greet(name) {
 }
 
 // When we call/invoke a function we pass in an ARGUMENT to the FUNCTION CALL
-greet("Tom");
+greet("Tom");   // output: Hello Tom
 ```
 &nbsp;  
 # 
@@ -60,7 +60,7 @@ const sum = function add(x, y) {
 }
 
 // Invoke function to find the sum
-sum(20, 5);
+sum(20, 5);   // output: 25
 ```
 
 &nbsp;
@@ -71,23 +71,23 @@ const sum = function(x, y) {
 }
 
 // Invoke function to find the sum
-sum(100, 3);
+sum(100, 3);   // output: 103
 ```
 &nbsp; 
 #
 ## `Returning` from a Function:
 
-## Rule #1:
+### Rule #1:
 * ### Every function in JavaScript returns `undefined` unless otherwise specified.
 
-## Rule #2:
+### Rule #2:
 * ### The `return` statement ends function execution. Using return causes your code to short-circuit and stop executing immediately
 
-## Rule #3:
+### Rule #3:
 * ### The return statement returns a `value` to the `calling function`
 
 &nbsp;
-#
+
 ## JavaScript Variable Scope:
 
 ### The scope of a variable is the region of your program in which it is defined. JavaScript variables have only two scopes.
