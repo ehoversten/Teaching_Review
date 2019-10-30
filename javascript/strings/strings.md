@@ -12,7 +12,7 @@
 ```
 
 &nbsp;
-### a `template literal` is a way to concatenate strings while allowing embedded expressions and improving readability
+### A `template literal` is a way to concatenate strings while allowing embedded expressions and improving readability
 
 ```javascript
 let firstName = "Bobby";
@@ -24,7 +24,9 @@ console.log(hello);
 ```
 
 &nbsp; 
-### There is a distinction when referring to each of these. A string literal is the string as it is written in the source code, including quotations. A string value is what we see in the output, and does not include quotations.
+### There is a distinction when referring to each of these. 
+* A string literal is the string as it is written in the source code, including quotations. 
+* A string value is what we see in the output, and does not include quotations.
 
 ```javascript
 // String Literal (in code)
@@ -55,9 +57,4 @@ console.log(hello);
 
 
 * #### The syntax of `\'` will always be a single quote, and the syntax of `\"` will always be a double quote, without any fear of breaking the string.
-
-
-
-#
-
 

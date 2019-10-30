@@ -48,3 +48,46 @@ After you have a Firebase project, you can add your web app to it.
 </body>
 
 ```
+
+
+## Next we have to set up the Database Configuration
+
+```javascript
+// Initialize Firebase
+var config = {
+    apiKey: "FIREBASE-API_KEY",
+    authDomain: "recent-user-with-all-use-e8e76.firebaseapp.com",
+    databaseURL: "https://recent-user-with-all-use-e8e76.firebaseio.com",
+    projectId: "recent-user-with-all-use-e8e76",
+    storageBucket: ""
+};
+
+// Initialize an INSTANCE of a FIREBASE DATABASE with the passed in `config` parameter
+firebase.initializeApp(config);
+
+// Here we create a reference to our new DATABASE
+var database = firebase.database();
+```
+
+&nbsp;
+### Set the `key: value` OBJECT in the database
+
+* The use of .ref() to specify where the data will be saved. Since there is nothing inside the parentheses the data is saved to the database's root directory.
+
+* The use of .set() to save the data to the database
+
+
+```javascript
+database.ref().set({
+    keyName_1: value_1,
+      keyName_1: value_2
+    });
+```
+&nbsp; 
+* .on("value", function(){}) which effectively creates an "on-change" event so that the moment the page first loads or the moment the database changes, the impact is reflected immediately.
+
+```javascript
+database.ref().on("value", function(snapshot){
+    console.log(snapshot.val());
+});
+```
