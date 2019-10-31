@@ -17,24 +17,24 @@ console.log(fish);
 
 // output: -> ["shark", "cuttlefish", "clownfish", "eel"];
 ```
-&nbsp;
-### Arrays are a very flexible data type because they are mutable in that they can have element values added, removed, and changed.
+
+ Arrays are a very flexible data type because they are mutable in that they can have element values added, removed, and changed.
 
 &nbsp;
 
 ## Indexing Arrays
 
-### Arrays do not have name/value pairs. Instead, they are indexed with integer values beginning with `0`. You may hear the term `zero indexed`
+Arrays do not have name/value pairs. Instead, they are indexed with integer values beginning with `0`. You may hear the term `zero indexed`
 
 
-### We can find out how many items are in an array with the length property.
+We can find out how many items are in an array with the length property.
 ```javascript
 fish.length;
 
 // output -> 4
 ```
 &nbsp;
-### If we want to find out the index number of a specific item in an array, such as clownfish, we can use the indexOf() method.
+If we want to find out the index number of a specific item in an array, such as clownfish, we can use the indexOf() method.
 ```javascript
 fish.indexOf("clownfish");
 
