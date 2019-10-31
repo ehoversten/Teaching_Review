@@ -58,7 +58,7 @@ if (test_condition_1 && test_condition_2 ) {
 }
 ```
 &nbsp; 
-#
+
 ## The Switch Statement:
 ###  A `switch` statement single expression/value as an input, and then look through a number of choices until they find one that matches that value, executing the corresponding code that goes along with it.
 
@@ -83,7 +83,7 @@ switch (expression) {
 }
 ```
 &nbsp; 
-#
+
 ## Ternary operator: 
 
 ### The ternary or conditional operator is a small bit of syntax that tests a condition and returns one value/expression if it is true, and another if it is false
@@ -100,7 +100,7 @@ let result = (num < 10) ? console.log("TRUE") : console.log("FALSE");
 &nbsp;
 
 
-![operators image](./img/operators.png);
+![operators image](./img/operators.png)
 
 
 
