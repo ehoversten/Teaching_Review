@@ -4,11 +4,11 @@
 
 &nbsp;
 
-<!-- ![Conditional Choice](./img/cookie-choice-small.PNG) -->
-![Conditional Choice](./img/decisions.jpeg)
+<p align="center">
+  <img src='./img/decisions.jpeg'/>
+</p>
+<!-- ![Conditional Choice](./img/decisions.jpeg) -->
 
-
-&nbsp; 
 &nbsp; 
 
 ## if... else Statements:
