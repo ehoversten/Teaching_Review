@@ -6,12 +6,12 @@
 
 ### Just as strings are defined as characters between quotes, arrays are defined by having values between square brackets [ ].
 #
-### An array of strings, for example, looks like this:
+An array of strings, for example, looks like this:
 ```javascript
 let fish = ["shark", "cuttlefish", "clownfish", "eel"];
 ```
 &nbsp;
-### If we call the variable fish, we’ll receive the following output:
+If we call the variable fish, we’ll receive the following output:
 ```javascript
 console.log(fish);
 
@@ -44,7 +44,7 @@ fish.indexOf("clownfish");
 
 ## Accessing Items in an Array
 
-### An item in a JavaScript array is accessed by referring to the index number of the item in square brackets.
+An item in a JavaScript array is accessed by referring to the index number of the item in square brackets.
 ```javascript
 fish[1];
 
@@ -52,14 +52,14 @@ fish[1];
 ```
 &nbsp;
 
-### Attempting to access an item that doesn't exist will return undefined.
+Attempting to access an item that doesn't exist will return undefined.
 ```javascript
 fish[10];
 
 // output -> undefined
 ```
 &nbsp;
-### In order to access items in a nested array, you would add another index number to correspond to the inner array.
+In order to access items in a nested array, you would add another index number to correspond to the inner array.
 ```javascript
 let nestedArray = [
     [
@@ -80,7 +80,7 @@ nestedArray[1][0];
 
 ## Adding an Item to an Array
 
-### In our fish variable we had five items, which consisted of the indices from 0 to 4. If we want to add a new item to the array, we can assign a value to the next index.
+In our fish variable we had five items, which consisted of the indices from 0 to 4. If we want to add a new item to the array, we can assign a value to the next index.
 
 ```javascript
 fish[5] = "squid";
@@ -89,9 +89,9 @@ fish[5] = "squid";
 ```
 
 &nbsp; 
-### We can also use a built-in javascript array methods to add data to the array. 
+We can also use a built-in javascript array methods to add data to the array. 
 
-* ### Using the push() method, we add an item to the end of an array.
+* Using the push() method, we add an item to the end of an array.
 
 ```javascript
 fish.push("whale");
@@ -99,7 +99,7 @@ fish.push("whale");
 // output -> ["shark", "cuttlefish", "clownfish", "eel", "squid", "whale"]
 ```
 &nbsp; 
-* ### Using the unshift() method will add an item to the beginning of an array.
+* Using the unshift() method will add an item to the beginning of an array.
 ```javascript
 fish.unshift("lobster");
 
@@ -111,7 +111,7 @@ console.log(fish);
 
 ## Modifying Items in Arrays:
 
-### We can overwrite any value in an array by assigning a new value using the assignment operator, just like we would with a regular variable.
+We can overwrite any value in an array by assigning a new value using the assignment operator, just like we would with a regular variable.
 
 ```javascript
 fish[0] = "manatee";
@@ -119,7 +119,7 @@ fish[0] = "manatee";
 // output -> ["manatee", "shark", "cuttlefish", "clownfish", "eel", "squid", "whale"]
 ```
 &nbsp; 
-### Another way to modify a value is using the splice() method with a new parameter. If we wanted to change the value of clownfish, which is the item at index 3, we could remove it and add a new item in its place.
+Another way to modify a value is using the splice() method with a new parameter. If we wanted to change the value of clownfish, which is the item at index 3, we could remove it and add a new item in its place.
 
 
 
@@ -132,7 +132,7 @@ fish.splice(3, 1, "sea lion");
 // output -> ["manatee", "shark", "cuttlefish", "sea lion", "eel", "squid", "whale"]
 ```
 
-* ### The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements `in place`.
+* The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements `in place`.
 
 
 
