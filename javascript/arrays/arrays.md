@@ -10,40 +10,37 @@
 ```javascript
 let fish = ["shark", "cuttlefish", "clownfish", "eel"];
 ```
-
-### - If we call the variable fish, we’ll receive the following output:
+&nbsp;
+### If we call the variable fish, we’ll receive the following output:
 ```javascript
 console.log(fish);
 
 // output: -> ["shark", "cuttlefish", "clownfish", "eel"];
 ```
-
+&nbsp;
 ### Arrays are a very flexible data type because they are mutable in that they can have element values added, removed, and changed.
 
-#
-
+&nbsp;
 
 ## Indexing Arrays
 
 ### Arrays do not have name/value pairs. Instead, they are indexed with integer values beginning with `0`. You may hear the term `zero indexed`
 
 
-### - We can find out how many items are in an array with the length property.
+### We can find out how many items are in an array with the length property.
 ```javascript
 fish.length;
 
 // output -> 4
 ```
-
-### - If we want to find out the index number of a specific item in an array, such as clownfish, we can use the indexOf() method.
+&nbsp;
+### If we want to find out the index number of a specific item in an array, such as clownfish, we can use the indexOf() method.
 ```javascript
 fish.indexOf("clownfish");
 
 // output -> 2
 ```
-
-#
-
+&nbsp; 
 
 ## Accessing Items in an Array
 
@@ -53,7 +50,7 @@ fish[1];
 
 // output -> "shark"
 ```
-
+&nbsp;
 
 ### Attempting to access an item that doesn't exist will return undefined.
 ```javascript
@@ -61,7 +58,7 @@ fish[10];
 
 // output -> undefined
 ```
-
+&nbsp;
 ### In order to access items in a nested array, you would add another index number to correspond to the inner array.
 ```javascript
 let nestedArray = [
@@ -79,8 +76,7 @@ nestedArray[1][0];
 
 // output -> 'coral'
 ```
-
-#
+&nbsp;
 
 ## Adding an Item to an Array
 
@@ -112,8 +108,6 @@ console.log(fish);
 // output -> ["lobster", "shark", "cuttlefish", "clownfish", "eel", "squid", "whale"]
 ```
 &nbsp; 
-#
-
 
 ## Modifying Items in Arrays:
 
