@@ -10,7 +10,8 @@ An array of strings, for example, looks like this:
 ```javascript
 let fish = ["shark", "cuttlefish", "clownfish", "eel"];
 ```
-&nbsp;
+&nbsp; 
+
 If we call the variable fish, we’ll receive the following output:
 ```javascript
 console.log(fish);
@@ -18,7 +19,7 @@ console.log(fish);
 // output: -> ["shark", "cuttlefish", "clownfish", "eel"];
 ```
 
- Arrays are a very flexible data type because they are mutable in that they can have element values added, removed, and changed.
+Arrays are a very flexible data type because they are mutable in that they can have element values added, removed, and changed.
 
 &nbsp;
 
@@ -33,7 +34,8 @@ fish.length;
 
 // output -> 4
 ```
-&nbsp;
+&nbsp; 
+
 If we want to find out the index number of a specific item in an array, such as clownfish, we can use the indexOf() method.
 ```javascript
 fish.indexOf("clownfish");
@@ -58,7 +60,8 @@ fish[10];
 
 // output -> undefined
 ```
-&nbsp;
+&nbsp; 
+
 In order to access items in a nested array, you would add another index number to correspond to the inner array.
 ```javascript
 let nestedArray = [
@@ -89,6 +92,7 @@ fish[5] = "squid";
 ```
 
 &nbsp; 
+
 We can also use a built-in javascript array methods to add data to the array. 
 
 * Using the push() method, we add an item to the end of an array.
@@ -98,7 +102,8 @@ fish.push("whale");
 
 // output -> ["shark", "cuttlefish", "clownfish", "eel", "squid", "whale"]
 ```
-&nbsp; 
+&nbsp;  
+
 * Using the unshift() method will add an item to the beginning of an array.
 ```javascript
 fish.unshift("lobster");
@@ -119,6 +124,7 @@ fish[0] = "manatee";
 // output -> ["manatee", "shark", "cuttlefish", "clownfish", "eel", "squid", "whale"]
 ```
 &nbsp; 
+ 
 Another way to modify a value is using the splice() method with a new parameter. If we wanted to change the value of clownfish, which is the item at index 3, we could remove it and add a new item in its place.
 
 
