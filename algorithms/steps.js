@@ -18,21 +18,34 @@
             '####'
 */      
 
-
-function steps(n) {
+function steps(num) {
     // We want to make sure that submitted arguments are positive and greater than Zero
-    if(n < 1) {
+    if (num < 1) {
         return "N must be a positive number larger than zero"
     }
-    
-    // Let's start out with an empty string that we can add to
-    let result = '';
 
-    // if we are given N we need to have at least that many spots in our string
-    
-    // we need a loop to start from 1 up to N
-        // * Start with a single # and add N-1 'spaces' to the right
-        // * Add consecutive # characters until the number of # characters is equal to N
+    // Iterate through number of rows
+    for(let row = 0; row < num; row++) {
+        // create a empty string variable to start
+        let result = '';
+        // Iterate through number of columns
+        for(let column= 0; column < num; column++) {
+            // IF current column is less than or equal to total rows
+            if(column <= row) {
+                // add '#' to result
+                result += '#';
+            } else {
+                // add ' ' (empty space) to result
+                result += ' ';
+            }
+        }
+        // Log the row result 
+        console.log(result);
+    }
+}
 
-    // Return from function call
-} 
+steps(2);
+console.log('\n');
+
+steps(5);
+
