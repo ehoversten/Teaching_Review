@@ -16,7 +16,7 @@ function vowels(str) {
     let vowelArr = ['a', 'e', 'i', 'o', 'u'];
     // Let's also lowercase the input string so we don't have to compare capital vowel characters also
     let lowerStr = str.toLowerCase();
-    
+
     // Loop through the STRING OBJECT
     for (let i = 0; i < lowerStr.length; i++) {
 
@@ -35,3 +35,29 @@ function vowels(str) {
 }
 
 console.log(vowels("Hi There"));
+console.log(vowels("Why do you ask?"));
+
+// This solution gives us bad Big 'O' Time Complexity -> O(n^2)
+
+
+// *** A Better Solution *** //
+function betterVowels(str) {
+    // Let's create a counting variable
+    let count = 0;
+    // Let's have an array of our vowel characters to compare against
+    let vowelArr = ['a', 'e', 'i', 'o', 'u'];
+
+    // Loop through the STRING OBJECT
+    for (let char of str.toLowerCase()) {
+        if(vowelArr.includes(char)) {
+            count++;
+        }
+    }
+    // Don't forget to return count!
+    return count;
+}
+
+// This solution gives us better Big 'O' Time Complexity -> O(n)
+
+console.log(betterVowels("Hi There"));
+console.log(betterVowels("Why do you ask?"));
