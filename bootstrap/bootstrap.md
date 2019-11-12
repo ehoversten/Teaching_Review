@@ -1,6 +1,6 @@
 # What is Bootstrap and why would we choose to use it?
 
-### Bootstrap is a popular front-end component library. Bootstrap is an open source toolkit for developing with HTML, CSS, and JS
+### Bootstrap is a popular front-end component library. Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Bootstrap gives us `predefined CSS` styles.
 
 &nbsp; 
 ## Advantages:
@@ -12,13 +12,13 @@
 
 &nbsp; 
 ## Installation:
-* Include the CDN (Content Delivery Network) Link
-* Download and Include (* if you don't have internet or working offline)
+* Include the CDN (Content Delivery Network) Link                `** Preferred Method **`
+* Download and Include (* if you don't have internet or working offline, use this method)
 * Package Managers (NPM, Yarn)
 
 &nbsp; 
 ## UI Utilities and Classes
-* Grid System - FLEXBOX
+* Grid System - FLEXBOX vs. CSS-GRID
 * Text and Typography
 * Positioning
 * Spacing
@@ -59,19 +59,16 @@
 * Live Server Extension (Recommended)
 * Emmet Extension (Recommended)
 * An HTML file to code in (usually `index.html`)
-&nbsp; 
-#
-* ## Containers
-* ## Rows
-* ## Columns / Grid / Flexbox
-* ## Cards
-* ## Navigation
-* ## Jumbotron
-* ## Adding JavaScript & Script files
-* ## Modals
-* ## Scrollspy
 
-* # Box-Sizing ** 
+&nbsp; 
+## The `Box-Model`
+
+### History:
+The box model has worked like this by default:
+
+* Width + Padding + Border = actual visible/rendered `width` of an element's box
+
+* Height + Padding + Border = actual visible/rendered `height` of an element's box
 
 The CSS box model acts as a `container` which has the ability to modify properties including `borders`, `margin`, `padding` and the `content` itself. It is helpful to create the design and layout of web pages. The web browser renders every element as a rectangular box according to the CSS box model. The Box-Model has multiple properties in CSS. 
 
@@ -87,6 +84,23 @@ The following figure illustrates the box model:
 <p align="center">
   <img src='./assets/img/box-model.jpeg'/>
 </p>
+&nbsp; 
+
+
+## CSS Font Sizing: `Pixels` vs `Em` vs `Rem` vs `Percent` vs `Viewport Units`
+
+* Pixel -
+* Em - 
+* Rem - 
+* Percent - (%)
+* Viewport Units (vw, vh)
+
+#
+* ## Containers
+* ## Rows
+* ## Columns / Grid / Flexbox
+* ## Adding JavaScript & Script files
+* ## Modals
 
 * ## Responsive Styling with CSS Media-Queries
 
