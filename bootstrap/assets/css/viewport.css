@@ -1,0 +1,15 @@
+h1 {
+  font-size: 10vw;
+  text-align: center;
+}
+
+p {
+  font-size: 2.5vh;
+  line-height: 3.5vh;
+}
+
+
+section {
+  width: 80vw;
+  margin: auto;
+}

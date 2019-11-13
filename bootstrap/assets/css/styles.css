@@ -33,7 +33,6 @@ h1 {
     border: solid #000 2px;
     border-radius: 10px;
     background: rgb(68, 160, 199);
-
 }
 
 .card img {
@@ -50,6 +49,7 @@ footer {
     padding-top: 20px;
     margin-top: 60px;
     border-top: 5px solid rgb(79, 79, 83);
+    line-height: 3.5vh;
 }
 
 

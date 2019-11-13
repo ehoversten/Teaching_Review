@@ -63,19 +63,12 @@
 &nbsp; 
 ## The `Box-Model`
 
-### History:
-The box model has worked like this by default:
-
-* Width + Padding + Border = actual visible/rendered `width` of an element's box
-
-* Height + Padding + Border = actual visible/rendered `height` of an element's box
-
 The CSS box model acts as a `container` which has the ability to modify properties including `borders`, `margin`, `padding` and the `content` itself. It is helpful to create the design and layout of web pages. The web browser renders every element as a rectangular box according to the CSS box model. The Box-Model has multiple properties in CSS. 
 
 Some of them are as follows:
 
-* Borders
 * Margins
+* Borders
 * Padding
 * Content
 
@@ -86,14 +79,37 @@ The following figure illustrates the box model:
 </p>
 &nbsp; 
 
+#### So how do we calculate the size our content will actually take up?
+* Element Width + Padding + Border + Margin = actual visible/rendered `width` of an element's box
+
+* Element Height + Padding + Border + Margin = actual visible/rendered `height` of an element's box
+
+&nbsp;   
 
 ## CSS Font Sizing: `Pixels` vs `Em` vs `Rem` vs `Percent` vs `Viewport Units`
 
-* Pixel -
-* Em - 
-* Rem - 
-* Percent - (%)
-* Viewport Units (vw, vh)
+Each is a unit of length used to define the size of an element on a webpage. You can use them across on divs, margins, padding, \<h> tags, \<p> tags, etc ...
+
+* Pixel - Pixels are `fixed-size` units and do not change based on the size of the viewport. One pixel is equal to one dot on the computer screen (the smallest division of your screen’s resolution).
+    * `The Problem...?` Pixel Size differs on screen sizes
+* Em - Em is a `flexible`, scalable unit that is converted by the browser into pixel valid values.
+* Rem - Rem is `relative` to the font size of the `root element` (html element). 
+    * For example: If the font-size of the html element is 16 px, then 1rem = 16 px.
+* Percent (%) - Percent value is always relative to another value, be it the element’s parent value or from another property of the element itself. 
+    * Percentages are used widely in responsive design
+* Viewport Units (vw, vh) - Viewport width and height properties are relative to the width/height of the current viewport size.   
+
+    * 1vw = 1% of viewport width
+    * 1vh = 1% of viewport height 
+
+
+Resources: 
+* https://j.eremy.net/confused-about-rem-and-em/
+* https://kyleschaeffer.com/css-font-size-em-vs-px-vs-pt-vs-percent
+
+&nbsp;  
+## Responsive Styling with CSS Media-Queries
+
 
 #
 * ## Containers
@@ -102,7 +118,6 @@ The following figure illustrates the box model:
 * ## Adding JavaScript & Script files
 * ## Modals
 
-* ## Responsive Styling with CSS Media-Queries
 
 
 
