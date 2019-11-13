@@ -3,9 +3,17 @@
 
 
 body {
-    
+    background-color: #ddd;
 }
 
+/* .jumbo-container {
+    display: flex;
+}
+
+.jumbo-row {
+    margin: auto 0;
+    justify-content: center;
+} */
 
 .jumbotron {
     margin-top: 30px;

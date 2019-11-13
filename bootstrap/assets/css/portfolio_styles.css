@@ -10,7 +10,32 @@ h1 {
 
 #main {
   overflow:auto;
-  padding-bottom:150px; /* this needs to be bigger than footer height*/
+  padding-bottom:50px;
+}
+
+
+.view {
+  display: flex;
+  background-color: #bbb;
+  justify-content: space-around;
+}
+
+.view-row {
+  /* align-content: center; */
+}
+
+.view-item {
+  height: 200px;
+  width: 20vw;
+  background-color: #ccc;
+  justify-content: space-between;
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+.view-button {
+  /* align-self: flex-end; */
+  float: right;
 }
 
 footer {

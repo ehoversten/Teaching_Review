@@ -108,18 +108,34 @@ Resources:
 * https://kyleschaeffer.com/css-font-size-em-vs-px-vs-pt-vs-percent
 
 &nbsp;  
-## Responsive Styling with CSS Media-Queries
+## Responsive Styling with Bootstrap CSS Media-Queries
 
+#### What is Responsive Design?
+* Responsive web design is creating web layouts that can adapt to a multitude of displays and devices.
+
+&nbsp;   
+We use a handful of media queries to create breakpoints for our web layouts. These breakpoints are based on minimum viewport widths and allow us to scale elements as the viewport changes.
+
+#### From Bootstrap Documentation: Common break point cases
+```css
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+```
 
 #
-* ## Containers
-* ## Rows
-* ## Columns / Grid / Flexbox
-* ## Adding JavaScript & Script files
-* ## Modals
-
-
-
+&nbsp;   
 
 ## Resources:
 
