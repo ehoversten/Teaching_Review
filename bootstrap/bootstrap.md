@@ -116,6 +116,7 @@ Resources:
 &nbsp;   
 We use a handful of media queries to create breakpoints for our web layouts. These breakpoints are based on minimum viewport widths and allow us to scale elements as the viewport changes.
 
+&nbsp;   
 #### From Bootstrap Documentation: Common break point cases
 ```css
 // Extra small devices (portrait phones, less than 576px)
@@ -134,6 +135,7 @@ We use a handful of media queries to create breakpoints for our web layouts. The
 @media (min-width: 1200px) { ... }
 ```
 
+
 #
 &nbsp;   
 
@@ -141,6 +143,10 @@ We use a handful of media queries to create breakpoints for our web layouts. The
 
 FlexBox:
 * https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background
+* https://www.youtube.com/watch?v=k32voqQhODc&t=1s
 
 CSS-Grid:
 * https://css-tricks.com/snippets/css/complete-guide-grid/
+
+View Port Units: 
+* https://www.youtube.com/watch?v=du6gnsImsLU&list=PLpcSpRrAaOaqfJ5uIRikm04Gd5X5aiqSB&index=23

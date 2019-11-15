@@ -6,6 +6,10 @@ body {
     background-color: #ddd;
 }
 
+.box {
+    display: flex;
+}
+
 /* .jumbo-container {
     display: flex;
 }
