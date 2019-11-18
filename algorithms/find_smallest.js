@@ -35,4 +35,7 @@ findSmallestNum([34, -345, -1, 100]);
 findSmallestNum([0.4356, 0.8795, 0.5435, -0.9999]);
 
 
-
+// Using built-in javascript functions
+function findSmallestQuick(arr) {
+    return Math.min(...arr);
+}
