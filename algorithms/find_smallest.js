@@ -13,17 +13,26 @@
 
 function findSmallestNum(arr) {
     // define a variable to hold value of current smallest value
-    
+    let min = arr[0];
     // Loop through the given array
-
+    for(let i = 1; i < arr.length; i++) {
         // check current_smallest variable against current_value of arr[i] in loop
-
-        // is current_value less than current_smallest value?
-
+        if(min > arr[i]) {
+            // is current_value less than current_smallest value?
             // YES? set new current_smallest to current_value[i]
-
-            // NO? keep looping through array
+            min = arr[i];
+            // NO? Do nothing, keep looping through array
+        }
+    }
 
     // Return smallest_value found
-    return small;
+    console.log(min);
+    return min;
 }
+
+findSmallestNum([34, 15, 88, 2]);
+findSmallestNum([34, -345, -1, 100]);
+findSmallestNum([0.4356, 0.8795, 0.5435, -0.9999]);
+
+
+
