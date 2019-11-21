@@ -79,12 +79,15 @@ Common Higher-Order Functions that we see in javascript and often use in React
 
 &nbsp;  
 ### Filter: `Array.prototype.filter()`
-`filter` allows us to pick which elements of the array should remain in the transformed list by passing a filtering function that returns a Boolean value (true/false).
+`filter()` allows us to pick which elements of the array should remain in the transformed list by passing a filtering function that returns a Boolean value (true/false). 
+
+* Slightly Simplified: The filter() method `creates a new array` with all elements that pass the test implemented by the provided function.
 
 ```javascript
 function isAboveMyRange(value) {
   return value >= 25;
 }
+
 var filtered = [12, 5, 8, 130, 44].filter(isAboveMyRange);
 // filtered is [130, 44]
 ```
@@ -93,10 +96,13 @@ var filtered = [12, 5, 8, 130, 44].filter(isAboveMyRange);
 
 &nbsp;  
 ### Map: `Array.proptotype.map()`
-`map` is used if we want to perform the same change on each member of the array. It takes the function that should be applied to each element of the array as a parameter.
+`map()` is used if we want to perform the same change on each member of the array. It takes the function that should be applied to each element of the array as a parameter.
+
+* Slightly Simplified: The map() method `creates a new array` with the results of calling a provided function (or callback) on every element in the calling array.
 
 ```javascript
 var numbers = [1, 4, 9];
+
 var doubles = numbers.map(function(num) {
   return num * 2;
 });
@@ -104,8 +110,39 @@ var doubles = numbers.map(function(num) {
 // doubles is now [2, 8, 18]
 // numbers is still [1, 4, 9]
 ```
+&nbsp;  
+### Reduce: Array.prototype.reduce()
+
+### The `reduce()` method executes the callback function on each member of the calling array, and results in a `single output value`. 
+
+The reduce() method takes in two input parameters:
+
+* The reducer callback function (making this method a higher-order function)
+* Optional initial value
+
+```javascript
+// Syntax
+arr.reduce(callback[, initialValue]);
+```
+&nbsp;  
+The reducer function (callback) accepts four parameters:
+
+* accumulator
+* currentValue
+* currentIndex
+* sourceArray
+
+If an initialValue is provided, then the accumulator will be equal to the initialValue, and the currentValue will be equal to the first element in the array. Suppose no initialValue is provided, then the accumulator will be equal to the first element in the array and the currentValue will be equal to the second element in the array.
 
 
+```javascript
+let reducerFunction = function(accumulator, currentValue) {
+    return accumulator + currentValue;
+}
+
+var sum = [0, 1, 2, 3].reduce(reducerFunction, 0);
+// output: sum is 6
+```
 #
 
 ### Resources: 
@@ -118,7 +155,8 @@ Traversy Media: Great quick walk through using higher-order functions
 Video Playlist for a deeper understanding:
 * https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84
 
-
+Mosh Hamedami:
+* https://programmingwithmosh.com/javascript/what-are-higher-order-functions-in-javascript/
 
 - What are they GOOD for? 
 * Composition(?)
