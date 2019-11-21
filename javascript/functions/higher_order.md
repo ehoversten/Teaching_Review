@@ -69,13 +69,54 @@ console.log(sum(3, 5, func));  // output: 8
 
 ## So what are Higher-Order Functions?
 
-#### Higher order functions are functions that operate on other functions
+### Higher order functions are functions that operate on other functions.
 
 Common Higher-Order Functions that we see in javascript and often use in React
 * filter
 * map
 * reduce
 * sort
+
+&nbsp;  
+### Filter: `Array.prototype.filter()`
+`filter` allows us to pick which elements of the array should remain in the transformed list by passing a filtering function that returns a Boolean value (true/false).
+
+```javascript
+function isAboveMyRange(value) {
+  return value >= 25;
+}
+var filtered = [12, 5, 8, 130, 44].filter(isAboveMyRange);
+// filtered is [130, 44]
+```
+
+
+
+&nbsp;  
+### Map: `Array.proptotype.map()`
+`map` is used if we want to perform the same change on each member of the array. It takes the function that should be applied to each element of the array as a parameter.
+
+```javascript
+var numbers = [1, 4, 9];
+var doubles = numbers.map(function(num) {
+  return num * 2;
+});
+
+// doubles is now [2, 8, 18]
+// numbers is still [1, 4, 9]
+```
+
+
+#
+
+### Resources: 
+
+* https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad
+
+Traversy Media: Great quick walk through using higher-order functions
+* https://www.youtube.com/watch?v=rRgD1yVwIvE
+
+Video Playlist for a deeper understanding:
+* https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84
 
 
 
