@@ -143,6 +143,8 @@ let reducerFunction = function(accumulator, currentValue) {
 var sum = [0, 1, 2, 3].reduce(reducerFunction, 0);
 // output: sum is 6
 ```
+
+&nbsp;   
 #
 
 ### Resources: 
@@ -158,6 +160,5 @@ Video Playlist for a deeper understanding:
 Mosh Hamedami:
 * https://programmingwithmosh.com/javascript/what-are-higher-order-functions-in-javascript/
 
-- What are they GOOD for? 
-* Composition(?)
+
 
