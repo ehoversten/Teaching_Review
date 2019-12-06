@@ -36,3 +36,11 @@ console.log(findGreatestNum(test_arr));
 console.log(findGreatestNum(same_arr));
 console.log(findGreatestNum(deci_arr));
 
+
+// Using built-in javascript functions we can make it smaller!
+function findGreatestQuick(arr) {
+    // using the built-in Math.max function and passing the array in using ES6 spread operator we can make an easy one-liner
+    return Math.max(...arr);
+}
+
+console.log(findGreatestQuick(deci_arr));
