@@ -1,24 +1,67 @@
 
+## HTML Element Tags
 
+## Block vs Inline vs Inline-Block Elements:
+
+### Block
+* Block elements are usually container elements, like `<div>`, `<section>`, and `<ul>`. Also text "blocks" like `<p>` and `<h1>`. Block level elements do not sit inline but break past them. By default (without setting a width) they take up as much horizontal space as they can.
+
+* A block-level element always starts on a new line and takes up the full width of a page, from left to right. A block-level element can take up one line or multiple lines and has a line break before and after the element.
+
+
+### Inline:
+* An `inline` element will accept margin and padding, Margin and padding will only push other elements horizontally away, not vertically. `An inline element will not accept height and width.` It will just ignore it.
+
+### Inline-Block:
+* An element set to `inline-block` is very similar to inline in that it will set inline with the natural flow of text (on the "baseline"). `The difference is that you are able to set a width and height which will be respected.`
+
+&nbsp;   
+<p align="center">
+  <img src='./block_inline.jpeg'/>
+</p>
+
+
+
+#### Block level elements in HTML:
+```html
+<address> * <article> * <aside> * <blockquote> * <canvas> * <dd> * <div> * <dl> * <dt> * <fieldset> * <figcaption> * <figure> * <footer> * <form> * <h1>-<h6> * <header> * <hr> * <li> * <main> * <nav> * <noscript> * <ol> * <p> * <pre> * <section> * <table> * <tfoot> * <ul> * <video>
+```
+
+## HTML Forms (its own file?)
 
 
 ## CSS Selectors
 
-#id
-.class
+* `type` selectors – matching a specific element
+* `class` selectors – matching elements with a specific class
+* `ID` selectors – matching the element with a specific ID
+* `descendant` selectors – matching elements that are descendants of a specific element
+* `child` selectors – matching elements that are a child of the specific element
+* `universal` selectors – matching any element
+* `adjacent sibling` selectors – matching elements immediately preceded by a specific element
+* `attribute` selectors – matching elements with a specific attribute or attribute value
+* `pseudo-class` selectors – matching elements with a specific pseudo-class
+* `pseudo-element` selectors – matching elements with specific pseudo-element properties
 
+&nbsp;    
+### When choosing between a CSS ID and a CSS class, follow the convention:
+
+* Classes (.classname) are used if the same style will be used on multiple HTML elements.
+
+* IDs (#idname) are used if a style is unique to a certain HTML element.
+
+&nbsp;   
 ## Linking a stylesheet
 
 ```html
 <link rel="stylesheet" type="text/css" href="./styles"/> 
 ```
 
-## 
-
 &nbsp;   
+#
 ## CSS Box Model:
 
-The model helps to understand the relationship between margin, padding, border, the width and the height of the elements.
+### The model helps to understand the relationship between `margin`, `padding`, `border`, the `width` and the `height` of the elements.
 
 * Content: The text, image, icon etc... contained by the html element
 * Margin: It lies outside the box and is basically used to separate itself from other markup elements.
@@ -34,13 +77,13 @@ The following figure illustrates the box model:
 </p>
 &nbsp; 
 
-Calculating net height & width of the box:
+## Calculating net height & width of the box:
 
-Margin, border and padding – altogether make the overall width and height of our box:
+### Margin, border and padding – altogether make the overall width and height of our box:
 
 * Width + Left margin + Right margin + Left border + Right border + Right padding + Left padding
 
-The height of the box can be calculated using this way:
+### The height of the box can be calculated using this way:
 
 * Height + Top margin + Bottom margin + Top border + Bottom border + Top padding + Bottom padding
 
@@ -59,19 +102,21 @@ body {
 }
 ```
 
-## CSS Classes and Selectors
 
 ## CSS Pseudo-Classes
 
+
 ## Layout and Positioning in CSS
+
+```css
+div {
+  position: static | relative | absolute | fixed | sticky;
+}
+```
 
 ## CSS Media Queries
 
-## HTML Element Tags
 
-## Block vs Inline Elements
-
-## HTML Forms (its own file?)
 
 
 
