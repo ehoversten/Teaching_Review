@@ -1,7 +1,11 @@
 
 
 
-## CSS Attributes
+
+## CSS Selectors
+
+#id
+.class
 
 ## Linking a stylesheet
 
@@ -54,3 +58,27 @@ body {
     box-sizing: border-box;
 }
 ```
+
+## CSS Classes and Selectors
+
+## CSS Pseudo-Classes
+
+## Layout and Positioning in CSS
+
+## CSS Media Queries
+
+## HTML Element Tags
+
+## Block vs Inline Elements
+
+## HTML Forms (its own file?)
+
+
+
+
+# 
+
+## Resources
+
+* https://w3bits.com/css-box-model/
+* https://w3bits.com/box-sizing-reset/
