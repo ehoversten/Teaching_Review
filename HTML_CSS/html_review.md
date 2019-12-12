@@ -1,9 +1,41 @@
 
 ## HTML Element Tags
+* An HTML element usually consists of a start tag and an end tag, with the content inserted in between:
+
+```html
+<tagname>Content goes here...</tagname>
+```
+#
+* The `<html>` element defines the whole document.
+
+* It has a start tag `<html>` and an end tag `</html>`.
+
+* Inside the `<html>` element is the `<body>` element.
+
+* The `<body>` element defines the document body.
+
+
+#
+
+## HTML Attributes:
+
+* All HTML elements can have attributes
+* Attributes provide additional information about an element
+* Attributes are always specified in the `<start>` tag, not the closing `</end>` tag 
+* Attributes usually come in `name/value pairs` like: `name="value"`
+
+&nbsp;  
+
+* The `title` attribute provides additional "tool-tip" information
+* The `href` attribute provides address information for links
+* The `width` and `height` attributes provide size information for images
+* The `alt` attribute provides text for screen readers
+
+# 
 
 ## Block vs Inline vs Inline-Block Elements:
 
-### Block
+### Block:
 * Block elements are usually container elements, like `<div>`, `<section>`, and `<ul>`. Also text "blocks" like `<p>` and `<h1>`. Block level elements do not sit inline but break past them. By default (without setting a width) they take up as much horizontal space as they can.
 
 * A block-level element always starts on a new line and takes up the full width of a page, from left to right. A block-level element can take up one line or multiple lines and has a line break before and after the element.
@@ -24,9 +56,15 @@
 
 #### Block level elements in HTML:
 ```html
-<address> * <article> * <aside> * <blockquote> * <canvas> * <dd> * <div> * <dl> * <dt> * <fieldset> * <figcaption> * <figure> * <footer> * <form> * <h1>-<h6> * <header> * <hr> * <li> * <main> * <nav> * <noscript> * <ol> * <p> * <pre> * <section> * <table> * <tfoot> * <ul> * <video>
+<address> * <article> * <aside> * <blockquote> * <canvas> * <dd> * <div> * <dl> * <dt> * <fieldset> * <figcaption> * <figure> * <footer> * <form> * <h1> - <h6> * <header> * <hr> * <li> * <main> * <nav> * <noscript> * <ol> * <p> * <pre> * <section> * <table> * <tfoot> * <ul> * <video>
 ```
 
+
+#### Inline elements in HTML:
+```html
+<a> * <abbr> * <acronym> * <b> * <bdo> * <big> * <br> * <button> * <cite> * <code> * <dfn> * <em> * <i> * <img> * <input> * <kbd> * <label> * <map> * <object> * <output> * <q> * <samp> * <script> * <select> * <small> * <span> * <strong> * <sub> * <sup> * <textarea> * <time> * <tt> * <var>
+```
+&nbsp;   
 ## HTML Forms (its own file?)
 
 
