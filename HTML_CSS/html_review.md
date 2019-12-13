@@ -143,7 +143,24 @@ body {
 
 ## CSS Pseudo-Classes
 
+* Pseudo class selectors are CSS selectors with a colon preceding them.
 
+```css
+a:hover {
+  color: purple;
+}
+```
+
+* `:hover`
+* `:active`
+* `:visited`
+* `:focus`
+* `::before` - Add content before a certain element.
+
+* `::after` - Add content after a certain element. Commonly for the `clearfix`, ** Where an empty space is added after the element which clears the float without any need for extra HTML markup. **
+
+
+&nbsp;    
 ## Layout and Positioning in CSS
 
 ```css
@@ -152,10 +169,75 @@ div {
 }
 ```
 
+&nbsp;
+
 ## CSS Media Queries
 
+### Media queries can be used to check many things, such as:
+
+* width and height of the viewport
+* width and height of the device
+* orientation (is the tablet/phone in landscape or portrait mode?)
+* resolution
+
+### Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones
+
+&nbsp;   
+### Synatx:
+* A media query consists of a `media type` and can contain `one or more expressions`, which resolve to either `true` or `false`.
+
+```css
+@media not|only mediatype and (expressions) {
+  CSS-Code;
+}
+```
+&nbsp;
+### Example:
+```css
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+```
+&nbsp;
 
 
+### This allows us to control what `styles` get applied to the encompassed elements at the specified `screen size` (or `expression`):
+```css
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+```
+
+&nbsp;   
+### Common Screen Size and Breakpoints
+```css
+/* /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* /* Medium devices (landscape tablets, 768px and up) */ 
+@media only screen and (min-width: 768px) {...}
+
+/* /* Large devices (laptops/desktops, 992px and up) */ 
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)  */
+@media only screen and (min-width: 1200px) {...}
+```
 
 
 
@@ -165,3 +247,4 @@ div {
 
 * https://w3bits.com/css-box-model/
 * https://w3bits.com/box-sizing-reset/
+* https://css-tricks.com/pseudo-class-selectors/
