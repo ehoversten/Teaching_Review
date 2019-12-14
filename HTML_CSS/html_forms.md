@@ -17,20 +17,52 @@
 &nbsp;   
 ## An HTML form contains form elements.
 
-* Form elements are different types of `input elements`, like `text` fields, `checkboxes`, `radio` buttons, `submit` buttons, and more.
+* Form elements are different types of `input` elements, like `text` fields, `checkboxe`s, `radio` buttons, `submit` buttons, and more.
 
+&nbsp;  
+## Form Attributes
 
+### The Action Attribute:
+
+* The action attribute defines the `action` to be performed, or location / `URL` where the forms collected data should be sent when the `form is submitted`.
+* The action attribute defines the location (URL) where the form's collected data should be sent when it is submitted.
+
+* If the action attribute is `omitted`, the action is set to the `current page`. Meaning the page with refresh. 
+
+### The Target Attribute:
+
+* The `target` attribute specifies if the submitted result will open in a new browser tab, a frame, or in the current window.
+
+### The Method Attribute:
+
+* The `method` attribute specifies the `HTTP method` (`GET` or `POST`) to be used when submitting the form data:
+
+&nbsp;   
+#### When to use the `GET` method:
+* `GET` is the default method when a form is submitted.
+
+* When we use a GET request, the data submitted via the form will be visible in the page address field: `Appends form-data into the URL in name/value pairs`
+
+* Use `GET` for `non-secure` data, like query strings
+
+* Never use GET to send sensitive data! As it will be visible in the URL
+
+&nbsp;   
+#### When to use the 'POST' method:
+
+* Use `POST` if the form data contains `sensitive` or `personal` information.
 
 
 &nbsp;   
 ```html
-<form action="/route" method="POST">
+<form action="/route_or_file" method="POST">
   <label for="match_Input_Id">Input Name</label>
   <input
     id="match_Input_Id"
     type="text"
     name="object.user.username"
     value="object.username"
+    target="_blank"
   />
 
   <label for="email">Enter Email</label>
@@ -46,3 +78,10 @@
 * Send it to a Backend (`Node/Express`) server, and have the server do some logic or action on that data. Save/persist data to a database (`SQL/noSQL DB`), route the user to another page on your website.
 
 
+# 
+
+## Resources:
+
+* https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms
+
+* https://www.w3schools.com/html/html_forms.asp
