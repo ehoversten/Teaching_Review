@@ -51,17 +51,15 @@ Basics:
 
 #### Block level elements in HTML:
 
-  HTML     | Block-Level |  Elements
----------- | ---------- | ----------
-`<address>` | `<article>` | `<aside>`
-`<blockquote>` | `<canvas>` | `<dd>`
-`<div>` | `<dl>` | `<dt>` | `<fieldset>`
-`<figcaption>` | `<footer>` | `<form>`
-`<h1>` - `<h6>` | `<header>` | `<hr>`
-`<li>` | `<main>` | `<nav>` 
-`<noscript>` | `<ol>` | `<p>` 
-`<pre>` | `<section>` | `<table>` 
-`<tfoot>` | `<ul>` | `<video>`
+  HTML     | Block |  Level | Elements
+---------- | ---------- | ---------- | ----------
+`<address>` | `<article>` | `<aside>` | `<blockquote>`
+`<canvas>` | `<dd>` | `<div>` | `<dl>` 
+`<dt>` | `<fieldset>` | `<figcaption>` | `<footer>` 
+`<form>` | `<h1>` - `<h6>` | `<header>` | `<hr>`
+`<li>` | `<main>` | `<nav>`  | `<noscript>` 
+`<ol>` | `<p>`  | `<pre>` | `<section>` 
+`<table>` | `<tfoot>` | `<ul>` | `<video>`
 
 
 
@@ -101,25 +99,23 @@ Basics:
 * `<video>` -->
 
 
-
+&nbsp;    
 #### Inline elements in HTML:
 <!-- ```html
 <a> * <abbr> * <acronym> * <b> * <bdo> * <big> * <br> * <button> * <cite> * <code> * <dfn> * <em> * <i> * <img> * <input> * <kbd> * <label> * <map> * <object> * <output> * <q> * <samp> * <script> * <select> * <small> * <span> * <strong> * <sub> * <sup> * <textarea> * <time> * <tt> * <var>
 ``` -->
 
-| HTML | Inline-Level | Elements |
-| ---- | ----------- | -------- |
-`<a>`  |`<abbr>`  |`<acronym>` 
-`<b>`  |`<bdo>`  |`<big>` 
-`<br>`  |`<button>`  |`<cite>` 
-`<code>`  |`<dfn>`  |`<em>`
-`<i>` | `<img>`  |`<input>`
-`<kbd>`  |`<label>` | `<map>` 
-`<object>`  |`<output>`  |`<q>`
-`<samp>`  |`<script>` | `<select>` 
-`<small>` | `<span>` | `<strong>` 
-`<sub>`  |`<sup>` | `<textarea>` 
-`<time>` | `<tt>` | `<var>`
+| HTML | Inline      |  Level | Elements 
+| ---- | ----------- | -------- | ---------
+`<a>`  |`<abbr>`  |`<acronym>`  | `<b>`
+`<bdo>`  |`<big>`  | `<br>`  |`<button>`  
+`<cite>` | `<code>`  |`<dfn>`  |`<em>`
+`<i>` | `<img>`  |`<input>` | `<kbd>`
+`<label>` | `<map>`  | `<object>`  |`<output>`  
+`<q>` | `<samp>`  |`<script>` | `<select>` 
+`<small>` | `<span>` | `<strong>`  | `<sub>`  
+`<sup>` | `<textarea>` | `<time>` | `<tt>` 
+ `<var>`
 
 &nbsp; 
 
