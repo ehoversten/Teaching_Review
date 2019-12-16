@@ -52,15 +52,80 @@ Basics:
 
 
 #### Block level elements in HTML:
-```html
+<!-- ```html
 <address> * <article> * <aside> * <blockquote> * <canvas> * <dd> * <div> * <dl> * <dt> * <fieldset> * <figcaption> * <figure> * <footer> * <form> * <h1> - <h6> * <header> * <hr> * <li> * <main> * <nav> * <noscript> * <ol> * <p> * <pre> * <section> * <table> * <tfoot> * <ul> * <video>
-```
+``` -->
+
+* `<address>`
+* `<article>` 
+* `<aside>` 
+* `<blockquote>` 
+* `<canvas>` 
+* `<dd>` 
+* `<div>` 
+* `<dl>` 
+* `<dt>` 
+* `<fieldset>` 
+* `<figcaption>` 
+* `<figure>` 
+* `<footer>` 
+* `<form>` 
+* `<h1>` - `<h6>` 
+* `<header>` 
+* `<hr>` 
+* `<li>` 
+* `<main>` 
+* `<nav>` 
+* `<noscript>` 
+* `<ol>` 
+* `<p>` 
+* `<pre>` 
+* `<section>` 
+* `<table>` 
+* `<tfoot>` 
+* `<ul>` 
+* `<video>`
+
 
 
 #### Inline elements in HTML:
-```html
+<!-- ```html
 <a> * <abbr> * <acronym> * <b> * <bdo> * <big> * <br> * <button> * <cite> * <code> * <dfn> * <em> * <i> * <img> * <input> * <kbd> * <label> * <map> * <object> * <output> * <q> * <samp> * <script> * <select> * <small> * <span> * <strong> * <sub> * <sup> * <textarea> * <time> * <tt> * <var>
-```
+``` -->
+* `<a>` 
+* `<abbr>` 
+* `<acronym>` 
+* `<b>` 
+* `<bdo>` 
+* `<big>` 
+* `<br>` 
+* `<button>` 
+* `<cite>` 
+* `<code>` 
+* `<dfn>` 
+* `<em>` 
+* `<i>` 
+* `<img>` 
+* `<input>` 
+* `<kbd>` 
+* `<label>` 
+* `<map>` 
+* `<object>` 
+* `<output>` 
+* `<q>` 
+* `<samp>` 
+* `<script>` 
+* `<select>` 
+* `<small>` 
+* `<span>` 
+* `<strong>` 
+* `<sub>` 
+* `<sup>` 
+* `<textarea>` 
+* `<time>` 
+* `<tt>` 
+* `<var>`
+
 &nbsp; 
 
 
