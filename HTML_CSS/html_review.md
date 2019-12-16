@@ -5,7 +5,7 @@
 ```html
 <tagname>Content goes here...</tagname>
 ```
-#
+Basics: 
 * The `<html>` element defines the whole document.
 
 * It has a start tag `<html>` and an end tag `</html>`.
@@ -14,9 +14,7 @@
 
 * The `<body>` element defines the document body.
 
-
-#
-
+&nbsp;    
 ## HTML Attributes:
 
 * All HTML elements can have attributes
@@ -31,8 +29,7 @@
 * The `width` and `height` attributes provide size information for images
 * The `alt` attribute provides text for screen readers
 
-# 
-
+&nbsp;   
 ## Block vs Inline vs Inline-Block Elements:
 
 ### Block:
@@ -67,9 +64,6 @@
 &nbsp; 
 
 
-#
-
-
 ## CSS Selectors
 
 * `type` selectors – matching a specific element
@@ -98,7 +92,6 @@
 ```
 
 &nbsp;   
-#
 ## CSS Box Model:
 
 ### The model helps to understand the relationship between `margin`, `padding`, `border`, the `width` and the `height` of the elements.
@@ -119,11 +112,11 @@ The following figure illustrates the box model:
 
 ## Calculating net height & width of the box:
 
-### Margin, border and padding – altogether make the overall width and height of our box:
+#### Margin, border and padding – altogether make the overall width and height of our box:
 
 * Width + Left margin + Right margin + Left border + Right border + Right padding + Left padding
 
-### The height of the box can be calculated using this way:
+#### The height of the box can be calculated using this way:
 
 * Height + Top margin + Bottom margin + Top border + Bottom border + Top padding + Bottom padding
 
@@ -142,7 +135,7 @@ body {
 }
 ```
 
-
+&nbsp;    
 ## CSS Pseudo-Classes
 
 * Pseudo class selectors are CSS selectors with a colon preceding them.
@@ -182,10 +175,12 @@ div {
 * orientation (is the tablet/phone in landscape or portrait mode?)
 * resolution
 
-### Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones
+&nbsp;
 
-&nbsp;   
-### Synatx:
+#### Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones
+
+
+Syntax:
 * A media query consists of a `media type` and can contain `one or more expressions`, which resolve to either `true` or `false`.
 
 ```css
@@ -193,8 +188,9 @@ div {
   CSS-Code;
 }
 ```
+
 &nbsp;
-### Example:
+Example:
 ```css
 @media screen and (min-width: 480px) {
   body {

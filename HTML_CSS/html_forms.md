@@ -1,6 +1,6 @@
 # HTML Forms
 
-## What are forms used for?
+###  What are forms used for?
 
 * User Input
 
@@ -19,6 +19,7 @@
 
 * Form elements are different types of `input` elements, like `text` fields, `checkboxe`s, `radio` buttons, `submit` buttons, and more.
 
+&nbsp;    
 ## Form Elements:
 
 * `<label>`
@@ -48,18 +49,18 @@
 &nbsp;  
 ## Form Attributes:
 
-### The Action Attribute:
+#### The Action Attribute:
 
 * The action attribute defines the `action` to be performed, or location / `URL` where the forms collected data should be sent when the `form is submitted`.
 * The action attribute defines the location (URL) where the form's collected data should be sent when it is submitted.
 
 * If the action attribute is `omitted`, the action is set to the `current page`. Meaning the page with refresh. 
 
-### The Target Attribute:
+#### The Target Attribute:
 
 * The `target` attribute specifies if the submitted result will open in a new browser tab, a frame, or in the current window.
 
-### The Method Attribute:
+#### The Method Attribute:
 
 * The `method` attribute specifies the `HTTP method` (`GET` or `POST`) to be used when submitting the form data:
 
