@@ -141,8 +141,32 @@ Basics:
 * IDs (#idname) are used if a style is unique to a certain HTML element.
 
 &nbsp;   
-## Linking a stylesheet
+## Adding CSS styling to HTML
 
+`Inline` - by using the style attribute in HTML elements
+
+> Adding inline styles:
+```html
+<div style="CSS_PROPERTY: VALUE">
+  <!-- container content -->
+</div>
+```
+&nbsp;    
+
+`Internal` - by using a `<style>` element in the `<head>` section
+
+> Adding a Stylesheet in the HTML file:
+```html
+<head>
+  <style type="text/css"> 
+    /* your CSS Styles */
+  </style>
+</head>
+```
+
+&nbsp;    
+`External` - by using an external CSS file
+> Linking a stylesheet:
 ```html
 <link rel="stylesheet" type="text/css" href="./styles"/> 
 ```
@@ -214,11 +238,25 @@ a:hover {
 &nbsp;    
 ## Layout and Positioning in CSS
 
+#### The `position` property specifies the type of positioning method used for an element
+
+
 ```css
 div {
   position: static | relative | absolute | fixed | sticky;
 }
 ```
+
+* Static - Default value. Elements render in order, as they appear in the document flow
+
+* Absolute - The element is positioned `relative` to its first positioned (not static) ancestor/`parent element`
+
+* Fixed - The element is positioned `relative` to the `browser window`
+
+* Relative - The element is positioned relative to its normal position
+
+* Sticky - A newly added CSS property, The element is positioned based on the user's scroll position
+
 
 &nbsp;
 
