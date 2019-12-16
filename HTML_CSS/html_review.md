@@ -45,7 +45,8 @@ Basics:
 * An element set to `inline-block` is very similar to inline in that it will set inline with the natural flow of text (on the "baseline"). `The difference is that you are able to set a width and height which will be respected.`
 
 &nbsp;   
-<p align="center">
+<p align="center" max-height="500px"
+>
   <img src='./block_inline.jpeg'/>
 </p>
 
