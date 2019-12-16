@@ -24,13 +24,18 @@
 * `<label>`
     * Labels are important for `web accessibility`
 * `<input>`
-    * We can define the `type` of user input and how that data will be connected upon submission (`id`, `name`, `value`, `placeholder`)
+    * We can define the `type` of user input and how that data will be connected upon submission (Input Attributes : `id`, `name`, `value`, `placeholder`, etc ...)
     * Input Types: `type="INPUT_TYPE"`
         * `text`
+        * `email`
+        * `password`
         * `radio`
         * `submit`
+        * and many more ...
 * `<select>`
     * Allows us to create specified `option` values for the user to select from using a pull down menu
+* `<option>`
+    * Defines an option (and `value`) in a drop-down list
 * `<textarea>`
     * Defines a multi-line input field
 * `<button>`
@@ -38,7 +43,7 @@
 * `<fieldset>`
     * An element we can use to group together form inputs
 * `<legend>`
-    * The element we use to label our fieldset grouped inputs
+    * Element we use to caption our fieldset element
 
 &nbsp;  
 ## Form Attributes:
@@ -107,7 +112,6 @@
 ## TO DO: 
 * examples of various input types
 * Styling Forms
-
 
 
 # 
