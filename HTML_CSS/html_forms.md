@@ -15,12 +15,33 @@
 ```
 
 &nbsp;   
-## An HTML form contains form elements.
+### An HTML form contains form elements.
 
 * Form elements are different types of `input` elements, like `text` fields, `checkboxe`s, `radio` buttons, `submit` buttons, and more.
 
+## Form Elements:
+
+* `<label>`
+    * Labels are important for `web accessibility`
+* `<input>`
+    * We can define the `type` of user input and how that data will be connected upon submission (`id`, `name`, `value`, `placeholder`)
+    * Input Types: `type="INPUT_TYPE"`
+        * `text`
+        * `radio`
+        * `submit`
+* `<select>`
+    * Allows us to create specified `option` values for the user to select from using a pull down menu
+* `<textarea>`
+    * Defines a multi-line input field
+* `<button>`
+    * Often used with `type="submit"` to submit the form
+* `<fieldset>`
+    * An element we can use to group together form inputs
+* `<legend>`
+    * The element we use to label our fieldset grouped inputs
+
 &nbsp;  
-## Form Attributes
+## Form Attributes:
 
 ### The Action Attribute:
 
@@ -53,7 +74,9 @@
 * Use `POST` if the form data contains `sensitive` or `personal` information.
 
 
-&nbsp;   
+&nbsp;  
+
+### Putting it all together: Example
 ```html
 <form action="/route_or_file" method="POST">
   <label for="match_Input_Id">Input Name</label>
@@ -67,6 +90,8 @@
 
   <label for="email">Enter Email</label>
   <input id="email" type="email" name="email" value="object.user.email" />
+
+  <input type="submit" class="button_styles" value="Submit"/>
 </form>
 ```
 
@@ -76,6 +101,13 @@
 * We can manipulate that data using JavaScript /jQuery and dynamically add that data to the browser.
 * We can send the form data as a query string and make a request (`AJAX` call) to an outside server (`API`) for data. Then dynamically present that data to the client browser.
 * Send it to a Backend (`Node/Express`) server, and have the server do some logic or action on that data. Save/persist data to a database (`SQL/noSQL DB`), route the user to another page on your website.
+
+#
+
+## TO DO: 
+* examples of various input types
+* Styling Forms
+
 
 
 # 
