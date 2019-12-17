@@ -35,11 +35,14 @@ Basics:
 ### Block:
 * Block elements are usually container elements, like `<div>`, `<section>`, and `<ul>`. Also text "blocks" like `<p>` and `<h1>`. Block level elements do not sit inline but break past them. By default (without setting a width) they take up as much horizontal space as they can.
 
-* A block-level element always starts on a new line and takes up the full width of a page, from left to right. A block-level element can take up one line or multiple lines and has a line break before and after the element.
+* A block-level element always starts on a new line and takes up the full width of a page, from left to right if no `width` property is set. A block-level element can take up one line or multiple lines and has a line break before and after the element.
+
 
 
 ### Inline:
-* An `inline` element will accept margin and padding, Margin and padding will only push other elements horizontally away, not vertically. `An inline element will not accept height and width.` It will just ignore it.
+* An `inline` element will not accept margin and padding, Margin and padding will only push other elements horizontally away, not vertically. `An inline element will not accept height and width.` It will just ignore it.
+
+
 
 ### Inline-Block:
 * An element set to `inline-block` is very similar to inline in that it will set inline with the natural flow of text (on the "baseline"). `The difference is that you are able to set a width and height which will be respected.`

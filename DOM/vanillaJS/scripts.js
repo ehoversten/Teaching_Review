@@ -1,1 +1,12 @@
-// Temp space to add Vanilla JS example files for how to work in and manipulate the DOM
+console.log("Connected");
+
+
+
+// Let's grab the user input
+var newTask = document.getElementById("task");
+console.log(newTask);
+
+
+
+var thatTask = document.getElementById("task").value;
+console.log(thatTask);
