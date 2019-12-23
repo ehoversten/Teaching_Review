@@ -5,7 +5,14 @@ What Do I want to include?
 
 * The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
 
-* In the DOM, all HTML elements are defined as objects.
+* In the DOM, all HTML elements are defined as objects. ??
+
+* All items in the DOM are defined as nodes. There are many types of nodes, but there are three main ones that we work with most often:
+
+    * Element nodes
+    * Text nodes
+    * Comment nodes
+
 
 * A property is a value that you can get or set (like changing the content of an HTML element).
 
@@ -68,9 +75,9 @@ What Do I want to include?
 
 
 
-## The Element Object
+## The * Element Object
 
-* In the HTML DOM, the Element object represents an HTML element, like P, DIV, A, TABLE, or any other HTML element.
+* In the HTML DOM, the  * Element object represents an HTML element, like P, DIV, A, TABLE, or any other HTML element.
 
 ## The addEventListener() method attaches an event handler to the specified element.
 ```javascript
