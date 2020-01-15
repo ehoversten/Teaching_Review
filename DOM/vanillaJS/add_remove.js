@@ -47,7 +47,8 @@ addButton.addEventListener("click", function (event) {
     // *** TRY IT!! *** COMMENT OUT the line above and see how our new DYNAMICALLY created li elements DO NOT get removed from the <ul> element
 
     // We need to put contect (text) into our new item
-    newItem.textContent = "I am new content!";
+    // newItem.textContent = "I am new content!";
+    newItem.innerHTML = "I am new";
 
     // Don't forget the new element we create will not be seen untill we APPEND it to an element in the DOM
     questions.append(newItem);
