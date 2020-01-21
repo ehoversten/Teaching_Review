@@ -3,7 +3,6 @@
 // Let's clear out everything that may already be in the broswers localStorage Object
 localStorage.clear();
 
-
 let age = document.getElementById("maxAge");
 
 // Let's start with Createing a new Array
@@ -19,11 +18,11 @@ let userObject = {
 let userArrayObject = [
     {
         name: "Bingo",
-        age: 8
+        age: 10
     },
     {
         name: "Manhattan",
-        age: 4
+        age: 14
     },
     {
         name: "Bubbs",
@@ -55,25 +54,131 @@ console.log(convertedArrayObject);
 // Define a save() function
 function save() {
     // Remember we need to set the "key":"value" pair!
-    localStorage.setItem("user_array", convertedArrayObject);
+    localStorage.setItem("name_array", convertedArray);
+    localStorage.setItem("user_obj", convertedObject);
+    localStorage.setItem("user_object_array", convertedArrayObject);
     return console.log("Saved to Local Storage");
 }
 // Call save() function
 save();
 
-// Define a getSaved() function
-function getSaved() {
-    console.log("retrieving saved data");
-    return localStorage.getItem("user_array");
+
+// ------------------------------------------------//
+//
+// *** GET ARRAY OF NAMES STORED IN LOCAL STORAGE *** //
+//
+// ------------------------------------------------//
+
+// Grab Button and add Event Listener
+let arrBtn = document.getElementById("name-data");
+arrBtn.addEventListener('click', getArray);
+
+// Define a getArray() function
+function getArray() {
+    console.log("**************");
+    console.log("retrieving array data");
+    // Explore the differences between these two variables in the console
+    // This variable contains a STRING version of the ARRAY
+    let data = localStorage.getItem("name_array");
+    console.log(data);
+    // This variable contains the JavaScript Array Object 
+    let parsed = JSON.parse(data);
+    console.log(parsed);
+    // return the parsed JavaScript Object to the calling function
+    return parsed;
 }
 
-// Call getSaved() function
-getSaved();
+// ------------------------------------------------//
+//
+// *** GET OBJECT STORED IN LOCAL STORAGE *** //
+//
+// ------------------------------------------------//
+
+// Grab Button and add Event Listener
+let objBtn = document.getElementById("obj-data");
+objBtn.addEventListener('click', getObj);
+
+// Define a getObj() function
+function getObj() {
+    console.log("**************");
+    console.log("retrieving object data");
+    let data = localStorage.getItem("user_obj");
+    console.log(data);
+
+    let parsed = JSON.parse(data);
+    console.log(parsed);
+    // return the parsed JavaScript Object to the calling function
+    return parsed;
+}
+
+// ------------------------------------------------//
+//
+// *** GET ARRAY OF OBJECTS STORED IN LOCAL STORAGE *** //
+//
+// ------------------------------------------------//
+
+// Grab Button and add Event Listener
+let objArrBtn = document.getElementById("obj-arr-data");
+objArrBtn.addEventListener('click', getObjArr);
+
+// Define a getObjArr() function
+function getObjArr() {
+    console.log("**************");
+    console.log("retrieving object data");
+    let data = localStorage.getItem("user_object_array");
+    console.log(data);
+
+    let parsed = JSON.parse(data);
+    console.log(parsed);
+    // return the parsed JavaScript Object to the calling function
+    return parsed;
+}
+
+// ------------------------------------------------//
+//
+// *** ADD NEW NAME TO ARRAY AND STORE IN LOCAL STORAGE *** //
+//
+// ------------------------------------------------//
+
+let addBtn = document.getElementById("add-data");
+addBtn.addEventListener('click', addObj);
+
+function addObj() {
+    // Look at how these two are different in the console
+    let stringData = localStorage.getItem('name_array');
+    console.log(stringData);
+    console.log(typeof stringData);
+
+    let parsedData = JSON.parse(localStorage.getItem('name_array'));
+    console.log(parsedData);
+    console.log(typeof parsedData);
+
+    // we add our data
+    parsedData.push("Gary");
+    console.log(parsedData);
+
+    // we resave the array with the new data added back to local storage
+    localStorage.setItem('name_array', JSON.stringify(parsedData));
+
+    // Now go back and click on the 'Get Array' button and look at our results. What do you see?
+}
+
+// ------------------------------------------------//
+//
+// *** GET HIGHEST AGE STORED IN LOCAL STORAGE *** //
+//
+// ------------------------------------------------//
+
+// Grab the button and create a click event that triggers the getHighAge() function
+let button = document.getElementById("age");
+button.addEventListener("click", getHighAge);
 
 // Define function to retrieve the highest Age stored in localStorage
 function getHighAge() {
+    age.textContent = '';
     // Grab the STRING object stored in localStorage (by calling the getSaved() function)
-    let savedResults = getSaved();
+    let savedResults = localStorage.getItem('user_object_array');
+    // let savedResults = getObjArr();
     console.log(savedResults);
     
     // We have to convert the STRING version of the OBJECT retrieved from localStorage to a JavaScript OBJECT
@@ -103,6 +208,20 @@ function getHighAge() {
     return "Max age is " + max;
 }
 
-// Grab the button and create a click event that triggers the getHighAge() function
-let button = document.getElementById("click");
-button.addEventListener("click", getHighAge);
+
+
+
+
+// WHAT IF THERE IS NOTHING IN LOCAL STORAGE ? HOW DO I CHECK THAT ITS EMPTY? //
+
+// This function can be called directly in the browser console
+function checkEmpty() {
+    // The localStorage OBJECT only has one method (.length)
+    if(localStorage.length < 1) {
+        // if local storage is empty maybe we want to return the user a message. Or load our own data!
+        return console.log("Local Storage Empty");
+    }
+    // if it is not empty it will return the numebr of objects it contains
+    return console.log(localStorage.length);
+}
+
