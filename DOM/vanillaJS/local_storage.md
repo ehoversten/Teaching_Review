@@ -2,13 +2,18 @@
 
 ### The API provides a way to store data in the Web Browser on the clients machine.
 
-* Both Local and Session Storage are available on the window object
+&nbsp;
 
 ### How do we do this? 
 
 Using Local and/or Session Storage to persist data that we want to use on the client side. A simple login and registration can be built using session storage, or A cart for an e-commerce site can hold items the user saved by using local storage. 
 
-Both Local and Session Storage are available on the window object, so you can access them using sessionStorage and localStorage.
+Both Local and Session Storage are available on the window object. You can test out what's in local or session storage by opening the DEV tools in the web browser and opening the JavaScript console and typing it in.
+
+```javascript
+$> localStorage
+$> sessionStorage
+```
 
 
 &nbsp;   
@@ -21,15 +26,8 @@ Both Local and Session Storage are available on the window object, so you can ac
 
 * Persists the data until it’s explicitly removed
 
-
-You can test out what's in local or session storage by opening the DEV tools in the web browser and opening the JavaScript console and typing it in.
-
-```javascript
-$> localStorage
-$> sessionStorage
-```
-
 &nbsp;
+
 
 ## Methods
 
@@ -46,6 +44,7 @@ Both Local and Session Storage use these methods and return a Storage Object:
 On the other hand, the `Storage Object` has a only one property, `length` which is the number of data items stored into it.
 
 
+&nbsp;
 
 ## Storage Size Limits
 
