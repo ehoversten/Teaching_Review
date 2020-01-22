@@ -209,11 +209,26 @@ function getHighAge() {
 }
 
 
+// ------------------------------------------------//
+//
+// *** REMOVE OBJECT STORED IN LOCAL STORAGE *** //
+//
+// ------------------------------------------------///
+function removeFromStorage(key) {
+    localStorage.removeItem(key);
+}
+
+// We will run this command in the browser console, but its here for reference
+
+// removeFromStorage('user_obj');
 
 
 
-// WHAT IF THERE IS NOTHING IN LOCAL STORAGE ? HOW DO I CHECK THAT ITS EMPTY? //
-
+// ------------------------------------------------//
+//
+// *** CHECK IF LOCAL STORAGE HAS CONTENTS *** //
+//
+// ------------------------------------------------///
 // This function can be called directly in the browser console
 function checkEmpty() {
     // The localStorage OBJECT only has one method (.length)
