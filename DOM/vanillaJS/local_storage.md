@@ -4,19 +4,28 @@
 
 * Both Local and Session Storage are available on the window object
 
-
 ### How do we do this? 
-* Local Storage
-* Session Storgae
 
-This includes Local Storage & Session Storage
+Using Local and/or Session Storage to persist data that we want to use on the client side. A simple login and registration can be built using session storage, or A cart for an e-commerce site can hold items the user saved by using local storage. 
 
-### Session Storage
+Both Local and Session Storage are available on the window object, so you can access them using sessionStorage and localStorage.
 
-* Maintains the data stored into it for the duration of the page session
 
+&nbsp;   
+### Session Storage:
+
+* Maintains the data stored into it for the duration of the page session (until the window or tab is closed)
+
+
+### Local Storage:
+
+* Persists the data until it’s explicitly removed
+
+&nbsp;
 
 ## Methods
+
+Both Local and Session Storage use these methods and return a Storage Object:
 
 * setItem(key, value)
 * getItem(key)
@@ -24,14 +33,10 @@ This includes Local Storage & Session Storage
 * key(n)
 * clear()
 
-#
+&nbsp;
 
-How to access the storage
-Both Local and Session Storage are available on the window object, so you can access them using sessionStorage and localStorage.
+On the other hand, the `Storage Object` has a only one property, `length` which is the number of data items stored into it.
 
-Their set of properties and methods is exactly the same, because they return the same object, a Storage object.
-
-The Storage Object has a single property, length, which is the number of data items stored into it.
 
 
 
@@ -41,3 +46,7 @@ The Storage Object has a single property, length, which is the number of data it
 
 
 * https://flaviocopes.com/web-storage-api/
+
+* https://alligator.io/js/introduction-localstorage-sessionstorage/
+
+* https://www.taniarascia.com/how-to-use-local-storage-with-javascript/
