@@ -21,6 +21,14 @@ Both Local and Session Storage are available on the window object, so you can ac
 
 * Persists the data until it’s explicitly removed
 
+
+You can test out what's in local or session storage by opening the DEV tools in the web browser and opening the JavaScript console and typing it in.
+
+```javascript
+$> localStorage
+$> sessionStorage
+```
+
 &nbsp;
 
 ## Methods
@@ -39,11 +47,17 @@ On the other hand, the `Storage Object` has a only one property, `length` which 
 
 
 
+## Storage Size Limits
+
+Size limits can different per browser, typically they are between 5 - 10 MB. 
+
+
 
 #
 
 ## Resources:
 
+* https://flaviocopes.com/json/
 
 * https://flaviocopes.com/web-storage-api/
 
