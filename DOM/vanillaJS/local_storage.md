@@ -43,6 +43,49 @@ Both Local and Session Storage use these methods and return a Storage Object:
 
 On the other hand, the `Storage Object` has a only one property, `length` which is the number of data items stored into it.
 
+&nbsp;  
+## Creating Entries
+Create entries in local storage by providing a `key/value` pair:
+
+```javascript
+let key = 'Item 1';
+localStorage.setItem(key, 'Value');
+```
+
+&nbsp;
+
+## Reading Entries
+Read entries stored in local storage:
+
+```javascript
+let storageVar = localStorage.getItem(key);
+```
+
+&nbsp;  
+## Updating Entries
+
+Update an entry just as you would create a new one with setItem, but with a key that already exists:
+
+```javascript
+localStorage.setItem(key, 'New Value');
+```
+
+&nbsp;  
+
+## Deleting Entries
+Delete an entry with in local storage:
+
+```javascript
+localStorage.removeItem(key);
+```
+
+&nbsp;  
+## Clearing Everything
+Clear everything that’s stored in localStorage:
+
+```javascript
+localStorage.clear();
+```
 
 &nbsp;
 
@@ -52,7 +95,8 @@ Size limits can different per browser, typically they are between 5 - 10 MB.
 
 
 
-#
+&nbsp;
+
 
 ## Resources:
 
