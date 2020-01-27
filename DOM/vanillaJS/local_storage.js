@@ -37,6 +37,7 @@ let userArrayObject = [
 console.log(nameArray);
 let convertedArray = JSON.stringify(nameArray);
 console.log(convertedArray);
+console.log(typeof convertedArray);
 
 console.log("**********");
 console.log(userObject);

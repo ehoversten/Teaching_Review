@@ -1,5 +1,8 @@
 # The Call Stack 
 
+## JavaScript has a concurrency model based on an event loop
+
+
 ## Heap
 
 Memory Allocation 
@@ -23,7 +26,7 @@ Think of a stack of books or plates/lunch trays. Only the first or top item gets
 Waits for RESPONSES to complete or fail, then passes then on to the Task Queue
 
 
-## Task Queue
+## Task Queue / message queue
 
 The Task Queue keeps a queue of function calls (that had been waiting for data to be returned). When the Stack is empty the Event Loop will pass these waiting call back functions back one by one to the Stack.
 
@@ -50,3 +53,8 @@ The JavaScript Event Loop - Flavio Copes
 
 
 * https://blog.carbonfive.com/2013/10/27/the-javascript-event-loop-explained/
+
+
+Understanding the JavaScript Concurrency Model - 
+* https://blog.avenuecode.com/understanding-the-javascript-concurrency-model
+
