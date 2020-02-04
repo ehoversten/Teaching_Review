@@ -17,7 +17,7 @@ let concatenation = "Hello I am " + first_name + last_name;
 
 ## let, var, and const and Function vs Block Scope
 
-### Variable Scope
+### Variable Scope (var)
 
 Scope in JavaScript refers to the current `execution context` of code, this determines where variable can and cannot be accessed in JavaScript.
 
@@ -41,11 +41,9 @@ Keywords `let` and `const` are `BLOCK-scoped`. This means that a new, `local sco
 ** EXAMPLE of var and let in a for() loop
 ********
 
-## Hoisting and Closures
-
-
 
 ## Arrow Functions () => {}
+
 
 ## Default Parameters
 
@@ -77,6 +75,10 @@ console.log(make, color)
 // output -> "Audi Blue"
 ```
 
+## for of Loops
+
+
+
 ## Rest and Spread
 
 You can expand an array, an object or a string using the spread operator `...`
@@ -96,7 +98,7 @@ unknown(1, 2, 3, 4, 5);  // output -> [1, 2, 3, 4, 5]
 
 This can come in handy when we know that we will be passing in a number of parameters to a function call, but we don't know how many.
 
-## Promises
+## Promises / Callbacks
 
 ## Async / Await
 
