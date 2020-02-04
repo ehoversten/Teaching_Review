@@ -19,4 +19,10 @@
 ## Async / Await
 
 
+#
+
+## Resources:
+
+
+* https://www.taniarascia.com/es6-syntax-and-feature-overview/
 
