@@ -43,6 +43,8 @@ Keywords `let` and `const` are `BLOCK-scoped`. This means that a new, `local sco
 
 ## Hoisting and Closures
 
+
+
 ## Arrow Functions () => {}
 
 ## Default Parameters
@@ -59,6 +61,21 @@ add(3)     // output -> 8
 ```
 
 ## Object Destructuring
+
+Given an object, you can extract just some or all values and put them into named variables for easier naming in your code.
+
+```javascript
+let car = {
+    make: "Audi",
+    model: "A4",
+    transmission: "Manual",
+    color: "Blue"
+}
+
+let { make, color } = car;
+console.log(make, color)
+// output -> "Audi Blue"
+```
 
 ## Rest and Spread
 
