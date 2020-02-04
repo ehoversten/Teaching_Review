@@ -4,6 +4,16 @@
 
 ## Template Literals
 
+They provide us a way to easily embed expressions into strings, by using the `${VARIABLE_NAME}` syntax.
+
+```javascript
+let first_name = "Steve";
+let last_name = "Smith";
+let greeting = `Hello I am ${first_name} ${last_name}`
+// output  --> "Hello I am Steve Smith"
+let concatenation = "Hello I am " + first_name + last_name;
+```
+
 
 ## let, var, and const and Function vs Block Scope
 
@@ -35,9 +45,39 @@ Keywords `let` and `const` are `BLOCK-scoped`. This means that a new, `local sco
 
 ## Arrow Functions () => {}
 
+## Default Parameters
+
+Functions can be initialized with default parameters, which will be used only if an argument is not invoked through the function.
+
+```javascript
+function add(a, b = 5) {
+    return a + b;
+} 
+
+add(4, 8)  // output -> 12
+add(3)     // output -> 8
+```
+
 ## Object Destructuring
 
 ## Rest and Spread
+
+You can expand an array, an object or a string using the spread operator `...`
+
+```javascript
+let arr = [1, 2, 3]; 
+
+let newArr = [...arr, 4, 5]; // output -> [1, 2, 3, 4, 5]
+// you can create a copy of an array variable
+let copy = [...arr]   // output -> [1, 2, 3]
+
+function unknown(...arr) {
+    console.log(arr);
+}
+unknown(1, 2, 3, 4, 5);  // output -> [1, 2, 3, 4, 5]
+```
+
+This can come in handy when we know that we will be passing in a number of parameters to a function call, but we don't know how many.
 
 ## Promises
 
