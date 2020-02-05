@@ -111,3 +111,5 @@ This can come in handy when we know that we will be passing in a number of param
 * https://www.taniarascia.com/es6-syntax-and-feature-overview/
 
 * https://www.digitalocean.com/community/tutorials/understanding-variables-scope-hoisting-in-javascript#hoisting
+
+* https://flaviocopes.com/es6/
