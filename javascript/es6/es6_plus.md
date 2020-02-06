@@ -14,7 +14,6 @@ let greeting = `Hello I am ${first_name} ${last_name}`
 let concatenation = "Hello I am " + first_name + last_name;
 ```
 
-
 ## let, var, and const and Function vs Block Scope
 
 ### Variable Scope (var)
@@ -43,6 +42,36 @@ Keywords `let` and `const` are `BLOCK-scoped`. This means that a new, `local sco
 
 
 ## Arrow Functions () => {}
+
+Arrow functions are anonymous
+
+```javascript
+var add = function (x,y) {
+    return x + y;
+}
+
+var add = (x,y) => {
+    return x + y;
+}
+```
+
+Implicit Returns
+
+```javascript
+var add = function (x,y) {
+return x + y;
+}
+
+var add = (x,y) => x + y;
+```
+
+Benefits of the arrow function and its implications on execution context.
+
+Arrow functions allows us to “inherit” the scope we’re in if needed
+
+Lexical Scope or Function Scope
+
+Lexical Binding
 
 
 ## Default Parameters
@@ -77,7 +106,22 @@ console.log(make, color)
 
 ## for of Loops
 
+Combines the conciseness of `forEach()` with the ability to break out of the loop at a specified value;
 
+
+```javascript
+//iterate over the value
+for (const value of ['a', 'b', 'c']) {
+    console.log(value) //value
+}
+
+//get the index as well, using `entries()`
+for (const [index, value] of ['a', 'b', 'c'].entries()) {
+    console.log(index) //index
+    console.log(value) //value
+}
+
+```
 
 ## Rest and Spread
 
@@ -113,3 +157,11 @@ This can come in handy when we know that we will be passing in a number of param
 * https://www.digitalocean.com/community/tutorials/understanding-variables-scope-hoisting-in-javascript#hoisting
 
 * https://flaviocopes.com/es6/
+
+
+* https://tylermcginnis.com/arrow-functions/
+
+
+* https://ultimatecourses.com/blog/es6-arrow-functions-syntaxes-and-lexical-scoping
+
+* https://spin.atomicobject.com/2014/10/20/javascript-scope-closures/
