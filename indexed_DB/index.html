@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IndexedDB Practice</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        const wipeDb = indexedDB.deleteDatabase("classroom");
+        // Create a new IndexedDB named classroom and set initial version to 1
+        const request = window.indexedDB.open("classroom", 1);
+        // Create an object store (similar to a table or collection) named students
+        // Also create a primary key named index on this object store
+        request.onupgradeneeded = function (event) {
+            const db = event.target.result;
+            const studentStore = db.createObjectStore('students', { keyPath: 'id', autoIncrement: true });
+        };
+        // All operations on our object store happen here
+        request.onsuccess = () => {
+            const db = request.result;
+
+            // You must create a transaction before doing any database operations
+            const transaction = db.transaction(["students"], "readwrite");
+
+            // Now get the store you want tko work with
+            const studentStore = transaction.objectStore("students");
+
+            // Let's add some data
+            studentStore.add({ firstname: "Bob", lastname: "Smith", gpa: 2.5, passed: false });
+            studentStore.add({ firstname: "Mary", lastname: "Jones", gpa: 3.8, passed: false });
+
+            // Sample query by primary key
+            const getById = studentStore.get(1);
+            getById.onsuccess = e => {
+                console.log(getById.result);
+            }
+
+            // Sample query using another pre-defined index
+            const lastnameIdx = studentStore.index("lastnameIdx");
+            const getByLastName = lastnameIdx.getAll("Smith");
+            getByLastName.onsuccess = e => {
+                console.log(getByLastName.result[0])
+            }
+
+            // Opens a Cursor request and iterates over all the documents.
+            const getCursorRequest = studentStore.openCursor();
+            getCursorRequest.onsuccess = e => {
+                const cursor = e.target.result;
+                if (cursor) {
+                    console.log(cursor.value);
+                    if (cursor.value.gpa > 3) {
+                        const student = cursor.value;
+                        student.passed = true;
+                        cursor.update(student);
+                    }
+                    cursor.continue();
+                } else {
+                    console.log("No documents left!");
+                }
+            };
+        };
+    </script>
+</body>
+
+</html>
