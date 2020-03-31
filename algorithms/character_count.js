@@ -1,10 +1,10 @@
 
 
-// Count the number of occurances of specified character
+// Count the number of occurrences of specified character
 
-let str = "Number of occurances of character in JavaScript";
+let str = "Number of occurrences of character in JavaScript";
 
-// initalize counter
+// initialize counter
 let count = 0;
 
 
