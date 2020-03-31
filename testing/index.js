@@ -13,7 +13,7 @@ function subtract(a, b) {
 }
 
 
-function productOf(a, b) {
+function product(a, b) {
     return a * b;
 }
 
@@ -21,7 +21,6 @@ function productOf(a, b) {
 function divide(a, b) {
     return a / b;
 }
-
 
 
 // --------------------------------------------------------- //
@@ -42,3 +41,7 @@ function isEven(num) {
     }
     return false;
 }
+
+
+// Make sure that you export the functions so our Test file can access them
+module.exports = { add, subtract, product, divide, isOdd, isEven }
