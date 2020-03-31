@@ -108,8 +108,10 @@ A list of the most commonly used matchers are:
 * toBeInstanceOf(): checks if an object is an instance of a class
 
 
+&nbsp;
 
-# Resources
+
+## Resources
 
 Check the Documentation
 * https://jestjs.io/en/
