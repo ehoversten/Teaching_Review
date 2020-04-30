@@ -10,40 +10,50 @@ function nameOfFunction() {
 // Making a Function Declaration
 
 // Initialize greeting function
-function greet() {
-    console.log("Hello, World!");
-}   
+// function greet() {
+//     console.log("Hello, World!");
+// }   
 
 // Invoke the function
-greet();
+// greet();
+
+// We can print out the NAME of the function using the .name method on the function object
+// console.log(greet.name)
 
 
 // ** FUNCTION PARAMETERS ** //
 // Initialize custom greeting function
-function greet(name) {
+function greet(name = "Susan") {
     console.log(`Hello, ${name}!`);
 }
 
 // Invoke greet function with "Susan" as the argument
-greet("Susan");
+// greet("Susan");
+// console.log(greet.name);
 
 
 // We can also create a function expression by assigning a function to a variable.
 // Assign add function to sum constant
-const sum = function add(x, y) {
-    return x + y;
-}
+// const sum = function add(x, y) {
+//     return x + y;
+// }
 
+// console.log(sum.name)  // output -> add
+// add(5, 5);
 // Invoke function to find the sum
-sum(20, 5);
 
 // Assign an anonymous function to sum constant
-const sum = function (x, y) {
+const sum = function(x, y) {
+    console.log(x + y);
     return x + y;
 }
 
 // Invoke function to find the sum
 sum(100, 3);
+
+console.log(sum.name)  // output -> sum
+let result = sum(20, 5);
+console.log(result);
 
 
 // ** ARROW FUNCTIONS ** //
@@ -55,6 +65,8 @@ sum(100, 3);
 // Define multiply function
 const multiply = (x, y) => {
     return x * y;
+
+    // other code here;
 }
 
 // Invoke function to find product
