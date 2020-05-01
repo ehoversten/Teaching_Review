@@ -13,15 +13,16 @@ second();  // Dolly
 
 // What if we write code that won't return control to the JS Interpreter until some 'undetermined' time later (OR as we call it an ASYNCHRONOUS OPERATION)
 
-// function first() {
-//     // Simulate a code delay
-//     setTimeout(function () {
-//         console.log("Me First");
-//     }, 500);
-// }
-// function second() {
-//     console.log("Me Second");
-// }
+function first() {
+    // Simulate a code delay
+    setTimeout(function () {
+        console.log("Me First");
+    }, 500);
+}
+
+function second() {
+    console.log("Me Second");
+}
 
 // first();
 // second();
@@ -34,32 +35,32 @@ second();  // Dolly
 // ----------------------------------- //
 
 // Function Definition with expected parameters. One of the parameters is a CALLBACK function, here we call it 'callback'
-// function doHomework(subject, callback) {
-//     alert(`Starting my ${subject} homework.`);
-//     // Within our FUNCTION DEFINITION we INVOKE or CALL the FUNCTION(callback parameter) that was passed-in as an expected PARAMETER
-//     callback();
-// }
+function doHomework(subject, callback) {
+    alert(`Starting my ${subject} homework.`);
+    // Within our FUNCTION DEFINITION we INVOKE or CALL the FUNCTION(callback parameter) that was passed-in as an expected PARAMETER
+    callback();
+}
 
 // We CALL the doHomework function and PASS-IN as an ARGUMENT an (anonymous) FUNCTION DEFINITION
-// doHomework('math', function () {
-//     alert('Finished my homework');
-// });
+doHomework('math', function () {
+    alert('Finished my homework');
+});
 
 
 // ----------------------------------- //
 
 
 // Function Definition with expected parameters. One of the parameters is a CALLBACK function, here we call it 'callback'
-// function doHomework(subject, callback) {
-//     alert(`Starting my ${subject} homework.`);
-//     // Within our FUNCTION DEFINITION we INVOKE or CALL the FUNCTION(callback parameter) that was passed-in as an expected PARAMETER
-//     callback();
-// }
+function doHomework(subject, callback) {
+    alert(`Starting my ${subject} homework.`);
+    // Within our FUNCTION DEFINITION we INVOKE or CALL the FUNCTION(callback parameter) that was passed-in as an expected PARAMETER
+    callback();
+}
 
 // Normal Function Definition
-// function alertFinished() {
-//     alert('Finished my homework');
-// }
+function alertFinished() {
+    alert('Finished my homework');
+}
 
 // We CALL the doHomework function and PASS-IN as an ARGUMENT our previously defined 'alertFinished' FUNCTION. ** NOTICE ** that we just pass in the NAME but we DONT INVOKE the function in the line. This is because UNTIL the doHomework function is called we don't want the 'alertFinished' function to RUN/EXECUTE
 // doHomework('math', alertFinished);
@@ -69,7 +70,7 @@ second();  // Dolly
 // ----------------------------------- //
 
 /**
-    In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be returned by other functions.
+    In JavaScript, functions are OBJECTS. Because of this, functions can take functions as arguments, and can also be returned by other functions.
 */
 
 
@@ -108,6 +109,7 @@ elementOnPage.addEventListener("<EVENT_TYPE>", function(evt) {
     // Code that runs ONLY ONCE THE <EVENT_TYPE> on the ELEMENT is TRIGGERED
 });
 
+// Normal function definition 
 function someFunc() {
     // run function code 
     console.log("Some Function Executing");
@@ -116,7 +118,9 @@ function someFunc() {
 }
 
 elementOnPage.addEventListener("<EVENT_TYPE>", callback);
-// elementOnPage.addEventListener("click", someFunc);
+
+// We can USE any regularly defined FUNCTION and PASS IT IN AS AN ARGUMENT, and now our regular function ACTS AS A CALLBACK FUNCTION
+elementOnPage.addEventListener("click", someFunc);
 
 
 
@@ -158,7 +162,7 @@ inquirer.prompt(questions_Obj)
 // -- Asynchronous Request using the 'fs' (File System Module) -- //
 
 // --> This CALLBACK function looks a little different (sometimes called an Error First CALLBACK) but is no different. the 'fs' module starts of its search for the file. If this is a big file it may take a few seconds, if small it will seem to take no time. BUT the CALLBACK FUNCTION DOES NOT RUN UNTIL the readFile() METHOD returns either an ERROR or DATA to us. 
-fs.readFile('<NAME_OF_FILE', function(err, data) {
+fs.readFile('<NAME_OF_FILE>', function(err, data) {
     // On Un-successful Retrieval (or Error) on call for data (ex. file does not exist)
     if(err) {
         console.log(err);
