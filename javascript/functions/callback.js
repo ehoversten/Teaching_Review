@@ -94,3 +94,75 @@ two(one);
 // output -> One
 //           Two
 //           Three
+
+
+// --------------------------------------- //
+//  Call Back Functions you have/will see  //
+// --------------------------------------- //
+
+
+// -- Remember using CALLBACKs in the DOM (?) -- //
+let elementOnPage = document.getElementById("#element-id");
+// WHEN the EVENT is TRIGGERED we run a CALLBACK FUNCTION
+elementOnPage.addEventListener("<EVENT_TYPE>", function(evt) {
+    // Code that runs ONLY ONCE THE <EVENT_TYPE> on the ELEMENT is TRIGGERED
+});
+
+function someFunc() {
+    // run function code 
+    console.log("Some Function Executing");
+    // return control to JavaScript Interpreter (or calling function)
+    return;
+}
+
+elementOnPage.addEventListener("<EVENT_TYPE>", callback);
+// elementOnPage.addEventListener("click", someFunc);
+
+
+
+// -- AJAX (Asynchronous Request) API request (with jQuery) -- //
+$.ajax({
+    url: API_URL,
+    method: GET
+}).done(function(data) {
+    // This code will not run UNTIL we get a RESPONSE BACK from the server we made our API call to
+    console.log(data)
+})
+
+// -- CALLBACK Functions returned from PROMISED based Libraries (ex. axios, inquirer) --/
+
+// --> Here we are using CALLBACKS to HANDLE OUR PROMISE RESPONSE (or the data returned from our API call) <-- //
+
+// Making our API Call (or REQUEST) for data
+axios.get(API_URL)
+    // On successful RESPONSE from API in the .then() CALLBACK Function block
+    .then(function(response_data) {
+        console.log(response_data);
+    })
+    // On UN-Successful RESPONSE (or ERROR) from API in the .catch() CALLBACK Function block
+    .catch(function(error) {
+        console.log(error);
+    });
+
+// Making an Asynchronous Call to REQUEST data from our USER (terminal prompt)
+// Same as the axios code above just using ES6 ARROW Functions as the CALLBACK Function
+inquirer.prompt(questions_Obj)
+    .then( data => {
+        console.log(data)
+    })
+    .catch( err => {
+        console.log(err);
+    });
+
+
+// -- Asynchronous Request using the 'fs' (File System Module) -- //
+
+// --> This CALLBACK function looks a little different (sometimes called an Error First CALLBACK) but is no different. the 'fs' module starts of its search for the file. If this is a big file it may take a few seconds, if small it will seem to take no time. BUT the CALLBACK FUNCTION DOES NOT RUN UNTIL the readFile() METHOD returns either an ERROR or DATA to us. 
+fs.readFile('<NAME_OF_FILE', function(err, data) {
+    // On Un-successful Retrieval (or Error) on call for data (ex. file does not exist)
+    if(err) {
+        console.log(err);
+    }
+    // On Successful Retrieval of data from file
+    console.log(data)
+})
