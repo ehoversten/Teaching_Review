@@ -31,13 +31,34 @@ function countLetters(str) {
     // console.log("***********")
 }
 
-countLetters(str_A);
-countLetters(str_B);
+// countLetters(str_A);
+// countLetters(str_B);
 
 
 // Turning an ARRAY data structure into an OBJECT
+let arr_A = [10, 20, 30, 20, 40, 10, 50];
 
+function countNums(arr) {
+    // Create an empty OBJECT to store KEY:VALUE pairs
+    let obj = {}
 
+    // Loop through the array
+    arr.forEach(function(num) {
+        // Does the KEY exist?
+        if(obj[num]) {
+            // Increment count VALUE
+            obj[num] += 1;
+        } else {
+            // Add KEY to OBJ
+            obj[num] = 1;
+        }
+    })
+    // Let's check our result
+    console.log("#-#-#-#-#-#-#-#-#-#");
+    console.table(obj);
+}
+
+countNums(arr_A);
 
 
 // Turning two ARRAY's into an OBJECT with key:value pairs
