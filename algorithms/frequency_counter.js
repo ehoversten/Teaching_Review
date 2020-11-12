@@ -58,9 +58,89 @@ function countNums(arr) {
     console.table(obj);
 }
 
-countNums(arr_A);
+// -->  Run the Function
+// countNums(arr_A);
 
 
 // Turning two ARRAY's into an OBJECT with key:value pairs
+let arr_1 = [1, 2, 3];
+let arr_2 = [1, 4, 9];
+
+function areSquares(first, second) {
+    // Let's create a quick fail condition to check if the LENGTH of the provided arrays are the same
+    if(first.length !== second.length) {
+        return false;
+    }
+
+    // Create empty OBJECTS 
+    let obj_1 = {};
+    let obj_2 = {};
+
+    // Loop through each array and load/increment the KEY:VALUE pairs into the new OBJECTS
+    first.forEach( num => {
+        if(obj_1[num]){
+            obj_1[num] += 1
+        } else {
+            obj_1[num] = 1;
+        }
+        // TESTING (Watch the object grow as we iterate through the loop)
+        // console.log(obj_1)
+    });
+
+    // Each loop is only adding O(n) time/space
+    second.forEach( num => {
+        if(obj_2[num]){
+            obj_2[num] += 1
+        } else {
+            obj_2[num] = 1;
+        }
+        // TESTING (Watch the object grow as we iterate through the loop)
+        // console.log(obj_2)
+    });
 
 
+    // --> TESTING
+    console.log("OBJ #1:", obj_1);
+    console.log("OBJ #2:", obj_2);
+}
+
+// -->  Run the Function
+areSquares(arr_1, arr_2);
+
+
+
+// Testing Algo
+function find2Movies(flightLength, movies){
+  // create an object
+  let results = {}
+  // loop through every movie
+  for(let i = 0; i < movies.length; i++){
+    // If current movie is inside your object
+    if (results[movies[i]]){
+      // Then return true
+      console.log("true")
+      return true 
+    }
+    // Otherwise, add the movie that would pair with our current
+    // movie to our object 
+    // We know what that movie's length should be by 
+    // subtracting the current movie's length from the flight length 
+    let result = flightLength - movies[i]
+    console.log("Current Movie: ", movies[i]);
+    console.log("Result: ", result);
+    results[result] = true
+  }
+  
+  // If you went through the loops and didn't find any movies that 
+  // add up EXACTLY to a given flight length, return false
+  console.log("false")
+  return false
+}
+
+// -->  Run the Function
+let arr = [20, 30, 110, 40, 50];
+let arr_B = [80, 110, 40];
+let arr_C = [80, 110, 80];
+// find2Movies(160, arr_B);
+// find2Movies(160, arr);
+// find2Movies(160, arr_C);
