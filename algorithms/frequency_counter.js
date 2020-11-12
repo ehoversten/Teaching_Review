@@ -65,10 +65,13 @@ function countNums(arr) {
 // Turning two ARRAY's into an OBJECT with key:value pairs
 let arr_1 = [1, 2, 3];
 let arr_2 = [1, 4, 9];
+let arr_3 = [1, 1, 3, 4];
+let arr_4 = [1, 1, 9, 16];
 
 function areSquares(first, second) {
     // Let's create a quick fail condition to check if the LENGTH of the provided arrays are the same
     if(first.length !== second.length) {
+        console.log("False, Length of arrays do not match!")
         return false;
     }
 
@@ -98,14 +101,29 @@ function areSquares(first, second) {
         // console.log(obj_2)
     });
 
-
     // --> TESTING
     console.log("OBJ #1:", obj_1);
     console.log("OBJ #2:", obj_2);
+
+    for(let key in obj_1) {
+        console.log("Key: ", key)
+        if(!(key ** 2 in obj_2)) {
+            console.log("False, Squared KEY does not exist in second array");
+            return false
+        }
+        if(obj_1[key] !== obj_2[key ** 2]) {
+            console.log("False, Squared KEY in second array does not exist in first array");
+            return false;
+        }
+    }
+    console.log("True, Second array contains squares of first array")
+    return true;
 }
 
 // -->  Run the Function
 areSquares(arr_1, arr_2);
+areSquares(arr_1, arr_3);
+areSquares(arr_3, arr_4);
 
 
 
