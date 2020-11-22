@@ -39,12 +39,13 @@ function sameFrequency(num_1, num_2) {
         }
     }
 
+    // Check to see if the number of each value is the same in both OBJECTS 
     for(num in obj_1) {
         if(obj_1[num] !== obj_2[num]) {
             console.log("Frequencies do not match")
             return false;
         }
-        console.log("Frequency Match")
+        console.log("Frequencies Match")
         return true;
     }
 
@@ -57,3 +58,4 @@ function sameFrequency(num_1, num_2) {
 sameFrequency(128, 281);
 sameFrequency(28, 81);
 sameFrequency(28, 811);
+sameFrequency(2811, 8112);
