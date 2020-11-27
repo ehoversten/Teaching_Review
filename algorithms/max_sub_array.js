@@ -1,5 +1,4 @@
-// Using the sliding window pattern
-
+// -- Using the sliding window pattern -- //
 
 // Find the largest SUM given an ARRAY of numbers and a NUMBER of consecutive values to sum. 
 
