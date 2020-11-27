@@ -29,3 +29,4 @@ let powFour = power(2, 4);
 console.log(powFour);
 let powZero = power(2, 0);
 console.log(powZero);
+
