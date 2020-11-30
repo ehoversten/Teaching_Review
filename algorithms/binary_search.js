@@ -1,6 +1,8 @@
 /* 
 
-    Write a function called binarySearch() which accepts a SORTED array and returns the INDEX at which the value exists
+    Write a function called binarySearch() which accepts a SORTED array and returns the INDEX at which the value exists.
+
+    What is the Big(O) of this solution --> Big(O) of O(log n)
 
 */ 
 
