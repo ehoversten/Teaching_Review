@@ -43,4 +43,50 @@ class SinglyLinkedList {
         this.length++
         return this;
     }
+
+    // -- Pseudo Code for POP method -- //
+    // IF there are no Nodes in the LIST returned 'undefined'
+    // Loop through the LIST until you reach the TAIL
+    // Set the NEXT property of the 2nd to last Node to 'null'
+    // Set the TAIL to be the 2nd to last Node
+    // Decrement the LENGTH of the LIST by one
+    // Return the value of the removed Node
+    pop() {
+        if(!this.head) {
+            return undefined;
+        } 
+        let currentNode = this.head;
+        // console.log(currentNode);
+        while(currentNode.next.next !== null) {
+            currentNode = currentNode.next
+            // console.log(currentNode);
+        }
+        let popVal = currentNode.next.val;
+        currentNode.next = null;
+        this.tail = currentNode;
+        this.length--;
+        return popVal;
+    }
 }
+
+
+
+let list = new SinglyLinkedList();
+console.log(list);
+
+list.push(10);
+// console.log(list);
+
+list.push(99);
+// console.log(list);
+
+list.push(25);
+// console.log(list);
+
+list.push(50);
+console.log(list);
+
+
+let a = list.pop();
+console.log(a);
+console.log(list);
