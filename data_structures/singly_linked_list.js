@@ -99,7 +99,29 @@ class SinglyLinkedList {
         this.head = current.next;
         // console.table(this.head);
         this.length--;
+        if(this.length === 0) {
+            this.tail = null;
+        }
         return current;
+    }
+
+    // -- Pseudo Code for UNSHIFT method -- //
+        // Function accepts a VALUE
+        // Create a new Node, assign value input to Node.val property
+        // IF no HEAD exists in LIST, set HEAD & TAIL to new Node
+        // Otherwise - set new Node to be the new HEAD in the LIST
+        // Increment LENGTH of LIST by one
+        // Return Linked LIST
+    unshift(val) {
+        let newNode = new Node(val);
+        if(!this.head) {
+            this.head = newNode;
+        }
+        let oldHead = this.head;
+        this.head = newNode;
+        newNode.next = oldHead;
+        this.length++;
+        return this;
     }
 }
 
@@ -119,11 +141,16 @@ list.push(25);
 
 list.push(50);
 console.log(list);
+console.log("**********");
 
 // let a = list.pop();
 // console.log(a);
 // console.log(list);
 
-let b = list.shift();
-console.log(b);
+// let b = list.shift();
+// console.log(b);
+// console.log(list);
+
+let c = list.unshift(5);
+// console.log(b);
 console.log(list);
