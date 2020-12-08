@@ -129,12 +129,31 @@ class SinglyLinkedList {
         this.length++;
         return this;
     }
+
+    // -- Pseudo Code for GET method -- //
+        // This function should accept an INDEX as an input
+        // IF the INDEX is less than zero or greater than the LENGTH of the LIST, return NULL
+        // Loop through the LIST until you reach the INDEX and return the NODE at the specified INDEX value
+    get(index) {
+        if(index < 0 || this.length < index) {
+            console.log("No Node/Value at specified index");
+            return null;
+        }
+        let count = 0;
+        let current = this.head;
+        while(count !== index) {
+            current = current.next;
+            count++;
+        }
+        return current;
+    }
+
 }
 
 
 // -- TESTING -- //
 let list = new SinglyLinkedList();
-console.log(list);
+// console.log(list);
 
 list.push(10);
 // console.log(list);
@@ -146,7 +165,9 @@ list.push(25);
 // console.log(list);
 
 list.push(50);
-console.log(list);
+// console.log(list);
+
+list.push(7);
 console.log("**********");
 
 // let a = list.pop();
@@ -157,6 +178,15 @@ console.log("**********");
 // console.log(b);
 // console.log(list);
 
-let c = list.unshift(5);
+// let c = list.unshift(5);
 // console.log(b);
-console.log(list);
+// console.log(list);
+
+// let getIndex = list.get(2) // should return --> 25
+// console.log(getIndex);
+
+// getIndex = list.get(0) // should return --> 10
+// console.log(getIndex);
+
+// getIndex = list.get(5) // should return --> null
+// console.log(getIndex);
