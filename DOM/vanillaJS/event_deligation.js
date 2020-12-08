@@ -1,5 +1,5 @@
 // Here we just have an ARRAY of ITEMS
-var groceries = ["Bananas", "Apples", "Oranges", "Grapes", "Blueberries"];
+var choices = ["Choice 1", "Choice 2", "Choice 3", "Choice 4", "Choice 5"];
 
 // We create an EMPTY ARRAY to track the users selection(s)
 var userSelection = [];
@@ -16,15 +16,15 @@ loadBtn.addEventListener("click", function(event){
     console.log("Loading");
     
     // Loop Through our ITEMS ARRAY and ADD each ITEM to the DOM
-    for(var i = 0; i < groceries.length; i++) {
+    for(var i = 0; i < choices.length; i++) {
         // Create a NEW ELEMENT
         var newItem = document.createElement('li');
         // Add ATTRIBUTES and CLASSES to NEW ELEMENT
-        newItem.setAttribute("data", groceries[i]);
+        newItem.setAttribute("data", choices[i]);
         newItem.setAttribute("id", i);
         newItem.classList.add("list-item");
         // Add CONTENT to NEW ELEMENT
-        newItem.textContent = groceries[i];
+        newItem.textContent = choices[i];
         // Add NEW ELEMENT to DOM div
         list.appendChild(newItem);
     }
@@ -34,15 +34,15 @@ loadBtn.addEventListener("click", function(event){
 list.addEventListener('click', function(event){
     event.preventDefault();
 
-    // Since we added an EVENT LISTENER to the 'Containing DIV' we want to check that what we click on EXIST in the DIV.
+    // Since we added an EVENT LISTENER to the 'Containing DIV' we want to check that what we click on EXISTS in the DIV.
     if (event.target.matches("li")) {
         // Let's Identify EACH LIST ITEM
         let identifier = event.target.id;
-        // console.log(identifier);
+        console.log(identifier);
 
         // 
         let valueKey = event.target.innerHTML;
-        // console.log(valueKey);
+        console.log(valueKey);
 
         userSelection.push( 
             {   
