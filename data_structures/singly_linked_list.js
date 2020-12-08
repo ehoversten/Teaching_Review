@@ -148,6 +148,19 @@ class SinglyLinkedList {
         return current;
     }
 
+    // -- Pseudo Code for SET method -- //
+        // Function should accept an INDEX and a VALUE
+        // Using the GET() method find the specified node at the given INDEX
+        // If INDEX of NODE is not in LIST return 'false'
+        // Update VALUE of NODE at specified INDEX and return 'true'
+    set(index, value) {
+        if(index < 0 || index > this.length) {
+            return false;
+        }
+        let updateNode = this.get(index);
+        updateNode.val = value;
+        return true;
+    }
 }
 
 
@@ -182,11 +195,15 @@ console.log("**********");
 // console.log(b);
 // console.log(list);
 
-// let getIndex = list.get(2) // should return --> 25
-// console.log(getIndex);
+let getIndex = list.get(2) // should return --> 25
+console.log(getIndex);
 
 // getIndex = list.get(0) // should return --> 10
 // console.log(getIndex);
 
 // getIndex = list.get(5) // should return --> null
 // console.log(getIndex);
+
+list.set(2, 27);
+getIndex = list.get(2);
+console.log(getIndex);
