@@ -226,7 +226,27 @@ class SinglyLinkedList {
         // prevNode.next = rmvNode.next;
         prevNode.next = prevNode.next.next;
         this.length--;
-        return rmvNode.val;
+        return rmvNode;
+    }
+
+    // -- Pseudo Code for REVERSE method -- //
+        // Swap the HEAD and the TAIL
+        // Create a variable called 'next'
+        // Create a variable called 'prev'
+        // Create a variable called 'node' and initialize it to the HEAD property
+        // Loop through the list
+        // Set the NEXT property on whatever NODE your currently on
+        // Set 'prev' to be the value of the NODE property
+        // Set the NODE variable to be the value of the 'next' variable
+    reverse() {
+        let tempHead = this.tail;
+        let tempTail = this.head;
+        this.tail = this.head;
+        this.head = tempHead;
+
+        let nextNode;
+        let prevNode;
+
     }
 }
 
@@ -282,7 +302,7 @@ console.log(list);
 // console.log(list);
 
 // <--- TEST ---> //
-let getOut = list.remove(1);
-console.log(getOut);
+// let getOut = list.remove(1);
+// console.log(getOut);
 
-console.log(list);
+// console.log(list);
