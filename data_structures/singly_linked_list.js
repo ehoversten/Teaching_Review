@@ -195,6 +195,39 @@ class SinglyLinkedList {
         this.length++
         return true;
     }
+
+    // -- Pseudo Code for REMOVE method -- //
+        // Function will take in an INDEX
+        // IF the INDEX is less than zero or greater than the LENGTH, return 'undefined'
+        // IF the INDEX is the same as the LENGTH - 1, use the pop() method
+        // IF the INDEX is 0, use the shift() method
+        // Otherwise --> use the get() method to access the NODE at INDEX - 1 position
+        // Set the NEXT property on that NODE to be the NEXT property of the following NODE
+        // Decrement the LENGTH
+        // Return the VALUE of the NODE removed
+    remove(index) {
+        if(index < 0 || index > this.length) {
+            return undefined;
+        }
+
+        if(index == this.length - 1) {
+            let rmvValue = this.pop();
+            return rmvValue;
+        }
+
+        if(index == 0) {
+            let rmvValue = this.shift();
+            return rmvValue;
+        }
+
+        // let rmvNode = this.get(index);
+        let prevNode = this.get(index - 1);
+        let rmvNode = prevNode.next
+        // prevNode.next = rmvNode.next;
+        prevNode.next = prevNode.next.next;
+        this.length--;
+        return rmvNode.val;
+    }
 }
 
 
@@ -212,6 +245,7 @@ list.push(400);
 // console.log(list);
 // list.push(7);
 console.log("**********");
+console.log(list);
 
 // <--- TEST ---> //
 // let a = list.pop();
@@ -228,8 +262,8 @@ console.log("**********");
 // console.log(list);
 
 // <--- TEST ---> //
-let getIndex = list.get(2) // should return --> 25
-console.log(getIndex);
+// let getIndex = list.get(2) // should return --> 25
+// console.log(getIndex);
 
 // getIndex = list.get(0) // should return --> 10
 // console.log(getIndex);
@@ -243,6 +277,12 @@ console.log(getIndex);
 // console.log(getIndex);
 
 // <--- TEST ---> //
-list.insert(2, 250);
-console.table(list);
+// list.insert(2, 250);
+// console.table(list);
 // console.log(list);
+
+// <--- TEST ---> //
+let getOut = list.remove(1);
+console.log(getOut);
+
+console.log(list);
