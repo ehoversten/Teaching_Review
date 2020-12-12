@@ -161,28 +161,59 @@ class SinglyLinkedList {
         updateNode.val = value;
         return true;
     }
+
+     // -- Pseudo Code for INSERT method -- //
+        // Function should accept an INDEX and a VALUE
+        // IF the INDEX is less than zero or greater than the LENGTH, return 'false'
+        // IF the INDEX is the same as the LENGTH, push() the new node to the end of the list
+        // IF the INDEX is 0 unshift() a new NODE to the start of the list
+        // ELSE --> use the get() method to access the NODE at the INDEX - 1
+        // Set the NEXT property on the NODE (at INDEX - 1) to point to the new NODE
+        // Set the NEXT property on the new NODE to point at the previous NODE (at INDEX - 1)
+        // Increment the LENGTH of the LIST
+        // Return 'true'
+    insert(index, value) {
+        if(index < 0 || index > this.length) {
+            return false;
+        }
+
+        if(index === this.length) {
+            this.push(value);
+            return true;
+        }
+
+        if(index === 0) {
+            this.unshift(value);
+            return true;
+        }
+
+        let newNode = new Node(value);
+        let prevNode = this.get(index - 1);
+        let temp = prevNode.next;
+        prevNode.next = newNode;
+        newNode.next = temp;
+        this.length++
+        return true;
+    }
 }
 
 
-// -- TESTING -- //
+// <--- TEST ---> //
 let list = new SinglyLinkedList();
 // console.log(list);
 
-list.push(10);
+list.push(100);
 // console.log(list);
-
-list.push(99);
+list.push(200);
 // console.log(list);
-
-list.push(25);
+list.push(300);
 // console.log(list);
-
-list.push(50);
+list.push(400);
 // console.log(list);
-
-list.push(7);
+// list.push(7);
 console.log("**********");
 
+// <--- TEST ---> //
 // let a = list.pop();
 // console.log(a);
 // console.log(list);
@@ -191,10 +222,12 @@ console.log("**********");
 // console.log(b);
 // console.log(list);
 
+// <--- TEST ---> //
 // let c = list.unshift(5);
 // console.log(b);
 // console.log(list);
 
+// <--- TEST ---> //
 let getIndex = list.get(2) // should return --> 25
 console.log(getIndex);
 
@@ -204,6 +237,12 @@ console.log(getIndex);
 // getIndex = list.get(5) // should return --> null
 // console.log(getIndex);
 
-list.set(2, 27);
-getIndex = list.get(2);
-console.log(getIndex);
+// <--- TEST ---> //
+// list.set(2, 27);
+// getIndex = list.get(2);
+// console.log(getIndex);
+
+// <--- TEST ---> //
+list.insert(2, 250);
+console.table(list);
+// console.log(list);
