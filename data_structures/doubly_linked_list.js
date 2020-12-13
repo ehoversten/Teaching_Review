@@ -124,7 +124,7 @@ class DoublyLinkedList {
         return this;
     }
 
-    // -- Pseudo Code for UNSHIFT method -- //
+    // -- Pseudo Code for GET method -- //
         // Function accepts an INDEX value
         // If INDEX is less than 0 or greater than the LENGTH of the LIST, return NULL
         // If INDEX is less than or equal to half the LENGTH of the LIST
@@ -158,6 +158,22 @@ class DoublyLinkedList {
         }
         return current;
     }
+
+    // -- Pseudo Code for SET method -- //
+        // Function accepts an INDEX and a VALUE
+        // Create a variable which is the result of using the GET() method and the INDEX input
+        // IF the GET() method returns a valid NODE, set the VALUE of the NODE to the input VALUE and return 'true'
+        // ELSE return 'false'
+    set(index, value) {
+        if(index < 0 || index > this.length) {
+            return false;
+        } else {
+            let setNode = this.get(index);
+            setNode.val = value;
+            return true;
+        }
+    }
+
 }
 
 // -- Create New List -- //
