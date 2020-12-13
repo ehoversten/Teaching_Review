@@ -123,8 +123,51 @@ class DoublyLinkedList {
         this.length++;
         return this;
     }
+
+    // -- Pseudo Code for UNSHIFT method -- //
+        // Function accepts an INDEX value
+        // If INDEX is less than 0 or greater than the LENGTH of the LIST, return NULL
+        // If INDEX is less than or equal to half the LENGTH of the LIST
+            // Loop through the LIST starting from the HEAD moving towards the middle
+            // Return NODE at INDEX
+        // If INDEX is greater than half the LENGTH of the LIST
+            // Loop through the LIST starting from the TAIL towards the middle
+            // Return NODE at INDEX
+    get(index) {
+        if(index < 0 || index > this.length) {
+            return null;
+        }
+        let count;
+        let current;
+        let middle = Math.floor(this.length / 2);
+        // console.log(middle);
+        if(index <= middle) {
+            current = this.head;
+            count = 0;
+            while(count < index) {
+                current = current.next;
+                count++;
+            }
+        } else {
+            current = this.tail;
+            count = this.length - 1;
+            while(count > index) {
+                current = current.prev;
+                count--;
+            }
+        }
+        return current;
+    }
 }
 
-
+// -- Create New List -- //
 let dbl = new DoublyLinkedList();
+console.log(dbl);
+
+// -- TESTING -- //
+dbl.push(100);
+dbl.push(200);
+dbl.push(300);
+dbl.push(400);
+dbl.push(500);
 console.log(dbl);
