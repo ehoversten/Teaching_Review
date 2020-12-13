@@ -74,6 +74,32 @@ class DoublyLinkedList {
         this.length--;
         return popNode.val;
     }
+
+    // -- Pseudo Code for SHIFT method -- //
+        // IF LENGTH is 0, return 'undefined'
+        // Create a variable to store the current HEAD property
+        // IF LENGTH is 1 - set HEAD and TAIL to be NULL
+        // Set HEAD to be the NEXT property of the old head
+        // Set the new HEAD's PREV property to be NULL
+        // Set the old head's NEXT property to be NULL
+        // Decrement the LENGTH
+        // Return the OLD HEAD NODE
+    shift() {
+        if(this.length == 0) {
+            return undefined;
+        }
+        let oldHead = this.head;
+        if(this.length == 1) {
+            this.head = null;
+            this.tail = null;
+        } else {
+            this.head = oldHead.next;
+            this.head.prev = null;
+            oldHead.next = null;
+        }
+        this.length--;
+        return oldHead;
+    }
 }
 
 
