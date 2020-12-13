@@ -100,6 +100,29 @@ class DoublyLinkedList {
         this.length--;
         return oldHead;
     }
+
+    // -- Pseudo Code for UNSHIFT method -- //
+        // This function accepts a value
+        // Create a new NODE with the VALUE input
+        // IF LENGTH is 0 - Set HEAD and TAIL properties to be the NEW NODE
+        // Otherwise - Set PREV property on the HEAD to be the NEW NODE
+        // Set NEXT property on the NEW NODE to be the HEAD property
+        // Update HEAD to be the NEW NODE 
+        // Increment the LENGTH of the LIST
+        // Return LIST
+    unshift(value) {
+        let newNode = new Node(value);
+        if(this.length == 0) {
+            this.head = newNode;
+            this.tail = newNode;
+        } else {
+            this.head.prev = newNode;
+            newNode.next = this.head;
+            this.head = newNode;
+        }
+        this.length++;
+        return this;
+    }
 }
 
 
