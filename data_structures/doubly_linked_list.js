@@ -174,6 +174,39 @@ class DoublyLinkedList {
         }
     }
 
+    // -- Pseudo Code for INSERT method -- //
+        // Function accepts and INDEX and VALUE parameter
+        // If INDEX is less than 0 or greater than LENGTH of LIST, return 'false'
+        // If INDEX is 0, use UNSHIFT() method to add NODE
+        // If INDEX is the same LENGTH as the LIST, use PUSH() method to add NODE
+        // Otherwise - Use GET() method to find NODE at INDEX - 1
+        // Set the NEXT and PREV properties of the NEW NODE 
+        // Increment the LENGTH
+        // Return 'true'
+    insert(index, value) {
+        if(index < 0 || index > this.length) {
+            return false;
+        }
+
+        if(index == 0) {
+            return this.unshift(value);
+        } else if(index == this.length) {
+            return this.push(value);
+        } else {
+            let insertNode = new Node(value);
+            let prevNode = this.get(index - 1);
+            let afterNode = prevNode.next;
+            
+            prevNode.next = insertNode;
+            insertNode.prev = prevNode;
+            // insertNode.next = prevNode.next;
+            insertNode.next = afterNode;
+            // prevNode.next.prev = insertNode;
+            afterNode.prev = insertNode;
+        }
+        this.length++;
+        return true;
+    }
 }
 
 // -- Create New List -- //
