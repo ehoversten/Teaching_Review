@@ -38,6 +38,18 @@ h1 {
   float: right;
 }
 
+/* About Me Page  */
+#me {
+  height: 250px;
+  width: 250px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+#about-txt {
+  
+}
+
 footer {
     width: 100%;
     position: relative;
