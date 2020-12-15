@@ -53,6 +53,7 @@ h1 {
 footer {
     width: 100%;
     position: relative;
+    /* position: absolute; */
     bottom: 0;
     background: rgb(189, 189, 189);
     padding-top: 20px;

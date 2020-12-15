@@ -207,6 +207,39 @@ class DoublyLinkedList {
         this.length++;
         return true;
     }
+
+    // -- Pseudo Code for REMOVE method -- //
+        // Function accepts an INDEX of node to be removed
+        // If LENGTH is less than 0 or greater than or equal to LENGTH of LIST, return 'undefined'
+        // IF the INDEX is 0, use SHIFT() method to remove NODE
+        // IF the INDEX is the same and the LIST LENGTH - 1, use POP() method to remove NODE
+        // Use the GET() method to retrieve the NODE to be removed
+        // Update the NEXT and PREV properties to remove the found NODE
+        // Set the NEXT and PREV properties to NULL on the NODE to be removed
+        // Decrement the LENGTH of the LIST
+    remove(index) {
+        if(this.length == 0 || index >= this.length) {
+            return undefined;
+        }
+
+        if(index == 0) {
+            return this.shift();
+        }
+
+        if(index == this.length - 1) {
+            return this.pop();
+        }
+
+        let rmvNode = this.get(index);
+        let prevNode = rmvNode.prev;
+        let nextNode = rmvNode.next;
+        prevNode.next = nextNode;
+        nextNode.prev = prevNode;
+        rmvNode.prev = null;
+        rmvNode.next = null;
+        this.length--;
+        return rmvNode;
+    }
 }
 
 // -- Create New List -- //
