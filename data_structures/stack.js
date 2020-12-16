@@ -39,10 +39,36 @@ class Stack {
         } else {
             let current = this.first;
             this.first = newNode;
+            // this.first.next = current;
             newNode.next = current;
         }
         this.size++
         return this.size;
+    }
+
+    // -- Pseudo Code for POP method -- //
+        // If SIZE of STACK is 0, return NULL
+        // Otherwise - Create a temp variable to store the FIRST property on the STACK
+        // If SIZE is 1, set the FIRST and LAST properties to NULL
+        // If SIZE is greater than 1, set the FIRST property to be the NEXT property on the current Node's FIRST
+        // Decrement the SIZE by 1
+        // Return the value of the NODE removed
+    pop() {
+        if(!this.first) {
+            return null;
+        }
+        let temp = this.first;
+        // if(this.first == this.last) {
+        if(this.size == 1) {
+            // this.first = null;
+            this.last == null;
+        } else {
+            this.first = temp.next;
+            temp.first = null;
+            // temp.next = null;
+        }
+        this.size--;
+        return temp.value;
     }
 }
 
