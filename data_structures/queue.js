@@ -6,7 +6,7 @@
 
     Big-O of Queues:
         - Insertion - O(1)
-        - Removal - O(n)
+        - Removal - O(1)
         - Searching - O(n)
         - Access - O(n)
 
@@ -33,8 +33,6 @@ class Queue {
         // Create a new NODE and pass in the VALUE argument to the new NODE
         // If SIZE of QUEUE is 0, set the new NODE to be the FIRST and LAST properties of the QUEUE
         // Otherwise - Set the NEXT property on the CURRENT LAST to be the new NODE, then set the LAST property of the QUEUE to be the new NODE
-
-
     enqueue(value) {
         let newNode = new Node(value);
         if(!this.first) {
@@ -47,6 +45,28 @@ class Queue {
         }
         this.size++;
         return this.size;
+    }
+
+    // -- Pseudo Code for DEQUEUE method -- //
+        // If QUEUE SIZE is 0, return NULL
+        // Otherwise - Store the FIRST property in variable
+        // If QUEUE SIZE is 1 (If FIRST and LAST property reference/point to the same NODE) - Set FIRST and LAST properties to be NULL
+        // If QUEUE SIZE is greater than 1, set FIRST property to be the NEXT property of ?
+        // Decrement QUEUE SIZE by 1
+        // Return VALUE of removed NODE 
+    dequeue() {
+        if(!this.first) {
+            return null;
+        }
+        let temp = this.first;
+        if(this.first == this.last) {
+            this.first = null;
+            this.last = null;
+        } else {
+            this.first = temp.next;
+        }
+        this.size--;
+        return temp.value;
     }
 
 }
