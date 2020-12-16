@@ -4,6 +4,12 @@
 
     LIFO - Last In First Out
 
+    Big-O of Stacks:
+        - Insertion - O(1)
+        - Removal - O(1)
+        - Searching - O(n)
+        - Access - O(n)
+
 */ 
 
 // -- Define a Node to hold the VALUE at the nodes current location, and a POINTER to the NEXT Node in our STACK -- //
