@@ -17,10 +17,8 @@
         - Every NODE to the RIGHT of the PARENT is GREATER than the PARENT NODE
 
     Big-O of Trees:
-        - Insertion - O(x)
-        - Removal - O(x)
-        - Searching - O(x)
-        - Access - O(x)
+        - Insertion - O(log n)
+        - Searching - O(log n)
 
 */ 
 
@@ -61,7 +59,7 @@ class BinarySearchTree {
 
         let current = this.root;
         while(current.value) {
-            
+
             if(newNode.value > current.value) {
                 if(!current.right) {
                     current.right = newNode;
@@ -79,9 +77,58 @@ class BinarySearchTree {
             }
             console.log("Compare Next");
         }
-        // return this;
     }
-}
+
+    // -- Pseudo Code for FIND method -- //
+        // Start a ROOT NODE
+        // If no ROOT exists, return NULL
+        // If VALUE is equal to ROOT NODE VALUE, return ROOT
+        // Check if VALUE is GREATER than or LESS than VALUE at ROOT NODE
+            // - If GREATER:
+                // * Check if there is NODE to the RIGHT 
+                    // - If yes, move to the NODE and repeat
+                    // - If not, VALUE is not in TREE
+            // - If LESS:
+                // * Check if there is a NODE to the LEFT
+                    // - If yes, move to the NODE and repeat
+                    // - If not, VALUE is not in TREE
+    find(value) {
+        if(!this.root) {
+            console.log("Tree is Empty");
+            return null;
+        }
+
+        if(value == this.root.value) {
+            return this.root;
+        }
+
+        let current = this.root;
+        let found = false;
+
+        while(current && !found) {
+            // if(value == current.value) {
+            //     console.log("Found Value");
+            //     return current;
+            // } 
+
+            if(value > current.value) {
+                current = current.right;
+                console.log("Compare Next");
+            } else if (value < current.value) {
+                current = current.left;
+                console.log("Compare Next");
+            } else {
+                found = true
+            }
+        }
+
+        if(!found) {
+            return undefined;
+        }
+
+        return current;
+    }
+} 
 
 
 let tree = new BinarySearchTree();
