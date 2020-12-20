@@ -128,6 +128,40 @@ class BinarySearchTree {
 
         return current;
     }
+
+
+    // -- Pseudo Code for BFS (Breadth First Search) method -- //
+        // Create a QUEUE (or ARRAY) and a variable (ARRAY) to store VALUES of NODES that have been VISITED
+        // Place the ROOT NODE in the QUEUE
+        // Continue to LOOP through the QUEUE as long as there are VALUES
+            // * Dequeue a NODE from the QUEUE and push the VALUE of the NODE into the ARRAY that stores the NODES that have been (or are currently being) VISITED
+            // * If there is a LEFT property on the NODE being DEQUEUED -> add it to the QUEUE (ARRAY)
+            // * If there is RIGHT property on the NODE being DEQUEUED -> add it to the QUEUE (ARRAY)
+        // Return the VISITED (ARRAY) variable
+    bfs() {
+        if(!this.root) {
+            return null;
+        }
+
+        let queue = [this.root];
+        let data = [];
+        let current;
+
+        while(queue.length > 0) {
+            current = queue.shift();
+            data.push(current.value);
+            
+            if(current.left) {
+                queue.push(current.left);
+            }
+            
+            if(current.right) {
+                queue.push(current.right);
+            }
+        }
+
+        return data;
+    }
 } 
 
 
