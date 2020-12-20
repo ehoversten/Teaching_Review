@@ -227,6 +227,37 @@ class BinarySearchTree {
         helper(current);
         return data;
     }
+
+    // -- Pseudo Code for DFS - In Order (Depth First Search) method -- //
+        // Create a ARRAY to store VISITED NODES
+        // Store the ROOT in a variable (also used to traverse our tree)
+        // Write a helper() function that accepts a NODE
+            // * If the NODE has a LEFT property, call the helper() function with the LEFT property on the NODE
+            // * Push the VALUE of the NODE into the VISITED NODES ARRAY
+            // * If the NODE has a RIGHT property, call the helper() function with the RIGHT property on the NODE
+        // Invoke the helper() function with the CURRENT NODE
+        // Return the ARRAY
+    dfsInOrder() {
+        let data = [];
+        let current = this.root;
+
+        function helper(node) {
+            if(node.left) {
+                current = node.left;
+                helper(current);
+            }
+
+            data.push(node.value);
+
+            if(node.right) {
+                current = node.right;
+                helper(current);
+            }
+        }
+
+        helper(current);
+        return data;
+    }
 } 
 
 
