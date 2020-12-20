@@ -162,8 +162,52 @@ class BinarySearchTree {
 
         return data;
     }
+
+    // -- Pseudo Code for DFS - Pre Order (Depth First Search) method -- //
+        // Create a ARRAY to store VISITED NODES
+        // Store the ROOT in a variable (also use to traverse our tree)
+        // Write a helper() function that accepts a NODE
+            // * Push the VALUE of the NODE into the VISITED NODES ARRAY
+            // * If the NODE has a LEFT property, call the helper() function with the LEFT property on the NODE
+            // * If the NODE has a RIGHT property, call the helper() function with the RIGHT property on the NODE
+        // Invoke the helper() function with the CURRENT NODE
+        // Return the ARRAY
+    dfsPre() {
+        if(!this.root) {
+            return undefined;
+        }
+
+        let data = [];
+        let current = this.root;
+
+        function helper(checkNode) {
+            data.push(checkNode.value);
+
+            if(checkNode.left) {
+                current = checkNode.left;
+                helper(current);
+            }
+
+            if(checkNode.right) {
+                current = checkNode.right;
+                helper(current);
+            }
+        }
+
+        helper(current);
+        return data;
+    }
 } 
 
 
 let tree = new BinarySearchTree();
 console.log(tree);
+
+tree.insert(20);
+tree.insert(10);
+tree.insert(30);
+tree.insert(5);
+tree.insert(15);
+tree.insert(25);
+tree.insert(35);
+tree.insert(8);
