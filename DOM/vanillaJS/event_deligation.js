@@ -13,6 +13,7 @@ var listItems = document.querySelectorAll(".item-choice");
 // GRAB a BUTTON ELEMENT and attach an EVENT LISTENER 
 var loadBtn = document.getElementById("load");
 loadBtn.addEventListener("click", function(event){
+
     console.log("Loading");
     
     // Loop Through our ITEMS ARRAY and ADD each ITEM to the DOM
@@ -56,11 +57,12 @@ list.addEventListener('click', function(event){
         );
     }
     checkUserSelection();
-
+    list.innerHTML = '';
 })
 
 
 function checkUserSelection() {
     console.log("User Array Contains:");
     console.log(userSelection);
+
 }
