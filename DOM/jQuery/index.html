@@ -15,11 +15,38 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="demo"> </div>
 
-    <div id="event"></div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div id="demo"> </div>
+        </div>
+    
+        <div class="container mt-5">
+            <div class="row">
+                <div id="event"></div>
+            </div>
+            <div class="row">
+                <a href="#" id="trigger" class="btn btn-primary">Push Me</a>
+            </div>
+        </div>
+    
+    </div>
 
-    <a href="#" id="trigger" class="btn btn-primary">Push Me</a>
+     <div class="container mt-5">
+        <form>
+            <fieldset>
+                <legend>Add New Task</legend>
+                <label for="task">Enter New Task:</label>
+                <input id="task" type="text" name="task" />
+                <button type="submit" id="submit">Add New</button>
+            </fieldset>
+        </form>
+
+        <div id="task-list">
+            <h1>Task List:</h1>
+            <ul id="all-tasks"></ul>
+        </div>
+    </div>
 
 
     <!-- Bootstrap jQuery Links -->
