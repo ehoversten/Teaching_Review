@@ -24,8 +24,8 @@
             * Right Child is located at INDEX -> '2n + 2'
 
     Big-O of Heaps:
-        - Insertion - O(log n)
-        - Searching - O(log n)
+        - Insertion - X
+        - Searching - X
 
 */ 
 
@@ -66,7 +66,82 @@ class Heap {
     }
 
 
+    // -- Pseudo Code for REMOVE (max) method -- //
+        // Swap the value at the FIRST INDEX with the value at the LAST INDEX from the VALUES PROPERTY ARRAY
+        // POP the VALUE from the end of the VALUES ARRAY
+        // Have the new ROOT "sink down" to its new correct index location
+            // - Your PARENT INDEX starts at zero (the root) 
+            // - Find the INDEX of the LEFT CHILD: 2 * (index + 1)
+            // - Find the INDEX of the RIGHT CHILD: 2 * (index + 2)
+                // * If the LEFT or RIGHT child is greater than the ELEMENT - SWAP 
+                // * If both LEFT and RIGHT children are larger, SWAP with the largest child
+            // - The CHILD INDEX you swapped to now becomes the new PARENT INDEX
+            // - Keep looping and the swapping until neither child is larger than the element
+        // Return the old ROOT
+    removeMax() {
+        let max = this.values[0];
+        // let tmp = this.values[this.values.length - 1];
+        let tmp = this.values.pop();
+
+        if(this.values.length > 0) {
+            this.values[0] = tmp;
+            this.sortDown();
+        }
+        return max;
+    }
+
+    // Sorting Elements Down
+    sortDown() {
+
+        let idx = 0;
+        let length = this.values.length;
+        // let rmv = this.values.pop();
+        let elem = this.values[0];
+
+        while(true) {
+            let rightChildIdx = 2 * idx + 1;
+            let leftChildIdx = 2 * idx + 2;
+
+            let leftChild;
+            let rightChild;
+            let swap = null;
+
+            if(leftChildIdx < length) {
+                leftChild = this.values[leftChildIdx];
+                if(leftChild > elem) {
+                    swap = leftChildIdx;
+                }
+            }
+
+            if(rightChildIdx < length) {
+                rightChild = this.values[rightChildIdx];
+                if( 
+                    (swap === null && rightChild > elem) || 
+                    (swap !== null && rightChild > leftChild) 
+                ) {
+                    swap = rightChildIdx;
+                }
+            }
+
+            if(swap === null) {
+                break;
+            }
+
+            this.values[idx] = this.values[swap];
+            this.values[swap] = elem;
+            idx = swap;
+        }
+    }
+
 }
 
 let heap = new Heap();
 console.log(heap);
+
+// heap.insert(41);
+// heap.insert(39);
+// heap.insert(33);
+// heap.insert(18);
+// heap.insert(27);
+// heap.insert(12);
+// heap.insert(55);
