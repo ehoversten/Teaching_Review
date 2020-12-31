@@ -24,8 +24,9 @@
             * Right Child is located at INDEX -> '2n + 2'
 
     Big-O of Heaps:
-        - Insertion - X
-        - Searching - X
+        - Insertion - O (log(n))
+        - Removal - O (log(n))
+        - Searching - O(n)
 
 */ 
 
