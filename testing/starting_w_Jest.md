@@ -107,6 +107,40 @@ A list of the most commonly used matchers are:
 
 * toBeInstanceOf(): checks if an object is an instance of a class
 
+&nbsp;
+
+## Integration Testing
+
+Integration tests are a bit more complex than unit tests because you now have to deal with some dependencies (e.g. another function that gets called).
+
+
+Define the function that we want to test
+```javascript
+function addUser(name, password) {
+  let newUser = {
+    name: name,
+    password: password
+  }
+
+  return newUser;
+}
+```
+
+Define our test
+```javascript
+test("Created New User", () => {
+  // Create a new variable that invokes our addUser() function
+  let user = new addUser("Kermit", "Piggy");
+  // Call our expect() testing method and expected value
+  expect(user).toEqual({ name: "Kermit", password: "Piggy"});
+});
+
+
+```
+
+## Testing Asynchronous Code
+
+
 
 &nbsp;
 
@@ -119,3 +153,8 @@ Check the Documentation
 
 Flavio Copes: Some really great info to checkout
 * https://flaviocopes.com/jest/
+
+
+Academind: JavaScript Integration Testing
+* https://academind.com/tutorials/javascript-testing-introduction/
+

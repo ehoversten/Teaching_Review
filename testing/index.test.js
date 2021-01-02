@@ -3,7 +3,7 @@
 // --------------------------------------------------------- //
 
 // Let's bring in the functions that we want to test
-const { add, subtract, product, divide, isOdd, isEven } = require('./index');
+const { add, subtract, product, divide, isOdd, isEven, addUser } = require('./index');
 
 describe("Testing Simple Math Functions", () => {
 
@@ -73,6 +73,17 @@ describe("Testing Objects", () => {
             last: "Bird"
         }
         expect(obj).toEqual({ first: "Big", last: "Bird"});
+    });
+
+});
+
+
+describe("Testing Add New User Object", () => {
+
+    test("Created New User", () => {
+        let user = new addUser("Kermit", "Piggy");
+
+        expect(user).toEqual({ name: "Kermit", password: "Piggy"});
     });
 
 });

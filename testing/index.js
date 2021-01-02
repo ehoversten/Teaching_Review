@@ -43,5 +43,18 @@ function isEven(num) {
 }
 
 
+// --------------------------------------------------------- //
+// - Basic function definition to create a new User object   //
+// --------------------------------------------------------- //
+function addUser(name, password) {
+    let newUser = {
+        name: name,
+        password: password
+    }
+
+    return newUser;
+}
+
+
 // Make sure that you export the functions so our Test file can access them
-module.exports = { add, subtract, product, divide, isOdd, isEven }
+module.exports = { add, subtract, product, divide, isOdd, isEven, addUser }
