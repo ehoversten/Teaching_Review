@@ -46,4 +46,14 @@ test('The number 5 is not even', () => {
 })
 
 
+// --------------------------------- //
+// - Testing the value of an OBJECT
+// --------------------------------- //
 
+test('Object Assignment', () => {
+    let obj = {
+        first: "Big",
+        last: "Bird"
+    }
+    expect(obj).toEqual({ first: "Big", last: "Bird"});
+});
