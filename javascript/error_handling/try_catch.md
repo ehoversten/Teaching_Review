@@ -29,7 +29,56 @@ Therefore if we encounter an ERROR inside of the `try` block our script doesn't 
 
 &nbsp;
 
+## The Error Object
+#
+
+The error object has two main properties:
+
+`name`:
+* The type of error that occurred. For example - an undefined variable returns a `"ReferenceError"`.
+
+`message`:
+* A description of the Error - message details about the error that occurred.
+
+&nbsp;
+
+## Common Error Types:
+
+Reference Error
+* A ReferenceError indicates that an invalid reference value has been detected: a JavaScript program is trying to read a variable that does not exist.
+
+Syntax Error
+* A SyntaxError is raised when a syntax error is found in a program.
+
+Type Error
+* A TypeError happens when a value has a type that’s different than the one expected.
+
+
+&nbsp;
+
+
+
+What if we want some piece of code to run after our `try...catch` block, no matter if it runs successfully or throws an error?
+
+### `try...catch...finally...` block syntax:
+```javascript
+try {
+    ... try to execute the code ...
+} catch(e) {
+    ... handle errors ...
+} finally {
+    ... always executes if no errors occur or errors are found ...
+}
+```
+
+
+&nbsp;
+#
 ## Resources and References:
 
 JavaScript Info
 * https://javascript.info/try-catch
+
+Flavio Copes
+* https://flaviocopes.com/javascript-errors/
+* https://flaviocopes.com/javascript-custom-errors/
