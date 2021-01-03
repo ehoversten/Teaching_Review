@@ -113,8 +113,9 @@ A list of the most commonly used matchers are:
 
 Integration tests are a bit more complex than unit tests because you now have to deal with some dependencies (e.g. another function that gets called).
 
+&nbsp;
 
-Define the function that we want to test
+Define the function that we want to test:
 ```javascript
 function addUser(name, password) {
   let newUser = {
@@ -126,7 +127,7 @@ function addUser(name, password) {
 }
 ```
 
-Define our test
+Define our test:
 ```javascript
 test("Created New User", () => {
   // Create a new variable that invokes our addUser() function
