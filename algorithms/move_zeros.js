@@ -43,3 +43,25 @@ function moveZeros(numArr) {
 // ** TEST ** //
 let result = moveZeros([0, 1, 0, 3, 12]);
 console.log(result);
+
+
+// ** A variation of the solution ** //
+function moveZeros2(numArr) {
+    // Create a pointer
+    let p1 = 0;
+
+    // Loop through the elements in the array
+    for(let i = 0; i < numArr.length; i++) {
+        // When an element is Non-Zero
+        if(numArr[i] !== 0) {
+            // Swap values
+            let temp = numArr[p1];
+            numArr[p1] = numArr[i]
+            numArr[i] = temp;
+            // increment the pointer
+            p1++;
+        }
+    }
+    // Return the Array
+    return numArr;
+}
