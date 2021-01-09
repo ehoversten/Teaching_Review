@@ -37,3 +37,6 @@ var containsDuplicate = function(arr) {
 // Solution yields a Big-O of (n^2)
 
 
+function containsDups(nums) {
+    let obj = {};
+}
