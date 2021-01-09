@@ -49,7 +49,7 @@ var findDup = function (arr) {
     return undefined;
 }
 
-// Still yeilds a Big-O of (n^2) ...
+// Still yields a Big-O of (n^2) ...
 
 
 // *** THIRD POSSIBLE SOLUTION *** //
@@ -74,4 +74,5 @@ console.log(firstDupObj(arr_A));
 console.log(firstDupObj(arr_B));
 console.log(firstDupObj(arr_C));
 
-// This solution will yeild a Big-O Time Complexity of (n)
+// This solution will yield a Big-O Time Complexity of (n)
+

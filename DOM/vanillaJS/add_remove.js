@@ -50,7 +50,7 @@ addButton.addEventListener("click", function (event) {
     // newItem.textContent = "I am new content!";
     newItem.innerHTML = "I am new";
 
-    // Don't forget the new element we create will not be seen untill we APPEND it to an element in the DOM
+    // Don't forget the new element we create will not be seen until we APPEND it to an element in the DOM
     questions.append(newItem);
 })
 

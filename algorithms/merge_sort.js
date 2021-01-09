@@ -2,6 +2,9 @@
 
     Exploring the Merge Sort Algorithm 
 
+    Big - O of Merge Sort:
+        * Time Complexity - O(n log n)
+        * Space Complexity - O(n)
 */
 
 
